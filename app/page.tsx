@@ -6,7 +6,10 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex-grow"></main>
+      <main>
+        <div className="h-screen bg-neutral-400">
+				</div>
+      </main>
       <Footer />
     </>
   );

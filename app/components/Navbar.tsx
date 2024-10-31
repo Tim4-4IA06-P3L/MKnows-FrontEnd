@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav
       className="flex flex-row justify-between items-center
-    p-6 border-b-2 max-h-20"
+    p-6 border-b-2 max-h-20 bg-neutral-50"
     >
       <Logo />
       <Menu />

@@ -3,14 +3,13 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-50 w-screen flex flex-col h-max">
-		
-      <div className="flex justify-start ml-5 mt-2 mb-2">
-        <Logo />
-      </div>
+    <footer className="flex flex-col w-full">
+			<div className="flex justify-center m-5">
+				<Logo />
+			</div>
 			
-			<div className="flex flex-row justify-evenly w-screen">
-				<div className="ml-5 basis-1/4">
+			<div className="flex flex-row justify-around space-x-5 ml-5 mr-5">
+				<div className="basis-0 flex-grow flex-shrink">
 					<strong className="underline">Contact Us</strong>
 					<br />
 					<ul className="list-none text-[#888888]">
@@ -21,7 +20,7 @@ const Footer = () => {
 					</ul>
 				</div>
 
-				<div className="basis-1/4">
+				<div className="basis-0 flex-grow flex-shrink">
 					<strong className="underline">Surabaya Branch Office</strong>
 					<br />
 					<ul className="list-none text-[#888888]">
@@ -31,7 +30,7 @@ const Footer = () => {
 					</ul>
 				</div>
 
-				<div className="basis-1/4">
+				<div className="basis-0 flex-grow flex-shrink">
 					<strong className="underline">Alamat Utama</strong>
 					<br />
 					<ul className="list-none text-[#888888]">
@@ -39,7 +38,7 @@ const Footer = () => {
 					</ul>
 				</div>
 
-				<div className="basis-1/4">
+				<div className="basis-0 flex-grow flex-shrink">
 					<strong className="underline">Alamat Produksi</strong>
 					<br />
 					<ul className="list-none text-[#888888]">
@@ -48,13 +47,13 @@ const Footer = () => {
 				</div>
 			</div>
 
-      <div className="flex flex-row justify-center space-x-6">
-        <a className="rounded-md flex justify-center items-center h-5 w-5
+			<div className="flex flex-row justify-center space-x-6 mt-5">
+				<a className="rounded-md flex justify-center items-center h-5 w-5
 				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300" href="#">
 					<div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							className="h-5 w-5 top-1/2"
+							className="h-5 w-5"
 							fill="currentColor"
 							style={{ color: "#0089B9" }}
 							viewBox="0 0 24 24"
@@ -64,7 +63,7 @@ const Footer = () => {
 					</div>
 				</a>
 				
-        <a className="rounded-md h-5 w-5 flex items-center justify-center
+				<a className="rounded-md h-5 w-5 flex items-center justify-center
 				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300" href="#">
 					<div>
 						<svg
@@ -78,7 +77,7 @@ const Footer = () => {
 					</div>
 				</a>
 				
-        <a className="rounded-md h-5 w-5 flex items-center justify-center
+				<a className="rounded-md h-5 w-5 flex items-center justify-center
 				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300" href="#">
 					<div>
 						<svg
@@ -92,7 +91,7 @@ const Footer = () => {
 					</div>
 				</a>
 				
-        <a className="rounded-md h-5 w-5 flex items-center justify-center
+				<a className="rounded-md h-5 w-5 flex items-center justify-center
 				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300" href="#">
 					<div>
 						<svg
@@ -106,13 +105,14 @@ const Footer = () => {
 						</svg>
 					</div>
 				</a>
-      </div>
+			</div>
 
-      <div className="h-1 bg-neutral-400 w-screen mt-5"></div>
+			<div className="h-1 bg-neutral-400 mt-5"></div>
 
-      <p className="p-3 text-center text-[#888888]">
-        2024 - &copy; M-Knows Consulting - Hak Cipta Dilindungi
-      </p>
+			<p className="p-3 text-center text-[#888888]">
+				2024 - &copy; M-Knows Consulting - Hak Cipta Dilindungi
+			</p>
+			
     </footer>
   );
 };
