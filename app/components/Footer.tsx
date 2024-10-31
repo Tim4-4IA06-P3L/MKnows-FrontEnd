@@ -5,51 +5,52 @@ const Footer = () => {
   return (
     <footer className="bg-neutral-50 w-screen flex flex-col h-max">
 		
-      <div className="flex justify-start ml-5 mt-2">
+      <div className="flex justify-start ml-5 mt-2 mb-2">
         <Logo />
       </div>
+			
+			<div className="flex flex-row justify-evenly w-screen">
+				<div className="ml-5 basis-1/4">
+					<strong className="underline">Contact Us</strong>
+					<br />
+					<ul className="list-none text-[#888888]">
+						<li>Inhouse Training : 021-720-9729</li>
+						<li>Public Training : 021-726-5274</li>
+						<li>Whatsapp : 0812-1046-8281</li>
+						<li>Email : learning@m-knowsconsulting.com</li>
+					</ul>
+				</div>
 
-      <div className="flex flex-row justify-center space-x-2 w-screen p-6">
-        <div className="w-max">
-          <strong className="underline">Contact Us</strong>
-          <br />
-          <ul className="text-[#888888]">
-            <li>Inhouse Training : 021-720-9729</li>
-            <li>Public Training : 021-726-5274</li>
-            <li>Whatsapp : 0812-1046-8281</li>
-            <li>Email : learning@m-knowsconsulting.com</li>
-          </ul>
-        </div>
+				<div className="basis-1/4">
+					<strong className="underline">Surabaya Branch Office</strong>
+					<br />
+					<ul className="list-none text-[#888888]">
+						<li>Jl. Raya Darmo Permai III Surabaya</li>
+						<li>Telp : 031-8570-5277</li>
+						<li>Email : surabaya@m-knowsconsulting.com</li>
+					</ul>
+				</div>
 
-        <div className="w-max">
-          <strong className="underline">Surabaya Branch Office</strong>
-          <br />
-          <ul className="text-[#888888]">
-            <li>Jl. Raya Darmo Permai III Surabaya</li>
-            <li>Telp : 031-8570-5277</li>
-            <li>Email : surabaya@m-knowsconsulting.com</li>
-          </ul>
-        </div>
+				<div className="basis-1/4">
+					<strong className="underline">Alamat Utama</strong>
+					<br />
+					<ul className="list-none text-[#888888]">
+						<li>Jl. Radio IV No. 8B Barito Kebayoran Baru, Jakarta Selatan</li>
+					</ul>
+				</div>
 
-        <div className="w-max">
-          <strong className="underline">Alamat Utama</strong>
-          <br />
-          <ul className="text-[#888888]">
-            <li>Jl. Radio IV No. 8B Barito Kebayoran Baru, Jakarta Selatan</li>
-          </ul>
-        </div>
-
-        <div className="w-max">
-          <strong className="underline">Alamat Produksi</strong>
-          <br />
-          <ul className="text-[#888888]">
-            <li>Jl. Cirendeu Raya No. 61 Ciputat, Tangerang Selatan 15419</li>
-          </ul>
-        </div>
-      </div>
+				<div className="basis-1/4">
+					<strong className="underline">Alamat Produksi</strong>
+					<br />
+					<ul className="list-none text-[#888888]">
+						<li>Jl. Cirendeu Raya No. 61 Ciputat, Tangerang Selatan</li>
+					</ul>
+				</div>
+			</div>
 
       <div className="flex flex-row justify-center space-x-6">
-        <a className="rounded-md flex justify-center items-center h-5 w-5 bg-neutral-200 p-5" href="#">
+        <a className="rounded-md flex justify-center items-center h-5 w-5
+				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300" href="#">
 					<div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +64,8 @@ const Footer = () => {
 					</div>
 				</a>
 				
-        <a className="rounded-md h-5 w-5 flex items-center justify-center bg-neutral-200 p-5" href="#">
+        <a className="rounded-md h-5 w-5 flex items-center justify-center
+				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300" href="#">
 					<div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +78,8 @@ const Footer = () => {
 					</div>
 				</a>
 				
-        <a className="rounded-md h-5 w-5 flex items-center justify-center bg-neutral-200 p-5" href="#">
+        <a className="rounded-md h-5 w-5 flex items-center justify-center
+				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300" href="#">
 					<div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +92,8 @@ const Footer = () => {
 					</div>
 				</a>
 				
-        <a className="rounded-md h-5 w-5 flex items-center justify-center bg-neutral-200 p-5" href="#">
+        <a className="rounded-md h-5 w-5 flex items-center justify-center
+				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300" href="#">
 					<div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
