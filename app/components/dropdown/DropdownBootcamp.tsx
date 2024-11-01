@@ -2,7 +2,7 @@ import React from "react";
 
 const DropdownBootcamp = () => {
   return (
-    <div className="bg-white flex flex-col top-20 left-0 absolute w-screen shadow-sm">
+    <div className="bg-white flex flex-col top-20 left-0 absolute w-full shadow-sm">
       <div
         className="
 				overflow-auto
@@ -13,7 +13,7 @@ const DropdownBootcamp = () => {
       >
         <div
           className="w-max
-					left-0 p-8 top-20 cursor-default
+					left-0 p-8 cursor-default
 					flex flex-row space-x-12"
         >
           <ul className="space-y-5 w-max">
@@ -210,10 +210,10 @@ const DropdownBootcamp = () => {
         </div>
       </div>
 
-      <div className="flex w-screen">
+      <div className="flex w-full">
         <a
           href="#"
-          className="font-bold w-screen text-center text-white tracking-widest 
+          className="font-bold w-full text-center text-white tracking-widest 
 				p-3 bg-[#0089B9]"
         >
           Lihat Selengkapnya

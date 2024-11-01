@@ -1,16 +1,18 @@
 import React from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import CoverPage from "./components/CoverPage";
 
 export default function Home() {
   return (
-    <>
+    <div className="min-h-screen">
       <Navbar />
       <main>
-        <div className="h-screen bg-neutral-400">
-				</div>
+        <section className="min-h-screen">
+					<CoverPage bgSrc="" coverTitle="" />
+				</section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

@@ -1,18 +1,18 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
+import CoverPage from "../../components/CoverPage";
 
-const page = () => {
+export default function Home() {
   return (
-    <>
+    <div className="min-h-screen">
       <Navbar />
       <main>
-        <div className="h-screen bg-neutral-400">
+        <div className="min-h-screen">
+					<CoverPage bgSrc="/Consulting_Img.jpg" coverTitle="Consulting Service M-Knows Consulting" />
 				</div>
       </main>
       <Footer />
-    </>
+    </div>
   );
-};
-
-export default page;
+}
