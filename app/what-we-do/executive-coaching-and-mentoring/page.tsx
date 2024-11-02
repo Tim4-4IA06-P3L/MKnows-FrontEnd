@@ -6,6 +6,9 @@ import OverlayImage from "../../components/OverlayImage";
 import Image from "next/image";
 
 export default function Home() {
+
+	const images = ["/coaching2.jpg", "/coaching3.webp"];
+	const images2 = ["/coaching4.webp", "/coaching5.webp"];
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -22,10 +25,12 @@ export default function Home() {
 					</p>
 				</section>
 				
-				<section className="w-full flex flex-row p-20 space-x-10">
-					<OverlayImage bgColor="#1C75BC" />
+				<section className="w-full flex flex-row p-20 justify-around items-center">
+					<div className="flex justify-center relative w-2/5">
+						<OverlayImage bgColor="#1C75BC" images={images} />
+					</div>
 					
-					<div>
+					<div className="w-3/5">
 						<strong className="text-2xl">Tujuan Pendampingan</strong>
 						<p className="text-justify mt-5">
 							Mengatasi semua kesulitan yang di hadapi bawahan dalam mengerjakan tugas atau performance yang tidak mencapai 
@@ -35,8 +40,8 @@ export default function Home() {
 					</div>
 				</section>
 				
-				<section className="w-full flex flex-row p-20 justify-between">
-					<div>
+				<section className="w-full flex flex-row p-20 justify-around items-center">
+					<div className="w-3/5">
 						<strong className="text-2xl">Topik yang Ditawarkan</strong>
 						<ol className="list-decimal list-inside mt-5">
 							<li>Executive Coaching</li>
@@ -49,21 +54,8 @@ export default function Home() {
 						</p>
 					</div>
 					
-					<div className="relative w-3/5">
-						<Image
-							src="/Rocket.png"
-							fill={true}
-							style={{
-								objectFit: "contain",
-							}}
-							alt="15"
-						/>
-					</div>
-				</section>
-				
-				<section className="mt-10">
-					<div className="flex flex-col justify-center">
-						<strong className="text-5xl text-center">Our Clients</strong>
+					<div className="flex justify-center relative w-2/5">
+						<OverlayImage bgColor="#FDD016" images={images2} />
 					</div>
 				</section>
       </main>
