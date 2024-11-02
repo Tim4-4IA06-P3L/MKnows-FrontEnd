@@ -3,7 +3,6 @@ import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import CoverPage from "../../components/CoverPage";
 import OverlayImage from "../../components/OverlayImage";
-import Image from "next/image";
 
 export default function Home() {
 
