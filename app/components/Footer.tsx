@@ -49,7 +49,9 @@ const Footer = () => {
 
 			<div className="flex flex-row justify-center space-x-6 mt-5">
 				<a className="rounded-md flex justify-center items-center h-5 w-5
-				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300" href="#">
+				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300"
+				href="https://www.linkedin.com/company/m-knows-consulting/about/"
+				target="_blank">
 					<div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +66,9 @@ const Footer = () => {
 				</a>
 				
 				<a className="rounded-md h-5 w-5 flex items-center justify-center
-				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300" href="#">
+				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300"
+				href="https://www.facebook.com/mknowsconsulting"
+				target="_blank">
 					<div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +82,9 @@ const Footer = () => {
 				</a>
 				
 				<a className="rounded-md h-5 w-5 flex items-center justify-center
-				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300" href="#">
+				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300"
+				href="https://www.instagram.com/mknowsconsulting/?hl=en"
+				target="_blank">
 					<div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +98,8 @@ const Footer = () => {
 				</a>
 				
 				<a className="rounded-md h-5 w-5 flex items-center justify-center
-				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300" href="#">
+				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300"
+				href="#">
 					<div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
