@@ -23,11 +23,12 @@ export default function Home() {
 					</p>
 				</section>
 				
-				<section className="w-full flex flex-row p-20 space-x-10">
-					<div className="relative w-full">
+				<section className="w-full flex flex-row p-20 justify-around items-center">
+					<div className="flex justify-center relative w-2/5">
 						<Image
 							src="/15.png"
-							fill={true}
+							width={200}
+							height={200}
 							style={{
 								objectFit: "contain",
 							}}
@@ -35,7 +36,7 @@ export default function Home() {
 						/>
 					</div>
 					
-					<div>
+					<div className="w-3/5">
 						<strong className="text-2xl">Kami telah menjadi mitra terpercaya (lebih dari 15 tahun)</strong>
 						<p className="text-justify mt-5">
 							Bagi perusahaan nasional dan multinasional dalam mendukung pengembangan bisnis dan strategi 
@@ -46,8 +47,8 @@ export default function Home() {
 					</div>
 				</section>
 				
-				<section className="w-full flex flex-row p-20 space-x-10">
-					<div>
+				<section className="w-full flex flex-row p-20 justify-around items-center">
+					<div className="w-3/5">
 						<strong className="text-2xl">Pengembangan Sumber Daya Manusia</strong>
 						<p className="text-justify mt-5">
 							Merupakan proses yang berkesinambungan yang membutuhkan komitmen yang tinggi dan manajemen yang 
@@ -59,10 +60,11 @@ export default function Home() {
 						</p>
 					</div>
 					
-					<div className="relative w-full">
+					<div className="flex justify-center relative w-2/5">
 						<Image
 							src="/Rocket.png"
-							fill={true}
+							width={200}
+							height={200}
 							style={{
 								objectFit: "contain",
 							}}
@@ -71,11 +73,12 @@ export default function Home() {
 					</div>
 				</section>
 				
-				<section className="w-full flex flex-row p-20 space-x-10">
-					<div className="relative w-full">
+				<section className="w-full flex flex-row p-20 justify-around items-center">
+					<div className="flex justify-center relative w-2/5">
 						<Image
 							src="/pelatihan-efektif.png"
-							fill={true}
+							width={200}
+							height={200}
 							style={{
 								objectFit: "contain",
 							}}
@@ -83,7 +86,7 @@ export default function Home() {
 						/>
 					</div>
 					
-					<div>
+					<div className="w-3/5">
 						<strong className="text-2xl">Program Pelatihan yang Efektif</strong>
 						<p className="text-justify mt-5">
 							Meningkatkan kompetensi sumber daya manusia untuk melakukan lebih baik dan nilai tambah bagi perusahaan 
