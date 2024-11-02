@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const OverlayImage = ({ bgColor, images }) => {
 	return (
@@ -31,7 +30,7 @@ const OverlayImage = ({ bgColor, images }) => {
 			</svg>
 			
 			<div
-				className="absolute w-1/3 h-1/3 top-[15%] left-[30%] rounded-xl bg-cover bg-center"
+				className="absolute w-[33%] h-[33%] top-[15%] left-[30%] rounded-xl bg-cover bg-center"
 				style = {{ backgroundImage: `url('${images[0]}')` }}>
 			</div>
 			
