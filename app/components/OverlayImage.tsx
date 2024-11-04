@@ -30,11 +30,11 @@ const OverlayImage = ({ bgColor, images }) => {
 			</svg>
 			
 			<div
-				className="absolute w-[33%] h-[33%] top-[15%] left-[30%] rounded-xl bg-cover bg-center"
+				className="absolute w-[33%] h-[30%] top-[15%] left-[30%] rounded-xl bg-cover bg-center"
 				style = {{ backgroundImage: `url('${images[0]}')` }}>
 			</div>
 			
-			<div className="absolute w-[60%] h-[45%] bottom-[5%] right-[5%] rounded-xl bg-cover bg-center"
+			<div className="absolute w-[50%] h-[45%] bottom-[5%] right-[5%] rounded-xl bg-cover bg-center"
 				style = {{ backgroundImage: `url('${images[1]}')` }}>
 			</div>
 		</div>
