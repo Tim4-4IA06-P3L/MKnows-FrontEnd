@@ -4,40 +4,6 @@ import Navbar from "./components/Navbar";
 import CoverPage from "./components/CoverPage";
 import Card from "./components/Card";
 
-const landCard = [
-  { title: "Program Pelatihan", img: "/ProgPelatihan.jpeg", link: "" },
-  {
-    title: "Pembelajaran online, publik & pelatihan internal",
-    img: "/OnlineLearn.png",
-    link: "/Drop-down-what-we-do/Training",
-  },
-  {
-    title: "Layanan Konsultasi",
-    img: "/Consulting_img.jpg",
-    link: "/what-we-do/consulting-service",
-  },
-  {
-    title: "Penilaian Kompetensi Teknis (PKT)",
-    img: "/PKT.png",
-    link: "",
-  },
-  {
-    title: "Pelatihan Eksekutif & Pendampingan Bisnis",
-    img: "/PelatihanEkse.jpeg",
-    link: "",
-  },
-  {
-    title: "Sistem Manajemen Pembelajaran",
-    img: "/SistemBelajar.png",
-    link: "",
-  },
-  { title: "Outbound & Gathering", img: "/Outbound.png", link: "" },
-  {
-    title: "Program kilat pengembangan petugas hybrid untuk industri keuangan",
-    img: "/Kilat.jpeg",
-    link: "",
-  },
-];
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -81,7 +47,56 @@ export default function Home() {
         </section>
 
         {/* Grid */}
-        <Card cardItems={landCard} />
+        <section className="">
+          <div className="container mx-auto px-4">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Card
+                title="Program Pelatihan"
+                imgSrc="/ProgPelatihan.jpeg"
+                link=""
+              />
+              <Card
+                title="Pembelajaran online, publik & pelatihan internal"
+                imgSrc="/OnlineLearn.png"
+                link="/Drop-down-what-we-do/Training"
+              />
+              <Card
+                title="Layanan Konsultasi"
+                imgSrc="/Consulting_img.jpg"
+                link="/what-we-do/consulting-service"
+              />
+              <Card
+                title="Penilaian Kompetensi Teknis (PKT)"
+                imgSrc="/PKT.png"
+                link=""
+              />
+              <Card
+                title="Pelatihan Eksekutif & Pendampingan Bisnis"
+                imgSrc="/PelatihanEkse.jpeg"
+                link=""
+              />
+              <Card
+                title="Sistem Manajemen Pembelajaran"
+                imgSrc="/SistemBelajar.png"
+                link=""
+              />
+            </div>
+
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+              <div className="hidden lg:block"></div>{" "}
+              <Card
+                title="Outbound & Gathering"
+                imgSrc="/Outbound.png"
+                link=""
+              />
+              <Card
+                title="Program kilat pengembangan petugas hybrid untuk industri keuangan"
+                imgSrc="/Kilat.jpeg"
+                link=""
+              />
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
