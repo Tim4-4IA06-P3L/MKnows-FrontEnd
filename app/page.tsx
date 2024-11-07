@@ -18,26 +18,26 @@ export default function Home() {
         </section>
 
         {/* Teks */}
-        <section className="pb-20 pt-14">
+        <section className="pb-20 pt-14 pl-2 pr-2">
           <div className="container mx-auto text-center">
-            <div className="flex justify-evenly mb-12">
-              <div className="text-center">
-                <h2 className="text-4xl font-bold">100+ Pelatihan</h2>
-                <p className="text-gray-600">Dari berbagai klien</p>
+            <div className="flex justify-center space-x-3 items-center mb-12">
+              <div className="flex-grow flex-shrink basis-0 text-center">
+                <h2 className="text-md md:text-3xl lg:text-4xl font-bold">100+ Pelatihan</h2>
+                <p className="text-sm md:text-lg text-gray-600">Dari berbagai klien</p>
               </div>
 
               <div className="h-12 border-l border-gray-300"></div>
 
-              <div className="text-center">
-                <h2 className="text-4xl font-bold">10+ Instruktur</h2>
-                <p className="text-gray-600">Instruktur Ternama</p>
+              <div className="flex-grow flex-shrink basis-0 text-center">
+                <h2 className="text-md md:text-3xl lg:text-4xl font-bold">10+ Instruktur</h2>
+                <p className="text-sm md:text-lg text-gray-600">Instruktur Ternama</p>
               </div>
 
               <div className="h-12 border-l border-gray-300"></div>
 
-              <div className="text-center">
-                <h2 className="text-4xl font-bold">200+ Klien</h2>
-                <p className="text-gray-600">Dari berbagai perusahaan</p>
+              <div className="flex-grow flex-shrink basis-0 text-center">
+                <h2 className="text-md md:text-3xl lg:text-4xl font-bold">200+ Klien</h2>
+                <p className="text-sm md:text-lg text-gray-600">Dari berbagai perusahaan</p>
               </div>
             </div>
             <h2 className="text-3xl font-bold mt-24 -mb-10">
