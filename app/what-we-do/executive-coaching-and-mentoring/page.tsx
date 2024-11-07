@@ -16,7 +16,7 @@ export default function Home() {
 					<CoverPage bgSrc="/coaching.jpg" coverTitle="Executive Coaching & Business Mentoring" />
 				</section>
 				
-				<section className="w-full flex flex-col items-center p-20">
+				<section className="w-full flex flex-col items-center p-10 md:p-20">
 					<strong className="text-2xl text-center mb-5">Peningkatan Keterampilan Kerja untuk Tim Efektif</strong>
 					<p className="text-justify last-center">
 						Program ini bertujuan untuk membantu peserta dalam memperoleh pengetahuan dan keterampilan fungsional 
@@ -24,12 +24,13 @@ export default function Home() {
 					</p>
 				</section>
 				
-				<section className="w-full flex flex-row p-20 justify-around items-center">
-					<div className="flex justify-center relative w-2/5">
+				<section className="w-full flex flex-row p-10 md:p-20 justify-around items-center 
+						min-[320px]:max-md:flex-col">
+					<div className="flex justify-center relative w-2/5 min-[320px]:max-md:mb-5 min-[320px]:max-md:w-3/5">
 						<OverlayImage bgColor="#1C75BC" images={images} />
 					</div>
 					
-					<div className="w-3/5">
+					<div className="w-3/5 min-[320px]:max-md:text-center min-[320px]:max-md:w-full">
 						<strong className="text-2xl">Tujuan Pendampingan</strong>
 						<p className="text-justify mt-5">
 							Mengatasi semua kesulitan yang di hadapi bawahan dalam mengerjakan tugas atau performance yang tidak mencapai 
@@ -39,10 +40,11 @@ export default function Home() {
 					</div>
 				</section>
 				
-				<section className="w-full flex flex-row p-20 justify-around items-center">
-					<div className="w-3/5">
+				<section className="w-full flex flex-row p-10 md:p-20 justify-around items-center 
+						min-[320px]:max-md:flex-col-reverse">
+					<div className="w-3/5 min-[320px]:max-md:text-center min-[320px]:max-md:w-full">
 						<strong className="text-2xl">Topik yang Ditawarkan</strong>
-						<ol className="list-decimal list-inside mt-5">
+						<ol className="list-decimal list-inside mt-5 text-left">
 							<li>Executive Coaching</li>
 							<li>Leadership Coaching</li>
 							<li>Business Mentoring</li>
@@ -53,7 +55,7 @@ export default function Home() {
 						</p>
 					</div>
 					
-					<div className="flex justify-center relative w-2/5">
+					<div className="flex justify-center relative w-2/5 min-[320px]:max-md:mb-5 min-[320px]:max-md:w-3/5">
 						<OverlayImage bgColor="#FDD016" images={images2} />
 					</div>
 				</section>
