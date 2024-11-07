@@ -2,17 +2,19 @@ import React from "react";
 
 const DropdownMore = () => {
   return (
-		<div className="cursor-default bg-white flex flex-col top-20 left-0 absolute w-full shadow-sm">
+		<div className="cursor-default bg-white flex lg:flex-col 
+				lg:top-20 lg:left-0 lg:absolute w-full shadow-sm">
 			<div
         className="
-				overflow-auto
-				[&::-webkit-scrollbar]:w-2
-				[&::-webkit-scrollbar-track]:bg-neutral-100
-				[&::-webkit-scrollbar-thumb]:bg-[#b3ff00]
-				[&::-webkit-scrollbar]:h-2"
+				lg:overflow-auto
+				lg:[&::-webkit-scrollbar]:w-2
+				lg:[&::-webkit-scrollbar]:h-2
+				lg:[&::-webkit-scrollbar-track]:bg-neutral-100
+				lg:[&::-webkit-scrollbar-thumb]:bg-[#b3ff00]"
       >
-				<div className="w-max left-0 p-8 flex flex-row space-x-12">
-					<ul className="space-y-5 w-max">
+				<div className="w-max left-0 p-8 flex 
+						flex-col lg:flex-row lg:space-x-12">
+					<ul className="space-y-5">
 						<li>
 							<a
 								className="cursor-pointer hover:underline underline-offset-4"
@@ -38,7 +40,7 @@ const DropdownMore = () => {
 							</a>
 						</li>
 					</ul>
-					<ul className="space-y-5">
+					<ul className="space-y-5 min-[320px]:max-lg:mt-5">
 						<li>
 							<a
 								className="cursor-pointer hover:underline underline-offset-4"

@@ -8,7 +8,8 @@ const Footer = () => {
 				<Logo />
 			</div>
 			
-			<div className="flex flex-row justify-around space-x-5 ml-5 mr-5">
+			<div className="flex flex-col md:flex-row justify-around 
+					md:space-x-5 ml-5 mr-5 min-[320px]:max-md:space-y-5">
 				<div className="basis-0 flex-grow flex-shrink">
 					<strong className="underline">Contact Us</strong>
 					<br />
