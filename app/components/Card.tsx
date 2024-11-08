@@ -9,9 +9,11 @@ const Card = ({ title, imgSrc, link }) => {
         <Image
           src={imgSrc}
           alt={title}
-          layout="fill"
-          objectFit="cover"
+					fill
           className="transition-transform duration-200 transform group-hover:scale-105"
+					style= {{
+						objectFit: "cover",
+					}}
         />
         <div className="absolute inset-0 bg-black bg-opacity-20 flex items-end p-4">
           <h3 className="text-white font-semibold text-lg">{title}</h3>
