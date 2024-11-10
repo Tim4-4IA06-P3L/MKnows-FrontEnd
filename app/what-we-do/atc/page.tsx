@@ -34,7 +34,7 @@ export default function Home() {
 					</div>
 					
 					<div className="w-3/5 min-[320px]:max-md:text-center min-[320px]:max-md:w-full">
-						<strong className="text-2xl">ATC Menawarkan Solusi Integratif</strong>
+						<strong className="text-2xl text-[#9DE000]">ATC Menawarkan Solusi Integratif</strong>
 						<p className="text-justify mt-5">
 							Untuk mengoptimasi pengembangan bakat melalui metode dan sarana yang valid dan terpercaya. Kami juga memberikan 
 							laporan yang unik dan dipersonalisasikan oleh para asesor dan penasihat kami untuk memberikan informasi yang lengkap 
@@ -46,7 +46,7 @@ export default function Home() {
 				<section className="w-full flex flex-row p-10 md:p-20 justify-around items-center 
 						min-[320px]:max-md:flex-col-reverse">
 					<div className="w-3/5 min-[320px]:max-md:text-center min-[320px]:max-md:w-full">
-						<strong className="text-2xl">Solusi-Solusi yang Ditawarkan Oleh ATC</strong>
+						<strong className="text-2xl text-[#ED8222]">Solusi-Solusi yang Ditawarkan Oleh ATC</strong>
 						<p className="text-justify mt-5">
 							Sesuai dengan setiap Individual Development Plan serta dapat menangkap potensi serta kompetensi dari para sumber daya 
 							manusia serta dapat memberikan gambaran yang jelas dari profil sumber daya manusia dengan menggunakan tools – tools 
@@ -66,7 +66,7 @@ export default function Home() {
 					</div>
 					
 					<div className="w-3/5 min-[320px]:max-md:text-center min-[320px]:max-md:w-full">
-						<strong className="text-2xl">Program Pelatihan yang Efektif</strong>
+						<strong className="text-2xl text-[#F0C413]">Program Pelatihan yang Efektif</strong>
 						<p className="text-justify mt-5">
 							Meningkatkan kompetensi sumber daya manusia untuk melakukan lebih baik dan nilai tambah bagi perusahaan serta institusi mereka. 
 							Pelatihan diperlukan untuk berbagai tujuan, misalnya mengembangkan keterampilan dan pengetahuan para eksekutif dan staf khusus, 
