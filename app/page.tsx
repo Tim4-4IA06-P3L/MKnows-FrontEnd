@@ -12,7 +12,7 @@ export default function Home() {
         {/* Hero */}
         <section className="pb-14">
           <CoverPage
-            bgSrc="/LandCard.jpeg"
+            bgSrc="/inh2.jpeg"
             coverTitle="Another Meaningful Learning with M-Knows Consulting"
           />
         </section>
@@ -22,22 +22,34 @@ export default function Home() {
           <div className="container mx-auto text-center">
             <div className="flex justify-center space-x-3 items-center mb-12">
               <div className="flex-grow flex-shrink basis-0 text-center">
-                <h2 className="text-md md:text-3xl lg:text-4xl font-bold">100+ Pelatihan</h2>
-                <p className="text-sm md:text-lg text-gray-600">Dari berbagai klien</p>
+                <h2 className="text-md md:text-3xl lg:text-4xl font-bold">
+                  100+ Pelatihan
+                </h2>
+                <p className="text-sm md:text-lg text-gray-600">
+                  Dari berbagai klien
+                </p>
               </div>
 
               <div className="h-12 border-l border-gray-300"></div>
 
               <div className="flex-grow flex-shrink basis-0 text-center">
-                <h2 className="text-md md:text-3xl lg:text-4xl font-bold">10+ Instruktur</h2>
-                <p className="text-sm md:text-lg text-gray-600">Instruktur Ternama</p>
+                <h2 className="text-md md:text-3xl lg:text-4xl font-bold">
+                  10+ Instruktur
+                </h2>
+                <p className="text-sm md:text-lg text-gray-600">
+                  Instruktur Ternama
+                </p>
               </div>
 
               <div className="h-12 border-l border-gray-300"></div>
 
               <div className="flex-grow flex-shrink basis-0 text-center">
-                <h2 className="text-md md:text-3xl lg:text-4xl font-bold">200+ Klien</h2>
-                <p className="text-sm md:text-lg text-gray-600">Dari berbagai perusahaan</p>
+                <h2 className="text-md md:text-3xl lg:text-4xl font-bold">
+                  200+ Klien
+                </h2>
+                <p className="text-sm md:text-lg text-gray-600">
+                  Dari berbagai perusahaan
+                </p>
               </div>
             </div>
             <h2 className="text-3xl font-bold mt-24 -mb-10">
@@ -48,7 +60,7 @@ export default function Home() {
 
         {/* Grid */}
         <section className="">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-8">
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card
                 title="Program Pelatihan"
@@ -58,7 +70,7 @@ export default function Home() {
               <Card
                 title="Pembelajaran online, publik & pelatihan internal"
                 imgSrc="/OnlineLearn.png"
-                link="/Drop-down-what-we-do/Training"
+                link="/what-we-do/training"
               />
               <Card
                 title="Layanan Konsultasi"
@@ -82,7 +94,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
               <div className="hidden lg:block"></div>{" "}
               <Card
                 title="Outbound & Gathering"
