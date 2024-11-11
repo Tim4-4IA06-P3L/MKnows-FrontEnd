@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
-import ClientLogos from "../../components/clientlogos";
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
+import ClientLogos from "../../../components/clientlogos";
 
 const InHouseTraining = () => {
   const TrainingLocation = ({ number, text }) => (
