@@ -31,7 +31,7 @@ export default function Home() {
 					</div>
 					
 					<div className="w-3/5 min-[320px]:max-md:text-center min-[320px]:max-md:w-full">
-						<strong className="text-2xl">Tujuan Pendampingan</strong>
+						<strong className="text-2xl text-[#1C75BC]">Tujuan Pendampingan</strong>
 						<p className="text-justify mt-5">
 							Mengatasi semua kesulitan yang di hadapi bawahan dalam mengerjakan tugas atau performance yang tidak mencapai 
 							dengan ketentuan yang diperintahkan sehingga daripada itu meningkatkan keahlian tertentu di dalam pekerjaan 
@@ -43,7 +43,7 @@ export default function Home() {
 				<section className="w-full flex flex-row p-10 md:p-20 justify-around items-center 
 						min-[320px]:max-md:flex-col-reverse">
 					<div className="w-3/5 min-[320px]:max-md:text-center min-[320px]:max-md:w-full">
-						<strong className="text-2xl">Topik yang Ditawarkan</strong>
+						<strong className="text-2xl text-[#F0C413]">Topik yang Ditawarkan</strong>
 						<ol className="list-decimal list-inside mt-5 text-left">
 							<li>Executive Coaching</li>
 							<li>Leadership Coaching</li>
