@@ -6,19 +6,19 @@ import Card from "../../components/Card";
 
 const Home = () => {
   return (
-    <body>
+    <>
       <Navbar />
       <main>
         {/* Hero */}
         <section className="pb-14">
           <CoverPage
-            bgSrc="/OnlineLearn.png"
+            bgSrc="/OnlineLearn.jpg"
             coverTitle="Online Learning, Public & Inhouse Training"
           />
         </section>
 
         {/* Grid */}
-        <section className="">
+        <section>
           <div className="container mx-auto sm:px-4 md:px-6 lg:px-10 pb-36">
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mx-10">
               <Card
@@ -41,7 +41,7 @@ const Home = () => {
         </section>
       </main>
       <Footer />
-    </body>
+    </>
   );
 };
 
