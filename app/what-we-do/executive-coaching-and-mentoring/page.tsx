@@ -6,14 +6,14 @@ import OverlayImage from "../../components/OverlayImage";
 
 export default function Home() {
 
-	const images = ["/coaching2.jpg", "/coaching3.webp"];
-	const images2 = ["/coaching4.webp", "/coaching5.webp"];
+	const images = ["/coaching/coaching2.jpg", "/coaching/coaching3.webp"];
+	const images2 = ["/coaching/coaching4.webp", "/coaching/coaching5.webp"];
   return (
     <div className="min-h-screen">
       <Navbar />
       <main>
         <section>
-					<CoverPage bgSrc="/coaching.jpg" coverTitle="Executive Coaching & Business Mentoring" />
+					<CoverPage bgSrc="/coaching/coaching.jpg" coverTitle="Executive Coaching & Business Mentoring" />
 				</section>
 				
 				<section className="w-full flex flex-col items-center p-10 md:p-20">

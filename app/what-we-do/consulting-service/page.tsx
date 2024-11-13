@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <main>
         <section>
-					<CoverPage bgSrc="/Consulting_Img.jpg" coverTitle="Consulting Service M-Knows Consulting" />
+					<CoverPage bgSrc="/consulting-service/Consulting_Img.jpg" coverTitle="Consulting Service M-Knows Consulting" />
 				</section>
 				
 				<section className="w-full flex flex-col items-center p-10 md:p-20">
@@ -27,7 +27,7 @@ export default function Home() {
 						min-[320px]:max-md:flex-col">
 					<div className="flex justify-center relative w-2/5 min-[320px]:max-md:mb-5 min-[320px]:max-md:w-3/5">
 						<Image
-							src="/15.png"
+							src="/consulting-service/15.png"
 							width={200}
 							height={200}
 							style={{
@@ -64,7 +64,7 @@ export default function Home() {
 					
 					<div className="flex justify-center relative w-2/5 min-[320px]:max-md:mb-5 min-[320px]:max-md:w-3/5">
 						<Image
-							src="/Rocket.png"
+							src="/consulting-service/Rocket.png"
 							width={200}
 							height={200}
 							style={{
@@ -79,7 +79,7 @@ export default function Home() {
 						min-[320px]:max-md:flex-col">
 					<div className="flex justify-center relative w-2/5 min-[320px]:max-md:mb-5 min-[320px]:max-md:w-3/5">
 						<Image
-							src="/pelatihan-efektif.png"
+							src="/consulting-service/pelatihan-efektif.png"
 							width={200}
 							height={200}
 							style={{
@@ -107,7 +107,7 @@ export default function Home() {
 				<section className="relative w-full flex flex-col items-center min-[320px]:max-md:mt-32 mt-20">
 					<div className="relative w-full h-[300px]">
 						<Image 
-							src="/business-2.jpg"
+							src="/consulting-service/business-2.jpg"
 							alt="Kerja Sama"
 							fill={true}
 							style={{

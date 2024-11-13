@@ -6,16 +6,16 @@ import OverlayImage from "../../components/OverlayImage";
 
 export default function Home() {
 
-	const images = ["/atc2.jpg", "/atc3.webp"];
-	const images2 = ["/atc4.jpg", "/atc5.jpg"];
-	const images3 = ["/atc6.jpg", "/atc7.png"];
+	const images = ["/atc/atc2.jpg", "/atc/atc3.webp"];
+	const images2 = ["/atc/atc4.jpg", "/atc/atc5.jpg"];
+	const images3 = ["/atc/atc6.jpg", "/atc/atc7.png"];
 	
   return (
     <div className="min-h-screen">
       <Navbar />
       <main>
         <section>
-					<CoverPage bgSrc="/atc.jpeg" coverTitle="Assessment for Technical Competency (ATC)" />
+					<CoverPage bgSrc="/atc/atc.jpeg" coverTitle="Assessment for Technical Competency (ATC)" />
 				</section>
 				
 				<section className="w-full flex flex-col items-center p-10 md:p-20">
