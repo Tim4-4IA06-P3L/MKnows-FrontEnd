@@ -20,7 +20,6 @@ const TrainingScheduleForm = () => {
                   layout="fill"
                   objectFit="contain"
                   priority
-                  className="scale-125"
                 />
               </div>
             </div>
@@ -35,7 +34,7 @@ const TrainingScheduleForm = () => {
             <form className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Nama Lengkap *
+                  Nama Lengkap <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -46,7 +45,7 @@ const TrainingScheduleForm = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Nama Perusahaan *
+                  Nama Perusahaan <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -57,7 +56,7 @@ const TrainingScheduleForm = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Jabatan *
+                  Jabatan <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -68,7 +67,7 @@ const TrainingScheduleForm = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Telepon Kantor *
+                  Telepon Kantor <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="tel"
@@ -79,7 +78,7 @@ const TrainingScheduleForm = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Nomor WhatsApp *
+                  Nomor WhatsApp <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="tel"
@@ -90,7 +89,7 @@ const TrainingScheduleForm = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Email *
+                  Email <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="email"
