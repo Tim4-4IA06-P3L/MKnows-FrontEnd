@@ -30,8 +30,8 @@ const Page = () => {
 			</section>
 			
 			<section className="w-full space-y-8 p-10 md:p-20">
-				<div className="flex flex-row justify-between">
-					<div className="flex flex-row justify-start items-center space-x-4 w-[25%]">
+				<div className="grid min-[320px]:max-md:grid-cols-1 md:grid-cols-3 gap-8">
+					<div className="flex flex-row justify-start items-center space-x-4 ">
 						<div className="w-16 h-16 flex-shrink-0">
 							<svg
 								viewBox="0 0 80 80"
@@ -47,7 +47,7 @@ const Page = () => {
 						</div>
 						<p>Recruitment & Seleksi Mahasiswa</p>
 					</div>
-					<div className="flex flex-row justify-start items-center space-x-4 w-[25%]">
+					<div className="flex flex-row justify-start items-center space-x-4 ">
 						<div className="w-16 h-16 flex-shrink-0">
 							<svg
 								viewBox="0 0 80 80"
@@ -66,7 +66,7 @@ const Page = () => {
 						</div>
 						<p>Coaching & Mentoring Selama Magang</p>
 					</div>
-					<div className="flex flex-row justify-start items-center space-x-4 w-[25%]">
+					<div className="flex flex-row justify-start items-center space-x-4 ">
 						<div className="w-16 h-16 flex-shrink-0">
 							<svg
 								viewBox="0 0 80 80"
@@ -88,8 +88,8 @@ const Page = () => {
 					</div>
 				</div>
 				
-				<div className="flex flex-row justify-between">
-					<div className="flex flex-row justify-start items-center space-x-4 w-[25%]">
+				<div className="grid min-[320px]:max-md:grid-cols-1 grid-cols-3 gap-8">
+					<div className="flex flex-row justify-start items-center space-x-4 ">
 						<div className="w-16 h-16 flex-shrink-0">
 							<svg
 								viewBox="0 0 80 80"
@@ -105,7 +105,7 @@ const Page = () => {
 						</div>
 						<p>Kontrak Kerja &  Orientasi</p>
 					</div>
-					<div className="flex flex-row justify-start items-center space-x-4 w-[25%]">
+					<div className="flex flex-row justify-start items-center space-x-4 ">
 						<div className="w-16 h-16 flex-shrink-0">
 							<svg
 								viewBox="0 0 80 80"
@@ -122,7 +122,7 @@ const Page = () => {
 						</div>
 						<p>Evaluasi dan Kelulusan</p>
 					</div>
-					<div className="flex flex-row justify-start items-center space-x-4 w-[25%]">
+					<div className="flex flex-row justify-start items-center space-x-4 ">
 						<div className="w-16 h-16 flex-shrink-0">
 							<svg
 								viewBox="0 0 80 80"
@@ -148,8 +148,8 @@ const Page = () => {
 					</div>
 				</div>
 				
-				<div className="flex flex-row justify-between">
-					<div className="flex flex-row justify-start items-center space-x-4 w-[25%]">
+				<div className="grid min-[320px]:max-md:grid-cols-1 grid-cols-3 gap-8">
+					<div className="flex flex-row justify-start items-center space-x-4 ">
 						<div className="w-16 h-16 flex-shrink-0">
 							<svg
 								viewBox="0 0 80 80"
@@ -165,7 +165,7 @@ const Page = () => {
 						</div>
 						<p>Pelatihan Berbasis Kompetensi</p>
 					</div>
-					<div className="flex flex-row justify-start items-center space-x-4 w-[25%]">
+					<div className="flex flex-row justify-start items-center space-x-4 ">
 						<div className="w-16 h-16 flex-shrink-0">
 							<svg
 								viewBox="0 0 80 80"
@@ -181,7 +181,7 @@ const Page = () => {
 						</div>
 						<p>Pembuatan Laporan Individual</p>
 					</div>
-					<div className="flex flex-row justify-start items-center space-x-4 w-[25%]">
+					<div className="flex flex-row justify-start items-center space-x-4 ">
 						<div className="w-16 h-16 flex-shrink-0">
 							<svg
 								viewBox="0 0 80 80"
@@ -204,16 +204,16 @@ const Page = () => {
 			</section>
 			
 			<section className="w-full flex flex-col items-center p-10 md:p-20">
-				<div className="h-full w-[78%] text-center">
+				<div className="min-[320px]:max-sm:w-full w-[78%] text-center">
 					<strong className="text-2xl text-[#9DE000]">Proses Perekrutan & Onboarding</strong>
-					<ol className="mt-5 text-left list-decimal list-inside marker:text-xl marker:text-[#1C75BC]">
+					<ol className="text-justify mt-5 text-left list-decimal list-inside marker:text-xl marker:text-[#1C75BC]">
 						<li>Recruitment 300 mahasiswa dilakukan bulan April 2022.</li>
 						<li>Persyaratan seleksi mahasiswa tingkat skripsi (tugas akhir),
 							atau yang sudah lulus atau maksimal selama COVID-19, (2 tahun terakhir) 
 							belum mendapatkan pekerjaan.
 						</li>
 						<li>Pembuatan kontrak kerja dan MoU dengan universitas (pusat karir).</li>
-						<li>mahasiswa melakukan onboarding dan mulai mengikuti pelatihan.</li>
+						<li>Mahasiswa melakukan onboarding dan mulai mengikuti pelatihan.</li>
 					</ol>
 				</div>
 			</section>
@@ -259,16 +259,16 @@ const Page = () => {
 				<strong className="text-2xl text-[#9DE000] mb-8">Monitoring & Evaluasi</strong>
 				<p className="text-justify mb-8">Peserta program akan dimonitor kerjanya meliputi : </p>
 				
-				<div className="w-[80%]">
-					<div className="flex justify-start items-center bg-left bg-[length:100%_100%] bg-no-repeat h-[33%] p-8 z-0"
+				<div className="min-[320px]:max-sm:w-full w-[80%]">
+					<div className="flex justify-start items-center bg-left bg-[length:100%_100%] bg-no-repeat min-[320px]:max-sm:p-3 p-8 z-0"
 							style = {{ 
 								backgroundImage: `url('${"/officer-development/office_development_highlight.png"}')`,
 						}}
 					>
-						<div className="flex flex-row justify-start items-center space-x-8 ml-16">
-							<strong className="text-4xl">01</strong>
+						<div className="flex flex-row justify-start items-center min-[320px]:max-sm:space-x-4 space-x-8 min-[320px]:max-md:space-x-8 ml-16 min-[320px]:max-md:ml-8">
+							<strong className="min-[320px]:max-sm:text-xl text-4xl">01</strong>
 							<div className="h-[50px] border border-neutral-500"></div>
-							<div className="w-8 h-8 flex-shrink-0">
+							<div className="w-8 h-8 min-[320px]:max-sm:w-5 min-[320px]:max-sm:h-5 flex-shrink-0">
 								<svg
 									viewBox="0 0 47 46"
 									fill="none"
@@ -281,8 +281,8 @@ const Page = () => {
 								</svg>
 							</div>
 							<div>
-								<strong>Professional Working Attitude</strong>
-								<p className="text-justify">
+								<strong className="min-[320px]:max-sm:text-sm">Professional Working Attitude</strong>
+								<p className="text-justify min-[320px]:max-md:hidden">
 									Meliputi disiplin, intensi belajar, sopan santun, 
 									tingkat energi, fokus, dan komitmen.
 								</p>
@@ -290,15 +290,15 @@ const Page = () => {
 						</div>
 					</div>
 					
-					<div className="flex justify-end items-center bg-right bg-[length:100%_100%] bg-no-repeat p-8 h-[33%] ml-8 z-0"
+					<div className="flex justify-end items-center bg-right bg-[length:100%_100%] bg-no-repeat min-[320px]:max-sm:p-3 p-8 ml-8 z-0"
 							style = {{ 
 								backgroundImage: `url('${"/officer-development/office_development_highlight2.png"}')`,
 						}}
 					>
-						<div className="flex flex-row justify-end items-center space-x-8 mr-10">
-							<strong className="text-4xl">02</strong>
+						<div className="flex flex-row justify-end items-center min-[320px]:max-sm:space-x-4 space-x-8 min-[320px]:max-md:space-x-8 mr-16 min-[320px]:max-md:mr-8">
+							<strong className="min-[320px]:max-sm:text-xl text-4xl">02</strong>
 							<div className="h-[50px] border border-neutral-500"></div>
-							<div className="w-8 h-8 flex-shrink-0">
+							<div className="w-8 h-8 min-[320px]:max-sm:w-5 min-[320px]:max-sm:h-5 flex-shrink-0">
 								<svg
 									viewBox="0 0 47 46"
 									fill="none"
@@ -311,8 +311,8 @@ const Page = () => {
 								</svg>
 							</div>
 							<div>
-								<strong>Pantang Menyerah terhadap Hasil</strong>
-								<p className="text-justify">
+								<strong className="min-[320px]:max-sm:text-sm">Pantang Menyerah terhadap Hasil</strong>
+								<p className="text-justify min-[320px]:max-md:hidden">
 									Meliputi kualitas hasil penugasan, nilai 
 									kinerja, nilai uji kompetensi.
 								</p>
@@ -320,15 +320,15 @@ const Page = () => {
 						</div>
 					</div>
 					
-					<div className="flex justify-start items-center bg-left bg-[length:100%_100%] bg-no-repeat h-[33%] p-8 z-0"
+					<div className="flex justify-start items-center bg-left bg-[length:100%_100%] bg-no-repeat min-[320px]:max-sm:p-3 p-8 z-0"
 							style = {{ 
 								backgroundImage: `url('${"/officer-development/office_development_highlight.png"}')`,
 						}}
 					>
-						<div className="flex flex-row justify-start items-center space-x-8 ml-16">
-							<strong className="text-4xl">03</strong>
+						<div className="flex flex-row justify-start items-center min-[320px]:max-sm:space-x-4 space-x-8 min-[320px]:max-md:space-x-8 ml-16 min-[320px]:max-md:ml-8">
+							<strong className="min-[320px]:max-sm:text-xl text-4xl">03</strong>
 							<div className="h-[50px] border border-neutral-500"></div>
-							<div className="w-8 h-8 flex-shrink-0">
+							<div className="w-8 h-8 min-[320px]:max-sm:w-5 min-[320px]:max-sm:h-5 flex-shrink-0">
 								<svg
 									viewBox="0 0 47 46"
 									fill="none"
@@ -341,8 +341,8 @@ const Page = () => {
 								</svg>
 							</div>
 							<div>
-								<strong>Penguasaan Kompetensi Teknis & Non Teknis</strong>
-								<p className="text-justify">
+								<strong className="min-[320px]:max-sm:text-sm">Penguasaan Kompetensi Teknis & Non Teknis</strong>
+								<p className="text-justify min-[320px]:max-md:hidden">
 									Meliputi standar kompetensi yang M-Knows terapkan, 
 									dimana gap kompetensi akan diidentifikasi dan 
 									ditentukan solusi perbaikannya.
@@ -351,7 +351,7 @@ const Page = () => {
 						</div>
 					</div>
 				</div>
-				<p className="w-[50%] mt-8 text-justify">
+				<p className="min-[320px]:max-sm:w-full w-[50%] mt-8 text-justify">
 					Selama melakukan magang kerja, mahasiswa akan di monitoring dan evaluasi progress kerjanya oleh Kampus Gratis. Laporan yang dibuat 
 					akan di berikan akses kepada mahasiswa dan pihak perusahaan, sesuai kebutuhan dan kepentingannya.
 				</p>
