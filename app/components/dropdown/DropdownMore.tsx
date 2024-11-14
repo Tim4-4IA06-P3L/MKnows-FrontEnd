@@ -20,7 +20,7 @@ const DropdownMore = () => {
         >
           <ul className="space-y-5">
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="#"
@@ -29,7 +29,7 @@ const DropdownMore = () => {
               </a>
             </li>
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/more/history"
@@ -38,7 +38,7 @@ const DropdownMore = () => {
               </a>
             </li>
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="#"
@@ -49,28 +49,28 @@ const DropdownMore = () => {
           </ul>
           <ul className="space-y-5 min-[320px]:max-lg:mt-5">
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
-                href="#"
+                href="/more/our-client"
               >
                 Our Clients
               </a>
             </li>
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
-                href="#"
+                href="/more/facilitator"
               >
                 Our Facilitator
               </a>
             </li>
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
-                href="#"
+                href="/more/contact-us"
               >
                 Contact Us
               </a>
