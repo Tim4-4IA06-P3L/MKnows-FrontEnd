@@ -255,9 +255,106 @@ const Page = () => {
 				</div>
 			</section>
 			
-			<section className="w-full flex flex-row p-10 md:p-20 justify-around items-center 
-					min-[320px]:max-md:flex-col">
+			<section className="w-full flex flex-col items-center p-10 md:p-20">
+				<strong className="text-2xl text-[#9DE000] mb-8">Monitoring & Evaluasi</strong>
+				<p className="text-justify mb-8">Peserta program akan dimonitor kerjanya meliputi : </p>
 				
+				<div className="w-[80%]">
+					<div className="flex justify-start items-center bg-left bg-[length:100%_100%] bg-no-repeat h-[33%] p-8 z-0"
+							style = {{ 
+								backgroundImage: `url('${"/officer-development/office_development_highlight.png"}')`,
+						}}
+					>
+						<div className="flex flex-row justify-start items-center space-x-8 ml-16">
+							<strong className="text-4xl">01</strong>
+							<div className="h-[50px] border border-neutral-500"></div>
+							<div className="w-8 h-8 flex-shrink-0">
+								<svg
+									viewBox="0 0 47 46"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M4.69014 45.5C3.40035 45.5 2.29661 45.0366 1.3789 44.1097C0.461197 43.1829 0.00156338 42.0674 0 40.7632V14.7105C0 13.4079 0.459634 12.2932 1.3789 11.3663C2.29817 10.4395 3.40192 9.97526 4.69014 9.97368H14.0704V5.23684C14.0704 3.93421 14.5301 2.81947 15.4493 1.89263C16.3686 0.96579 17.4723 0.501579 18.7606 0.5H28.1408C29.4306 0.5 30.5352 0.964211 31.4544 1.89263C32.3737 2.82105 32.8326 3.93579 32.831 5.23684V9.97368H42.2113C43.5011 9.97368 44.6056 10.4379 45.5249 11.3663C46.4441 12.2947 46.903 13.4095 46.9014 14.7105V40.7632C46.9014 42.0658 46.4426 43.1813 45.5249 44.1097C44.6071 45.0382 43.5026 45.5016 42.2113 45.5H4.69014ZM4.69014 40.7632H42.2113V14.7105H4.69014V40.7632ZM18.7606 9.97368H28.1408V5.23684H18.7606V9.97368Z"
+										fill="#225677"
+									/>
+								</svg>
+							</div>
+							<div>
+								<strong>Professional Working Attitude</strong>
+								<p className="text-justify">
+									Meliputi disiplin, intensi belajar, sopan santun, 
+									tingkat energi, fokus, dan komitmen.
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div className="flex justify-end items-center bg-right bg-[length:100%_100%] bg-no-repeat p-8 h-[33%] ml-8 z-0"
+							style = {{ 
+								backgroundImage: `url('${"/officer-development/office_development_highlight2.png"}')`,
+						}}
+					>
+						<div className="flex flex-row justify-end items-center space-x-8 mr-10">
+							<strong className="text-4xl">02</strong>
+							<div className="h-[50px] border border-neutral-500"></div>
+							<div className="w-8 h-8 flex-shrink-0">
+								<svg
+									viewBox="0 0 47 46"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M4.69014 45.5C3.40035 45.5 2.29661 45.0366 1.3789 44.1097C0.461197 43.1829 0.00156338 42.0674 0 40.7632V14.7105C0 13.4079 0.459634 12.2932 1.3789 11.3663C2.29817 10.4395 3.40192 9.97526 4.69014 9.97368H14.0704V5.23684C14.0704 3.93421 14.5301 2.81947 15.4493 1.89263C16.3686 0.96579 17.4723 0.501579 18.7606 0.5H28.1408C29.4306 0.5 30.5352 0.964211 31.4544 1.89263C32.3737 2.82105 32.8326 3.93579 32.831 5.23684V9.97368H42.2113C43.5011 9.97368 44.6056 10.4379 45.5249 11.3663C46.4441 12.2947 46.903 13.4095 46.9014 14.7105V40.7632C46.9014 42.0658 46.4426 43.1813 45.5249 44.1097C44.6071 45.0382 43.5026 45.5016 42.2113 45.5H4.69014ZM4.69014 40.7632H42.2113V14.7105H4.69014V40.7632ZM18.7606 9.97368H28.1408V5.23684H18.7606V9.97368Z"
+										fill="#225677"
+									/>
+								</svg>
+							</div>
+							<div>
+								<strong>Pantang Menyerah terhadap Hasil</strong>
+								<p className="text-justify">
+									Meliputi kualitas hasil penugasan, nilai 
+									kinerja, nilai uji kompetensi.
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div className="flex justify-start items-center bg-left bg-[length:100%_100%] bg-no-repeat h-[33%] p-8 z-0"
+							style = {{ 
+								backgroundImage: `url('${"/officer-development/office_development_highlight.png"}')`,
+						}}
+					>
+						<div className="flex flex-row justify-start items-center space-x-8 ml-16">
+							<strong className="text-4xl">03</strong>
+							<div className="h-[50px] border border-neutral-500"></div>
+							<div className="w-8 h-8 flex-shrink-0">
+								<svg
+									viewBox="0 0 47 46"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M4.69014 45.5C3.40035 45.5 2.29661 45.0366 1.3789 44.1097C0.461197 43.1829 0.00156338 42.0674 0 40.7632V14.7105C0 13.4079 0.459634 12.2932 1.3789 11.3663C2.29817 10.4395 3.40192 9.97526 4.69014 9.97368H14.0704V5.23684C14.0704 3.93421 14.5301 2.81947 15.4493 1.89263C16.3686 0.96579 17.4723 0.501579 18.7606 0.5H28.1408C29.4306 0.5 30.5352 0.964211 31.4544 1.89263C32.3737 2.82105 32.8326 3.93579 32.831 5.23684V9.97368H42.2113C43.5011 9.97368 44.6056 10.4379 45.5249 11.3663C46.4441 12.2947 46.903 13.4095 46.9014 14.7105V40.7632C46.9014 42.0658 46.4426 43.1813 45.5249 44.1097C44.6071 45.0382 43.5026 45.5016 42.2113 45.5H4.69014ZM4.69014 40.7632H42.2113V14.7105H4.69014V40.7632ZM18.7606 9.97368H28.1408V5.23684H18.7606V9.97368Z"
+										fill="#225677"
+									/>
+								</svg>
+							</div>
+							<div>
+								<strong>Penguasaan Kompetensi Teknis & Non Teknis</strong>
+								<p className="text-justify">
+									Meliputi standar kompetensi yang M-Knows terapkan, 
+									dimana gap kompetensi akan diidentifikasi dan 
+									ditentukan solusi perbaikannya.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p className="w-[50%] mt-8 text-justify">
+					Selama melakukan magang kerja, mahasiswa akan di monitoring dan evaluasi progress kerjanya oleh Kampus Gratis. Laporan yang dibuat 
+					akan di berikan akses kepada mahasiswa dan pihak perusahaan, sesuai kebutuhan dan kepentingannya.
+				</p>
 			</section>
 			
 			<Footer />
