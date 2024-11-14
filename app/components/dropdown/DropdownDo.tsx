@@ -20,7 +20,7 @@ const DropdownDo = () => {
         >
           <ul className="space-y-5 mb-5">
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/what-we-do/training"
@@ -29,7 +29,7 @@ const DropdownDo = () => {
               </a>
             </li>
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/what-we-do/officer-development"
@@ -38,7 +38,7 @@ const DropdownDo = () => {
               </a>
             </li>
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/what-we-do/atc"
@@ -49,7 +49,7 @@ const DropdownDo = () => {
           </ul>
           <ul className="space-y-5 mb-5">
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="#"
@@ -58,7 +58,7 @@ const DropdownDo = () => {
               </a>
             </li>
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/what-we-do/consulting-service"
@@ -67,10 +67,10 @@ const DropdownDo = () => {
               </a>
             </li>
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
-                href="#"
+                href="/what-we-do/outbound"
               >
                 Outbound & Gathering
               </a>
@@ -78,7 +78,7 @@ const DropdownDo = () => {
           </ul>
           <ul className="space-y-5">
             <li className="flex justify-start">
-							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
+              <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/what-we-do/executive-coaching-and-mentoring"
