@@ -6,7 +6,7 @@ import React from "react";
 const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
-  weight: "100",
+  weight: "500",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins} antialiased`}
+        className={`${poppins.className} antialiased`}
       >
         {children}
       </body>
