@@ -15,8 +15,8 @@ const DropdownMore = () => {
 				lg:[&::-webkit-scrollbar-thumb]:bg-[#b3ff00]"
       >
         <div
-          className="w-max left-0 p-8 flex 
-						flex-col lg:flex-row lg:space-x-12"
+          className="w-max left-0 p-8 min-[320px]:max-sm:text-sm min-[320px]:max-sm:w-full 
+					flex flex-col lg:flex-row lg:space-x-12"
         >
           <ul className="space-y-5">
             <li>
