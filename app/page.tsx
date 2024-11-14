@@ -59,63 +59,63 @@ export default function Home() {
         </section>
 
         {/* Grid */}
-        <section className="flex flex-wrap justify-center gap-8 p-8">
-					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
-						<Card
-							title="Program Pelatihan"
-							imgSrc="/ProgPelatihan.jpeg"
-							link=""
-						/>
-					</div>
-					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
-						<Card
-							title="Pembelajaran online, publik & pelatihan internal"
-							imgSrc="/OnlineLearn.png"
-							link="/what-we-do/training"
-						/>
-					</div>
-					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
-						<Card
-							title="Layanan Konsultasi"
-							imgSrc="/consulting-service/Consulting_img.jpg"
-							link="/what-we-do/consulting-service"
-						/>
-					</div>
-					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
-						<Card
-							title="Penilaian Kompetensi Teknis (PKT)"
-							imgSrc="/PKT.png"
-							link=""
-						/>
-					</div>
-					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
-						<Card
-							title="Pelatihan Eksekutif & Pendampingan Bisnis"
-							imgSrc="/PelatihanEkse.jpeg"
-							link=""
-						/>
-					</div>
-					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
-						<Card
-							title="Sistem Manajemen Pembelajaran"
-							imgSrc="/SistemBelajar.png"
-							link=""
-						/>
-					</div>
-					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
-						<Card
-							title="Outbound & Gathering"
-							imgSrc="/Outbound.png"
-							link=""
-						/>
-					</div>
-					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
-						<Card
-							title="Program kilat pengembangan petugas hybrid untuk industri keuangan"
-							imgSrc="/Kilat.jpeg"
-							link=""
-						/>
-					</div>
+        <section className="flex flex-wrap justify-center gap-8">
+          <div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%]">
+            <Card
+              title="Program Pelatihan"
+              imgSrc="/ProgPelatihan.jpeg"
+              link=""
+            />
+          </div>
+          <div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%]">
+            <Card
+              title="Pembelajaran online, publik & pelatihan internal"
+              imgSrc="/OnlineLearn.png"
+              link="/what-we-do/training"
+            />
+          </div>
+          <div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%]">
+            <Card
+              title="Layanan Konsultasi"
+              imgSrc="/consulting-service/Consulting_img.jpg"
+              link="/what-we-do/consulting-service"
+            />
+          </div>
+          <div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%]">
+            <Card
+              title="Penilaian Kompetensi Teknis (PKT)"
+              imgSrc="/PKT.png"
+              link="/what-we-do/atc"
+            />
+          </div>
+          <div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%]">
+            <Card
+              title="Pelatihan Eksekutif & Pendampingan Bisnis"
+              imgSrc="/PelatihanEkse.jpeg"
+              link="/what-we-do/executive-coaching-and-mentoring"
+            />
+          </div>
+          <div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%]">
+            <Card
+              title="Sistem Manajemen Pembelajaran"
+              imgSrc="/SistemBelajar.png"
+              link=""
+            />
+          </div>
+          <div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%]">
+            <Card
+              title="Outbound & Gathering"
+              imgSrc="/Outbound.png"
+              link="/what-we-do/outbound"
+            />
+          </div>
+          <div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%]">
+            <Card
+              title="Program kilat pengembangan petugas hybrid untuk industri keuangan"
+              imgSrc="/Kilat.jpeg"
+              link="/what-we-do/officer-development"
+            />
+          </div>
         </section>
       </main>
       <Footer />
