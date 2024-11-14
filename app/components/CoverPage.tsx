@@ -8,7 +8,7 @@ const CoverPage = ({ bgSrc, coverTitle }) => {
 			}}
 		>
 			<div className="flex w-[65%] justify-around items-center">
-				<div className="absolute text-lg md:text-4xl lg:text-6xl p-5 max-w-[60%]">
+				<div className="absolute min-[320px]:max-sm:text-[15px] sm:text-lg md:text-4xl lg:text-6xl p-5 max-w-[60%]">
 					<strong>{coverTitle}</strong>
 				</div>
 				<svg xmlns="http://www.w3.org/2000/svg"
