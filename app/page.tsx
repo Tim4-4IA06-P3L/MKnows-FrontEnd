@@ -59,55 +59,63 @@ export default function Home() {
         </section>
 
         {/* Grid */}
-        <section className="">
-          <div className="container mx-auto px-8">
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Card
-                title="Program Pelatihan"
-                imgSrc="/ProgPelatihan.jpeg"
-                link=""
-              />
-              <Card
-                title="Pembelajaran online, publik & pelatihan internal"
-                imgSrc="/OnlineLearn.png"
-                link="/what-we-do/training"
-              />
-              <Card
-                title="Layanan Konsultasi"
-                imgSrc="/consulting-service/Consulting_img.jpg"
-                link="/what-we-do/consulting-service"
-              />
-              <Card
-                title="Penilaian Kompetensi Teknis (PKT)"
-                imgSrc="/PKT.png"
-                link=""
-              />
-              <Card
-                title="Pelatihan Eksekutif & Pendampingan Bisnis"
-                imgSrc="/PelatihanEkse.jpeg"
-                link=""
-              />
-              <Card
-                title="Sistem Manajemen Pembelajaran"
-                imgSrc="/SistemBelajar.png"
-                link=""
-              />
-            </div>
-
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
-              <div className="hidden lg:block"></div>{" "}
-              <Card
-                title="Outbound & Gathering"
-                imgSrc="/Outbound.png"
-                link=""
-              />
-              <Card
-                title="Program kilat pengembangan petugas hybrid untuk industri keuangan"
-                imgSrc="/Kilat.jpeg"
-                link=""
-              />
-            </div>
-          </div>
+        <section className="flex flex-wrap justify-center gap-8 p-8">
+					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
+						<Card
+							title="Program Pelatihan"
+							imgSrc="/ProgPelatihan.jpeg"
+							link=""
+						/>
+					</div>
+					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
+						<Card
+							title="Pembelajaran online, publik & pelatihan internal"
+							imgSrc="/OnlineLearn.png"
+							link="/what-we-do/training"
+						/>
+					</div>
+					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
+						<Card
+							title="Layanan Konsultasi"
+							imgSrc="/consulting-service/Consulting_img.jpg"
+							link="/what-we-do/consulting-service"
+						/>
+					</div>
+					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
+						<Card
+							title="Penilaian Kompetensi Teknis (PKT)"
+							imgSrc="/PKT.png"
+							link=""
+						/>
+					</div>
+					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
+						<Card
+							title="Pelatihan Eksekutif & Pendampingan Bisnis"
+							imgSrc="/PelatihanEkse.jpeg"
+							link=""
+						/>
+					</div>
+					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
+						<Card
+							title="Sistem Manajemen Pembelajaran"
+							imgSrc="/SistemBelajar.png"
+							link=""
+						/>
+					</div>
+					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
+						<Card
+							title="Outbound & Gathering"
+							imgSrc="/Outbound.png"
+							link=""
+						/>
+					</div>
+					<div className="sm:basis-[100%] md:basis-[33%] lg:basis-[25%] 2xl:basis-[20%]">
+						<Card
+							title="Program kilat pengembangan petugas hybrid untuk industri keuangan"
+							imgSrc="/Kilat.jpeg"
+							link=""
+						/>
+					</div>
         </section>
       </main>
       <Footer />
