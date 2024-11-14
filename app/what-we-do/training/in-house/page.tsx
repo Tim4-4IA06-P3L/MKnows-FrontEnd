@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 import ClientLogos from "../../../components/clientlogos";
@@ -30,9 +31,11 @@ const InHouseTraining = () => {
           {/* Top Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
             <div className="w-full">
-              <img
+              <Image
                 src="/inh1.jpeg"
                 alt="Office workspace"
+                width={500}
+                height={400}
                 className="w-full h-64 sm:h-72 lg:h-96 object-cover rounded-lg shadow-md"
               />
             </div>
@@ -66,9 +69,11 @@ const InHouseTraining = () => {
               </p>
             </div>
             <div className="w-full md:order-2 order-1">
-              <img
+              <Image
                 src="/inh2.jpeg"
                 alt="Training session"
+                width={500}
+                height={400}
                 className="w-full h-64 sm:h-72 lg:h-96 object-cover rounded-lg shadow-md"
               />
             </div>
@@ -77,9 +82,11 @@ const InHouseTraining = () => {
           {/* Bottom Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
             <div className="w-full">
-              <img
+              <Image
                 src="/inh3.jpeg"
                 alt="Coffee and notebook"
+                width={500}
+                height={400}
                 className="w-full h-64 sm:h-72 lg:h-96 object-cover rounded-lg shadow-md"
               />
             </div>
