@@ -74,7 +74,7 @@ export default function Home() {
               />
               <Card
                 title="Layanan Konsultasi"
-                imgSrc="/Consulting_img.jpg"
+                imgSrc="/consulting-service/Consulting_img.jpg"
                 link="/what-we-do/consulting-service"
               />
               <Card
