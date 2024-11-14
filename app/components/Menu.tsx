@@ -21,7 +21,7 @@ const Menu = () => {
 				cursor-default top-20 left-0 w-full flex-col justify-around text-left min-[320px]:max-lg:bg-neutral-300
 				lg:flex lg:flex-row lg:justify-evenly lg:items-center lg:h-full lg:max-w-[70%] lg:space-x-5">
       <li className="cursor-pointer min-[320px]:max-lg:flex min-[320px]:max-lg:w-full">
-        <a className="min-[320px]:max-lg:w-full
+        <a className="min-[320px]:max-lg:w-full min-[320px]:max-lg:hover:bg-neutral-100
 						min-[320px]:max-lg:border-b-2 min-[320px]:max-lg:p-3 
 						min-[320px]:max-lg:bg-neutral-50" href="/">Home</a>
       </li>
@@ -36,13 +36,13 @@ const Menu = () => {
       </li>
 			
 			<li className="cursor-pointer min-[320px]:max-lg:flex min-[320px]:max-lg:w-full lg:hidden">
-        <a className="min-[320px]:max-lg:w-full 
+        <a className="min-[320px]:max-lg:w-full min-[320px]:max-lg:hover:bg-neutral-100
 				min-[320px]:max-lg:border-b-2 min-[320px]:max-lg:p-3 
 				min-[320px]:max-lg:bg-neutral-50" href="/">Bootcamp Program</a>
       </li>
 
       <li className="cursor-pointer min-[320px]:max-lg:flex 
-					min-[320px]:max-lg:items-center
+					min-[320px]:max-lg:items-center min-[320px]:max-lg:hover:bg-neutral-100
 					min-[320px]:max-lg:justify-between min-[320px]:max-lg:w-full 
 					min-[320px]:max-lg:border-b-2 min-[320px]:max-lg:p-3 
 					min-[320px]:max-lg:bg-neutral-50" onClick={() => handleToggle(2)}>
@@ -56,7 +56,7 @@ const Menu = () => {
 			{toggleState == 2 && width < 1024 && <DropdownNewTraining />}
 
       <li className="cursor-pointer min-[320px]:max-lg:flex 
-					min-[320px]:max-lg:items-center
+					min-[320px]:max-lg:items-center min-[320px]:max-lg:hover:bg-neutral-100
 					min-[320px]:max-lg:justify-between min-[320px]:max-lg:w-full 
 					min-[320px]:max-lg:border-b-2 min-[320px]:max-lg:p-3 
 					min-[320px]:max-lg:bg-neutral-50" onClick={() => handleToggle(3)}>
@@ -71,7 +71,7 @@ const Menu = () => {
 			
 			
       <li className="cursor-pointer min-[320px]:max-lg:flex 
-					min-[320px]:max-lg:items-center
+					min-[320px]:max-lg:items-center min-[320px]:max-lg:hover:bg-neutral-100
 					min-[320px]:max-lg:justify-between min-[320px]:max-lg:w-full 
 					min-[320px]:max-lg:border-b-2 min-[320px]:max-lg:p-3 
 					min-[320px]:max-lg:bg-neutral-50" onClick={() => handleToggle(4)}>

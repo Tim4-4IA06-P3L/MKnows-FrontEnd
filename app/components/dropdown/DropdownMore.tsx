@@ -19,7 +19,8 @@ const DropdownMore = () => {
 					flex flex-col lg:flex-row lg:space-x-12"
         >
           <ul className="space-y-5">
-            <li>
+            <li className="flex justify-start">
+							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="#"
@@ -27,7 +28,8 @@ const DropdownMore = () => {
                 About Us
               </a>
             </li>
-            <li>
+            <li className="flex justify-start">
+							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/more/history"
@@ -35,7 +37,8 @@ const DropdownMore = () => {
                 History
               </a>
             </li>
-            <li>
+            <li className="flex justify-start">
+							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="#"
@@ -45,7 +48,8 @@ const DropdownMore = () => {
             </li>
           </ul>
           <ul className="space-y-5 min-[320px]:max-lg:mt-5">
-            <li>
+            <li className="flex justify-start">
+							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="#"
@@ -53,7 +57,8 @@ const DropdownMore = () => {
                 Our Clients
               </a>
             </li>
-            <li>
+            <li className="flex justify-start">
+							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="#"
@@ -61,7 +66,8 @@ const DropdownMore = () => {
                 Our Facilitator
               </a>
             </li>
-            <li>
+            <li className="flex justify-start">
+							<div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
               <a
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="#"
