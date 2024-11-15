@@ -30,7 +30,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="h-12 border-l border-gray-300"></div>
+              <div className="h-20 border-l border-black"></div>
 
               <div className="flex-grow flex-shrink basis-0 text-center">
                 <h2 className="text-md md:text-3xl lg:text-4xl font-bold">
@@ -41,7 +41,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="h-12 border-l border-gray-300"></div>
+              <div className="h-20 border-l border-black"></div>
 
               <div className="flex-grow flex-shrink basis-0 text-center">
                 <h2 className="text-md md:text-3xl lg:text-4xl font-bold">
@@ -52,7 +52,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <h2 className="text-3xl font-bold mt-24 -mb-10">
+            <h2 className="text-3xl font-medium mt-24 -mb-10">
               Jelajahi Kategori Unggulan
             </h2>
           </div>
