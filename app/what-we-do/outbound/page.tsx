@@ -47,7 +47,7 @@ const OutboundPackages = () => {
 
         {/* Text */}
         <div className="space-y-8 sm:space-y-12 lg:space-y-16 max-w-7xl mx-auto pb-20">
-          <div className="flex items-center">
+          <div className="flex items-center mx-10 md:mx-20 lg:mx-40 xl:mx-0">
             <p className="text-gray-700 sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-center">
               Outbound merupakan jenis latihan yang memanfaatkan keunggulan alam
               (outdoor) untuk membangun kerjasama tim dan pengembangan diri yang
@@ -70,7 +70,7 @@ const OutboundPackages = () => {
               className="rounded-lg shadow-lg object-cover"
             />
           </div>
-          <div className="md:w-1/2 w-full text-gray-800 text-justify">
+          <div className="md:w-1/2 w-full text-gray-800 text-justify xl:mr-20">
             <p className="text-lg leading-relaxed">
               Paket Outbound yang kami tawarkan tidak hanya mencakup tantangan
               fisik dan mental, tetapi juga tantangan intelegensia. Program ini
@@ -92,10 +92,10 @@ const OutboundPackages = () => {
         </div>
 
         {/* outbound packages */}
-        <h2 className="text-xl text-left pl-24 pt-20 pb-8">
+        <h2 className="text-xl text-left pl-10 md:pl-24 pt-20 pb-8">
           Paket Outbound Training yang kami tawarkan meliputi:
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-5 px-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-5 md:px-20">
           {packages.map((pkg, index) => (
             <div
               key={index}
