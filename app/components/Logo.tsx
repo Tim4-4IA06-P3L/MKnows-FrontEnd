@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-const Logo = () => {
+const Logo = ({ props }) => {
   return (
-    <div className="h-10 flex items-center">
+    <div className={`h-10 flex items-center ${props}`}>
       <Image
         src="/MKnows_Logo.png"
 				width={198}
