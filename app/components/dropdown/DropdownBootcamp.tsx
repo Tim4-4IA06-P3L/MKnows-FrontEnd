@@ -208,7 +208,7 @@ const DropdownBootcamp = () => {
 
       <div className="flex w-full">
         <a
-          href="#"
+          href="/bootcamp"
           className="font-bold w-full text-center text-white tracking-widest 
 				p-3 bg-[#0089B9]"
         >

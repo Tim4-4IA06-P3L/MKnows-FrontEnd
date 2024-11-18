@@ -38,7 +38,7 @@ const Menu = () => {
 			<li className="cursor-pointer min-[320px]:max-lg:flex min-[320px]:max-lg:w-full lg:hidden">
         <a className="min-[320px]:max-lg:w-full min-[320px]:max-lg:hover:bg-neutral-100
 				min-[320px]:max-lg:border-b-2 min-[320px]:max-lg:p-3 
-				min-[320px]:max-lg:bg-neutral-50" href="/">Bootcamp Program</a>
+				min-[320px]:max-lg:bg-neutral-50" href="/bootcamp">Bootcamp Program</a>
       </li>
 
       <li className="cursor-pointer min-[320px]:max-lg:flex 
