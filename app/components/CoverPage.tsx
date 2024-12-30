@@ -14,7 +14,7 @@ const CoverPage = ({ bgSrc, coverTitle, subTitle }) => {
 				</div>
 				<svg xmlns="http://www.w3.org/2000/svg"
 					 viewBox="0 0 1050 450">
-					<polygon fill="#AECFDF" points="0,0 1050,0 950,450 0,450" />
+					<polygon fill="#D7E9F4" points="0,0 1050,0 950,450 0,450" />
 					<polygon fill="#B3FF00" points="1020,0 1050,0 950,450 920,450" />
 				</svg>
 			</div>
