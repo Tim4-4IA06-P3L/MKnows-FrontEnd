@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from "react";
 
 const DropdownBootcamp = () => {
@@ -39,6 +40,15 @@ const DropdownBootcamp = () => {
             </ul>
           ))}
         </ul>
+      </div>
+      <div className="flex w-full">
+        <a
+          href="/bootcamp"
+          className="font-bold w-full text-center text-white tracking-widest 
+				p-3 bg-[#0089B9]"
+        >
+          Lihat Selengkapnya
+        </a>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import ClientLogos from "../../../components/clientlogos";
+import ClientLogos from "../../../components/clientlogos left";
 
 const InHouseTraining = () => {
   const TrainingLocation = ({ number, text }) => (
