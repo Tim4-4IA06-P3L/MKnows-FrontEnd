@@ -1,7 +1,5 @@
 import react from "react";
-import Navbar from "../../components/Navbar";
 import CoverPage from "../../components/CoverPage";
-import Footer from "../../components/Footer";
 import OverlayImage from "../../components/OverlayImage";
 
 const Page = () => {
@@ -10,7 +8,6 @@ const Page = () => {
 	
 	return (
 		<main>
-			<Navbar />
 			<section className="mb-8">
 				<CoverPage bgSrc="/officer-development/officer-development.jpg"
 					coverTitle="Hybrid Officer Development Crash Program for Financial Industry"
@@ -359,8 +356,6 @@ const Page = () => {
 					akan di berikan akses kepada mahasiswa dan pihak perusahaan, sesuai kebutuhan dan kepentingannya.
 				</p>
 			</section>
-			
-			<Footer />
 		</main>
 	);
 };

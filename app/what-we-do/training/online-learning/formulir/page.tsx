@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Navbar from "../../../../components/Navbar";
-import Footer from "../../../../components/Footer";
 
 const TrainingScheduleForm = () => {
   const [formData, setFormData] = useState({
@@ -34,8 +32,7 @@ const TrainingScheduleForm = () => {
   };
 
   return (
-    <div>
-      <Navbar />
+    <main>
       <div className="min-h-screen bg-white flex items-center justify-center p-4">
         <div className="w-full max-w-6xl flex flex-col md:flex-row bg-transparent">
           {/* Left side - Image */}
@@ -173,8 +170,7 @@ const TrainingScheduleForm = () => {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </main>
   );
 };
 

@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import ClientLogos from "../../components/clientlogos left";
 import ClientLogosRight from "../../components/clientlogos right";
 
@@ -104,33 +102,24 @@ const InHouseTraining = () => {
     "/client/image 95.png",
   ];
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
+		<main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+			{/* Header Section */}
+			<h1 className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-blue-800 my-6 sm:my-8 lg:my-12 text-center">
+				In-House Training
+			</h1>
 
-      <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
-        <h1 className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-blue-800 my-6 sm:my-8 lg:my-12 text-center">
-          In-House Training
-        </h1>
-
-        {/* Content Sections */}
-        <ClientLogos images={imageArr} />
-        <ClientLogosRight images={imageArr1} />
-        <ClientLogos images={imageArr2} />
-        <ClientLogosRight images={imageArr3} />
-        <ClientLogos images={imageArr4} />
-        <ClientLogosRight images={imageArr5} />
-        <ClientLogos images={imageArr6} />
-        <ClientLogosRight images={imageArr7} />
-        <ClientLogos images={imageArr8} />
-        <ClientLogosRight images={imageArr9} />
-      </main>
-
-      {/* Client Logos and Footer */}
-      <div className="mt-12">
-        <Footer />
-      </div>
-    </div>
+			{/* Content Sections */}
+			<ClientLogos images={imageArr} />
+			<ClientLogosRight images={imageArr1} />
+			<ClientLogos images={imageArr2} />
+			<ClientLogosRight images={imageArr3} />
+			<ClientLogos images={imageArr4} />
+			<ClientLogosRight images={imageArr5} />
+			<ClientLogos images={imageArr6} />
+			<ClientLogosRight images={imageArr7} />
+			<ClientLogos images={imageArr8} />
+			<ClientLogosRight images={imageArr9} />
+		</main>
   );
 };
 

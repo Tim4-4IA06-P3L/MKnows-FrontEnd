@@ -1,29 +1,26 @@
 import React from "react";
 import Image from "next/image";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 
 const VisionMission = () => {
   return (
-    <>
-      <Navbar />
-      <div className="min-h-screen bg-gray-100 py-10">
-        <div className="max-w-5xl mx-auto px-6 lg:px-10 space-y-20">
+    <main>
+      <div className="min-h-screen py-10">
+        <div className="max-w-5xl mx-auto px-6 lg:px-10 space-y-10">
           {/* Bagian Visi */}
           {/* Judul Pertama */}
-          <div className="text-center mb-10">
+          <div className="text-center mb-8">
             <h1 className="text-3xl font-bold">Visi</h1>
           </div>
-          <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
-            <div className="md:w-1/2">
+          <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-8">
+            <div className="md:w-1/2 mb-5 md:mb-0">
               <img
-                src="/about-us/visimisi1.png" // Ganti dengan URL/path gambar Anda
+                src="/about-us/visimisi1.png"
                 alt="Vision"
                 className="w-full rounded-lg shadow-lg object-cover"
               />
             </div>
             <div className="md:w-1/2">
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-black leading-relaxed text-justify">
                 Menjadikan M-Knows Consulting sebagai one stop solution dalam
                 kegiatan konsultasi manajemen Sumber daya manusia, solusi
                 digital dan penyelenggaraan pelatihan, yang menekankan
@@ -37,12 +34,13 @@ const VisionMission = () => {
 
           {/* Bagian Misi */}
           {/* Judul Kedua */}
-          <div className="text-center mb-10">
+					<br />
+          <div className="text-center mb-8">
             <h1 className="text-3xl font-bold">Misi</h1>
           </div>
-          <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
-            <div className="md:w-1/2 order-last md:order-first">
-              <div className="space-y-2 text-gray-700 leading-relaxed">
+          <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-8">
+            <div className="md:w-1/2 order-last md:order-first mt-5 md:mt-0">
+              <div className="space-y-2 text-black leading-relaxed">
                 <p>
                   1. Memberikan pelayanan terbaik dalam penyelenggaraan jasa
                   layanan, sesuai dengan kompetensi M-Knows.
@@ -60,7 +58,7 @@ const VisionMission = () => {
             </div>
             <div className="md:w-1/2">
               <img
-                src="/about-us/visimisi2.png" // Ganti dengan URL/path gambar Anda
+                src="/about-us/visimisi2.png"
                 alt="Mission"
                 className="w-full rounded-lg shadow-lg object-cover"
               />
@@ -68,10 +66,10 @@ const VisionMission = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-100 py-10">
+      <div className="my-8">
         {/* Judul */}
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold">Nilai-Nilai Perusahaan</h2>
+        <div className="text-center">
+          <h2 className="text-3xl font-bold">Nilai-Nilai Perusahaan</h2>
         </div>
 
         {/* Kontainer Nilai */}
@@ -183,9 +181,7 @@ const VisionMission = () => {
           </div>
         </section>
       </div>
-
-      <Footer />
-    </>
+    </main>
   );
 };
 

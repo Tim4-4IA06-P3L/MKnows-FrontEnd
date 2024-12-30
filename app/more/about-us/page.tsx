@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 
 const services = [
   { id: 1, title: "MT & MDP Program", image: "/about-us/Vector.png" },
@@ -44,9 +42,7 @@ const competencies = [
 
 const AboutUs = () => {
   return (
-    <div>
-      <Navbar />
-
+    <main>
       <h1 className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-sky-600 my-6 sm:my-8 lg:my-12 text-center">
         M-Knows Consulting
       </h1>
@@ -180,8 +176,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </main>
   );
 };
 
