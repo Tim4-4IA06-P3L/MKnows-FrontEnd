@@ -1,25 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-const DropdownBootcamp = () => {
-  const [bootcamps, setBootcamps] = useState([]);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchBootcamps = async () => {
-      try {
-        const response = await fetch(
-          "http://localhost:1337/api/categories?populate=*&sort=Category"
-        );
-        const data = await response.json();
-        setBootcamps(data.data);
-      } catch (error) {
-        setError(error.message);
-      }
-    };
-    fetchBootcamps();
-  }, []);
-
+const DropdownBootcamp = ({bootcamps}) => {
   return (
     <div className="cursor-default bg-white flex flex-col top-20 left-0 absolute w-full shadow-sm">
       <div className="w-max left-0 p-8 flex flex-row space-x-12">
@@ -31,7 +13,7 @@ const DropdownBootcamp = () => {
                 <li key={program.id}>
                   <a
                     className="cursor-pointer hover:underline underline-offset-4"
-                    href="#"
+                    href={`/bootcamp/${program.id}`}
                   >
                     {program.Title}
                   </a>

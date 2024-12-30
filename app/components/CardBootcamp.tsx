@@ -24,7 +24,7 @@ const CardBootcamp = ({ thumbnail, title, level, description}) => {
 			<div className="absolute top-[35%] p-5 w-full">
 				<strong className="text-lg text-white">{title}</strong><br />
 				<strong className="text-blue-300">{level}</strong>
-				<p className="text-justify text-sm text-white">{description}</p>
+				<p className="text-justify min-[320px]:max-[400px]:text-[10px] min-[400px]:max-[420px]:text-[12px] min-[420px]:text-sm text-white">{description}</p>
 			</div>
 			<a className="absolute flex flex-row justify-end space-x-1 items-center 
 					right-[20px] bottom-[15px] bg-blue-600 rounded-lg py-2 px-4 text-white" href="#">

@@ -5,7 +5,7 @@ import Menu from "./Menu";
 import { useState } from "react";
 import useViewportWidth from "./dropdown/viewWidth";
 
-const Navbar = () => {
+const Navbar = ({bootcamps}) => {
 	
 	const [toggleDropMobile, setToggleDropMobile] = useState(0);
 	
@@ -35,7 +35,7 @@ const Navbar = () => {
 						${toggleDropMobile == 1 ? "bg-[#FF0000] -translate-y-2 -rotate-45":"bg-[#1C75BC] translate-y-0 rotate-0"}`}>
 				</div>
 			</div>
-      {(width >= 1024 || toggleDropMobile == 1) && <Menu />}
+      {(width >= 1024 || toggleDropMobile == 1) && <Menu bootcamps={bootcamps} />}
     </nav>
   );
 };
