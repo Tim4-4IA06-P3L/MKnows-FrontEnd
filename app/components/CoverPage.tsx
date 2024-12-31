@@ -7,8 +7,8 @@ const CoverPage = ({ bgSrc, coverTitle, subTitle }) => {
 				backgroundImage: `url('${bgSrc}')`,
 			}}
 		>
-			<div className="flex w-[65%] justify-around items-center">
-				<div className="absolute min-[320px]:max-sm:text-[15px] sm:text-lg md:text-4xl lg:text-6xl p-5 max-w-[60%]">
+			<div className="relative flex w-[65%] justify-start items-center">
+				<div className="absolute text-lg sm:text-3xl md:text-4xl lg:text-6xl font-semibold p-8">
 					<strong>{coverTitle}</strong>
 					<p><strong className="sm:text-md md:text-3xl lg:text-5xl">{subTitle}</strong></p>
 				</div>

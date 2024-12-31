@@ -13,37 +13,37 @@ const Footer = () => {
 				<div className="basis-0 flex-grow flex-shrink">
 					<strong className="underline">Contact Us</strong>
 					<br />
-					<ul className="list-none text-[#888888]">
-						<li>Inhouse Training : 021-720-9729</li>
-						<li>Public Training : 021-726-5274</li>
-						<li>Whatsapp : 0812-1046-8281</li>
-						<li>Email : learning@m-knowsconsulting.com</li>
+					<ul className="list-none text-[#888888] flex flex-col gap-3">
+						<li>In-House Training : <br />021-720-9729</li>
+						<li>Public Training :  <br />021-726-5274</li>
+						<li>WhatsApp :  <br />0812-1046-8281</li>
+						<li>Email :  <br />learning@m-knowsconsulting.com</li>
 					</ul>
 				</div>
 
 				<div className="basis-0 flex-grow flex-shrink">
 					<strong className="underline">Surabaya Branch Office</strong>
 					<br />
-					<ul className="list-none text-[#888888]">
-						<li>Jl. Raya Darmo Permai III Surabaya</li>
-						<li>Telp : 031-8570-5277</li>
-						<li>Email : surabaya@m-knowsconsulting.com</li>
+					<ul className="list-none text-[#888888] flex flex-col gap-3">
+						<li>Alamat :  <br />Jl. Raya Darmo Permai III Surabaya</li>
+						<li>Telp :  <br />031-8570-5277</li>
+						<li>Email :  <br />surabaya@m-knowsconsulting.com</li>
 					</ul>
 				</div>
 
 				<div className="basis-0 flex-grow flex-shrink">
 					<strong className="underline">Alamat Utama</strong>
 					<br />
-					<ul className="list-none text-[#888888]">
-						<li>Jl. Radio IV No. 8B Barito Kebayoran Baru, Jakarta Selatan</li>
+					<ul className="list-none text-[#888888] flex flex-col gap-3">
+						<li>Alamat :  <br />Jl. Radio IV No. 8B Barito Kebayoran Baru, Jakarta Selatan</li>
 					</ul>
 				</div>
 
 				<div className="basis-0 flex-grow flex-shrink">
 					<strong className="underline">Alamat Produksi</strong>
 					<br />
-					<ul className="list-none text-[#888888]">
-						<li>Jl. Cirendeu Raya No. 61 Ciputat, Tangerang Selatan</li>
+					<ul className="list-none text-[#888888] flex flex-col gap-3">
+						<li>Alamat :  <br />Jl. Cirendeu Raya No. 61 Ciputat, Tangerang Selatan</li>
 					</ul>
 				</div>
 			</div>
