@@ -13,13 +13,13 @@ const facilitator = () => {
 			<div className="space-y-8 sm:space-y-12 lg:space-y-24 max-w-7xl mx-auto">
 				{/* Bunaiya */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-					<div className="w-full">
+					<div className="w-full flex justify-center">
 						<Image
 							src="/facilitator/faci1.jpeg"
 							alt="Office workspace"
 							width={200}
 							height={250}
-							className="h-60 object-cover rounded-lg shadow-md ml-20 lg:ml-40 xl:ml-60"
+							className="h-60 object-cover rounded-lg"
 						/>
 					</div>
 					<div className="flex flex-col items-center md:items-start mr-10 lg:mr-20 ml-10 md:ml-0">
@@ -54,26 +54,26 @@ const facilitator = () => {
 							ini juga menjadi dosen di Swiss German University.
 						</p>
 					</div>
-					<div className="w-full md:order-2 order-1">
+					<div className="w-full md:order-2 order-1 flex justify-center">
 						<Image
 							src="/facilitator/faci2.jpeg"
 							alt="Training session"
 							width={200}
 							height={250}
-							className="h-60 object-cover rounded-lg shadow-md ml-20 lg:ml-40 xl:ml-60"
+							className="h-60 object-cover rounded-lg"
 						/>
 					</div>
 				</div>
 
 				{/* Rolando */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-					<div className="w-full">
+					<div className="w-full flex justify-center">
 						<Image
 							src="/facilitator/faci3.jpeg"
 							alt="Office workspace"
 							width={200}
 							height={250}
-							className="h-60 object-cover rounded-lg shadow-md ml-20 lg:ml-40 xl:ml-60"
+							className="h-60 object-cover rounded-lg"
 						/>
 					</div>
 					<div className="flex flex-col items-center md:items-start mr-10 lg:mr-20 ml-10 md:ml-0">
@@ -109,26 +109,26 @@ const facilitator = () => {
 							dan pelatihan di Jawa Timur dan sekitarnya.
 						</p>
 					</div>
-					<div className="w-full md:order-2 order-1">
+					<div className="w-full md:order-2 order-1 flex justify-center">
 						<Image
 							src="/facilitator/faci4.jpeg"
 							alt="Training session"
 							width={200}
 							height={250}
-							className="h-60 object-cover rounded-lg shadow-md ml-20 lg:ml-40 xl:ml-60"
+							className="h-60 object-cover rounded-lg"
 						/>
 					</div>
 				</div>
 
 				{/* Tri */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-					<div className="w-full">
+					<div className="w-full flex justify-center">
 						<Image
 							src="/facilitator/faci5.jpeg"
 							alt="Office workspace"
 							width={200}
 							height={250}
-							className="h-60 object-cover rounded-lg shadow-md ml-20 lg:ml-40 xl:ml-60"
+							className="h-60 object-cover rounded-lg"
 						/>
 					</div>
 					<div className="flex flex-col items-center md:items-start mr-10 lg:mr-20 ml-10 md:ml-0">
@@ -164,26 +164,26 @@ const facilitator = () => {
 							Liner, dan Strategic Marketing.
 						</p>
 					</div>
-					<div className="w-full md:order-2 order-1">
+					<div className="w-full md:order-2 order-1 flex justify-center">
 						<Image
 							src="/facilitator/faci6.jpeg"
 							alt="Training session"
 							width={200}
 							height={250}
-							className="h-60 object-cover rounded-lg shadow-md ml-20 lg:ml-40 xl:ml-60"
+							className="h-60 object-cover rounded-lg"
 						/>
 					</div>
 				</div>
 
 				{/* Erlina */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-					<div className="w-full">
+					<div className="w-full flex justify-center">
 						<Image
 							src="/facilitator/faci7.jpeg"
 							alt="Office workspace"
 							width={200}
 							height={250}
-							className="h-60 object-cover rounded-lg shadow-md ml-20 lg:ml-40 xl:ml-60"
+							className="h-60 object-cover rounded-lg"
 						/>
 					</div>
 					<div className="flex flex-col items-center md:items-start mr-10 lg:mr-20 ml-10 md:ml-0">
@@ -223,26 +223,26 @@ const facilitator = () => {
 							Company.
 						</p>
 					</div>
-					<div className="w-full md:order-2 order-1">
+					<div className="w-full md:order-2 order-1 flex justify-center">
 						<Image
 							src="/facilitator/faci8.jpeg"
 							alt="Training session"
 							width={200}
 							height={250}
-							className="h-60 object-cover rounded-lg shadow-md ml-20 lg:ml-40 xl:ml-60"
+							className="h-60 object-cover rounded-lg"
 						/>
 					</div>
 				</div>
 
 				{/* Dewi */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-					<div className="w-full">
+					<div className="w-full flex justify-center">
 						<Image
 							src="/facilitator/faci9.jpeg"
 							alt="Office workspace"
 							width={200}
 							height={250}
-							className="h-60 object-cover rounded-lg shadow-md ml-20 lg:ml-40 xl:ml-60"
+							className="h-60 object-cover rounded-lg"
 						/>
 					</div>
 					<div className="flex flex-col items-center md:items-start mr-10 lg:mr-20 ml-10 md:ml-0">
@@ -279,26 +279,26 @@ const facilitator = () => {
 							Pelatihan, dan Manajer Human Capital.
 						</p>
 					</div>
-					<div className="w-full md:order-2 order-1">
+					<div className="w-full md:order-2 order-1 flex justify-center">
 						<Image
 							src="/facilitator/faci10.jpeg"
 							alt="Training session"
 							width={200}
 							height={250}
-							className="h-60 object-cover rounded-lg shadow-md ml-20 lg:ml-40 xl:ml-60"
+							className="h-60 object-cover rounded-lg"
 						/>
 					</div>
 				</div>
 
 				{/* Santy */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-					<div className="w-full">
+					<div className="w-full flex justify-center">
 						<Image
 							src="/facilitator/faci11.jpeg"
 							alt="Office workspace"
 							width={200}
 							height={250}
-							className="h-60 object-cover rounded-lg shadow-md ml-20 lg:ml-40 xl:ml-60"
+							className="h-60 object-cover rounded-lg"
 						/>
 					</div>
 					<div className="flex flex-col items-center md:items-start mr-10 lg:mr-20 ml-10 md:ml-0">

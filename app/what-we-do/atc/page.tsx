@@ -74,10 +74,6 @@ export default function Home() {
 					</p>
 				</div>
 			</section>
-			
-			<section className="flex flex-col justify-center mt-8">
-				<strong className="text-center text-5xl">Our Clients</strong>
-			</section>
 		</main>
   );
 }

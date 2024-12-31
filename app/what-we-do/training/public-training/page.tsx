@@ -15,13 +15,13 @@ const App = () => {
   return (
 		<main className="text-center pt-14">
 			<div>
-				<h1 className="text-2xl font-bold text-black">Public Webtraining</h1>
+				<h1 className="text-2xl font-bold text-black">Public Training</h1>
 				<h2 className="text-xl text-blue-500">2024</h2>
 			</div>
 
 			{/* Button */}
 			<div className="mt-4 text-left pl-5 md:pl-24 pr-5 pb-10 pt-10">
-				<Link href="/what-we-do/training/public-learning/formulir">
+				<Link href="/what-we-do/training/public-training/formulir">
 					<button className="px-6 py-2 text-sm bg-slate-100 border border-sky-600 text-sky-700 rounded-md hover:bg-gray-200">
 						Download Jadwal Public Training Tahun 2024
 					</button>

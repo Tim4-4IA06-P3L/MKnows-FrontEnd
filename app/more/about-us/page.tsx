@@ -46,11 +46,11 @@ const AboutUs = () => {
       <h1 className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-sky-600 my-6 sm:my-8 lg:my-12 text-center">
         M-Knows Consulting
       </h1>
-      <div className="space-y-8 sm:space-y-12 lg:space-y-16 max-w-7xl mx-auto">
+      <div className="space-y-8 sm:space-y-12 lg:space-y-16 px-8">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
-          <div className="flex items-center md:order-1 order-2">
-            <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify mx-10 md:mr-0">
+          <div className="flex items-start md:order-1 order-2">
+            <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
               <span className="text-sky-600">M-Knows Consulting </span>
               adalah merk yang dipakai bersama oleh PT. Menara Indonesia dan PT.
               Menara Pengetahuan Indonesia. PT. Menara Indonesia adalah
@@ -64,7 +64,7 @@ const AboutUs = () => {
               Surabaya.
             </p>
           </div>
-          <div className="w-full md:order-2 order-1">
+          <div className="w-full md:order-2 order-1 flex justify-center md:justify-end">
             <Image
               src="/about-us/aboutus1.png"
               alt="Office workspace"
@@ -77,7 +77,7 @@ const AboutUs = () => {
 
         {/* Middle Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
-          <div className="w-full">
+          <div className="w-full flex justify-center md:justify-start">
             <Image
               src="/about-us/aboutus2.png"
               alt="Training session"
@@ -86,23 +86,27 @@ const AboutUs = () => {
               className="rounded-lg shadow-lg object-cover"
             />
           </div>
-          <div className="flex flex-col justify-between ml-5 md:ml-0 mr-10">
-            <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
-              Sejak berdiri, M-Knows Consulting telah sukses bekerjasama dengan
-              beragam perusahaan nasional dan multinasional, dengan kualitas
-              kerja yang memuaskan, dibuktikan dengan tingginya repeat order dan
-              customer yang loyal.
-            </p>
-            <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify ">
-              Melalui cabang Jakarta & Surabaya, M-Knows Consultingtelah sukses
-              melayani beragam perusahaan dengan kualitas kerja yang memuaskan,
-              sesuai keahliannya dan pendekatan konsultasi yang menekankan pada
-              sifat Applicative, Contemporary, High Impact, Fun & Motivational.
-            </p>
+          <div className="flex flex-col justify-between">
+						<div>
+							<p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+								Sejak berdiri, M-Knows Consulting telah sukses bekerjasama dengan
+								beragam perusahaan nasional dan multinasional, dengan kualitas
+								kerja yang memuaskan, dibuktikan dengan tingginya repeat order dan
+								customer yang loyal.
+							</p>
+							<br />
+							<p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify ">
+								Melalui cabang Jakarta & Surabaya, M-Knows Consulting telah sukses
+								melayani beragam perusahaan dengan kualitas kerja yang memuaskan,
+								sesuai keahliannya dan pendekatan konsultasi yang menekankan pada
+								sifat Applicative, Contemporary, High Impact, Fun & Motivational.
+							</p>
+						</div>
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center mt-10">
+			
+      <div className="flex items-center justify-center mt-10 px-8">
         <div className="max-w-4xl mx-auto px-6 py-20 bg-white rounded-lg shadow-lg">
           <h2 className="text-center text-2xl font-bold text-gray-800 mb-6">
             Jasa konsultasi yang sering diambil klien meliputi:
@@ -142,17 +146,17 @@ const AboutUs = () => {
           </ol>
         </div>
       </div>
-      <div className=" flex items-center justify-center">
+      <div className=" flex items-center justify-center px-8">
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
           {/* Bagian Gambar dengan Overlay */}
           <div className="relative">
             <img
-              src="/about-us/aboutus3.jpeg" // Ganti dengan URL/path gambar Anda
+              src="/about-us/aboutus3.jpeg"
               alt="Training Session"
-              className="w-full h-64 object-cover"
+              className="w-full object-cover"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center px-6">
-              <p className="text-white text-lg leading-relaxed text-center">
+              <p className="text-white min-[320px]:max-[450px]:text-[10px] min-[450px]:max-sm:text-sm sm:text-lg leading-relaxed text-center">
                 Program pelatihan unggulan yang banyak diambil klien M-Knows
                 antara lain meliputi topik: Marketing, Sales Distribution,
                 Service, Leadership, Managerial, Supervisory, Credit Management,
@@ -166,7 +170,7 @@ const AboutUs = () => {
 
           {/* Bagian Bawah dengan Background Biru */}
           <div className="bg-blue-50 px-6 py-4 text-center">
-            <p className="text-gray-700 text-lg font-medium">
+            <p className="min-[320px]:max-[450px]:text-[10px] min-[450px]:max-sm:text-sm sm:text-lg text-gray-700 text-lg">
               Kami percaya model pelatihan kontemporer lebih baik dibandingkan
               pendekatan yang klasik dan konservatif.{" "}
               <span className="font-bold">

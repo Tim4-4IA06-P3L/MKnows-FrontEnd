@@ -35,7 +35,7 @@ const OutboundPackages = () => {
 			</section>
 
 			{/* Title */}
-			<h1 className="text-2xl sm:text-3xl lg:text-5xl font-normal my-6 sm:my-8 lg:my-12 text-center">
+			<h1 className="text-2xl sm:text-3xl lg:text-5xl font-semibold my-6 sm:my-8 lg:my-12 text-center">
 				Outbound Training
 			</h1>
 
@@ -89,11 +89,12 @@ const OutboundPackages = () => {
 			<h2 className="text-xl text-left pl-10 md:pl-24 pt-20 pb-8">
 				Paket Outbound Training yang kami tawarkan meliputi:
 			</h2>
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-5 md:px-20">
+			<div className="flex flex-wrap justify-center gap-8 px-8">
 				{packages.map((pkg, index) => (
 					<div
 						key={index}
-						className="h-48 mx-6 bg-white shadow-lg border-lime-700 border rounded-lg overflow-hidden flex items-center justify-center"
+						className="h-48 mx-6 bg-white shadow-lg border-lime-700 
+						border rounded-lg overflow-hidden flex items-center justify-center basis-[100%] md:basis-[33%] lg:basis-[25%]"
 					>
 						<div className="w-1/3 flex justify-center">
 							<Image
@@ -140,13 +141,6 @@ const OutboundPackages = () => {
 						</div>
 					))}
 				</div>
-			</section>
-
-			{/* our clients */}
-			<section className="py-10 px-4">
-				<h2 className="text-center text-sky-800 text-3xl font-semibold mb-16">
-					Our Clients
-				</h2>
 			</section>
 		</main>
   );

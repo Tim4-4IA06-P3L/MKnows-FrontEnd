@@ -10,11 +10,11 @@ const History = () => {
 				<span className="text-sky-600">M-Knows Consulting</span>
 			</h1>
 
-			<div className="space-y-8 sm:space-y-12 lg:space-y-16 max-w-7xl mx-auto">
+			<div className="space-y-8 sm:space-y-12 lg:space-y-16 px-8">
 				{/* Top Section */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
-					<div className="flex items-center md:order-1 order-2">
-						<p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify mx-10 md:mr-0">
+					<div className="flex items-start md:order-1 order-2">
+						<p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
 							<span className="text-sky-600">M-Knows Consulting </span>
 							didirikan pertama kali pada bulan Juni 2003 dan berlokasi di
 							Petogogan Jakarta, dan pada tahun 2005 pindah ke Jl. Radio 4 No.
@@ -25,29 +25,29 @@ const History = () => {
 							raya Cirendeu no 61 Tangerang Selatan.
 						</p>
 					</div>
-					<div className="w-full md:order-2 order-1">
+					<div className="w-full md:order-2 order-1 flex justify-center md:justify-end">
 						<Image
 							src="/history1.jpeg"
 							alt="Office workspace"
 							width={500}
 							height={360}
-							className="md:h-80 w-9/12 md:w-80 object-cover rounded-lg shadow-md ml-10 md:ml-0 lg:ml-20 xl:ml-40"
+							className="rounded-lg shadow-lg object-cover"
 						/>
 					</div>
 				</div>
 
 				{/* Middle Section */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
-					<div className="w-full">
+					<div className="w-full flex justify-center md:justify-start">
 						<Image
 							src="/history2.jpeg"
 							alt="Training session"
 							width={500}
 							height={360}
-							className="md:h-80 w-9/12 md:w-80 object-cover rounded-lg shadow-md ml-10 lg:ml-20 xl:ml-40"
+							className="rounded-lg shadow-lg object-cover"
 						/>
 					</div>
-					<div className="flex items-center ml-10 md:ml-0 mr-10">
+					<div className="flex items-center">
 						<p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
 							Sejak berdirinya,
 							<span className="text-sky-600"> M-Knows Consulting </span> telah
@@ -66,9 +66,9 @@ const History = () => {
 				</div>
 
 				{/* Bottom Section */}
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 pb-10">
-					<div className="flex items-center md:order-1 order-2">
-						<p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify mx-10 md:mr-0">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 pb-8">
+					<div className="flex items-start md:order-1 order-2">
+						<p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
 							<span className="text-sky-600">M-Knows Consulting </span>
 							merupakan salah satu perusahaan Indonesia yang bergerak di
 							bidang consultant management. Didirikan pertama kali pada bulan
@@ -76,13 +76,13 @@ const History = () => {
 							Selatan.
 						</p>
 					</div>
-					<div className="w-full md:order-2 order-1">
+					<div className="w-full flex justify-center md:order-2 order-1">
 						<Image
 							src="/history3.jpeg"
 							alt="Coffee and notebook"
 							width={500}
 							height={360}
-							className="md:h-80 w-9/12 md:w-80 object-cover rounded-lg shadow-md ml-10 md:ml-0 lg:ml-20 xl:ml-40"
+							className="rounded-lg shadow-lg object-cover"
 						/>
 					</div>
 				</div>
