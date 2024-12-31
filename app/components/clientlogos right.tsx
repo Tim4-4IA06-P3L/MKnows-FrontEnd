@@ -4,13 +4,13 @@ const ClientLogosRight = ({ images }) => {
   return (
     <div className="w-full w-[80%] overflow-hidden bg-white py-10">
       <div className="flex flex-col space-y-5 w-[1500px]">
-        <div className="flex justify-around animate-scrollRight w-[200%]">
+        <div className="flex justify-around animate-scrollRight w-[200%] h-12">
 					{images.map((image, index) => (
 						<img
 							key={index}
 							src={image}
 							alt="Client"
-							className="h-12 object-contain"
+							className="h-full object-contain"
 						/>
 					))}
 					{images.map((image, index) => (
@@ -18,7 +18,7 @@ const ClientLogosRight = ({ images }) => {
 							key={index}
 							src={image}
 							alt="Client"
-							className="h-12 object-contain"
+							className="h-full object-contain"
 						/>
 					))}
         </div>
