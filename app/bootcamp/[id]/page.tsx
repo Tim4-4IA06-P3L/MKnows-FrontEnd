@@ -1,13 +1,27 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 
-const page = () => {
+const page = ({ params }: { params: Promise<{id: string}> }) => {
+	const { id } = React.use(params);
+	const [url, setURL] = useState(null);
+	const getPDF = async (id) => {
+		const res = await fetch(`http://localhost:1337/api/our-programs?populate=*&filters[id][$eq]=${id}`);
+		const resJson = await res.json();
+		const pdfURL = resJson.data[0].Document.url;
+		setURL(pdfURL);
+	};
+	
+	useEffect(() => {
+		getPDF(id);
+	}, []);
+	
   return (
-    <div className="w-screen h-screen">
-      <iframe
-        src="https://res.cloudinary.com/mknows-cms-upload/image/upload/v1735548932/ACT_1_WILLIAM_DEVIN_SEPTIANUS_PRANGGONO_51421517_487e668699.pdf"
-        width="100%"
-        height="100%"
-      />
+    <div className="relative w-[90vw] h-[80vh] left-[5%]">
+			<iframe
+				src={url}
+				width="100%"
+				height="100%"
+			/>
     </div>
   );
 };

@@ -51,6 +51,7 @@ const Page = () => {
 							title={program.Title}
 							level={program.Level}
 							description={program.Description}
+							bootcampID={program.id}
 						/>
 					))}
 				</div>
