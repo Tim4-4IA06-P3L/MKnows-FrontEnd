@@ -1,28 +1,40 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import CoverPage from "../../components/CoverPage";
 
 const page = ({ params }: { params: Promise<{id: string}> }) => {
 	const { id } = React.use(params);
-	const [url, setURL] = useState(null);
+	const [program, setProgram] = useState(null);
 	const getPDF = async (id) => {
-		const res = await fetch(`http://localhost:1337/api/our-programs?populate=*&filters[id][$eq]=${id}`);
+		const res = await fetch(`${process.env.CMS_URL}/api/our-programs?populate=*&filters[documentId][$eq]=${id}`);
 		const resJson = await res.json();
-		const pdfURL = resJson.data[0].Document.url;
-		setURL(pdfURL);
+		const pdf = resJson.data[0];
+		setProgram(pdf);
 	};
 	
 	useEffect(() => {
 		getPDF(id);
 	}, []);
 	
+	if (!program) {
+		return <div></div>
+	}
+	
   return (
-    <div className="relative w-[90vw] h-[80vh] left-[5%]">
-			<iframe
-				src={url}
-				width="100%"
-				height="100%"
-			/>
-    </div>
+		<main>
+			<CoverPage bgSrc={`${program.Thumbnail.url}`} coverTitle={`${program.Title}`} subTitle={`${program.Level}`} />
+			<section className="p-8 flex justify-center">
+				<p className="text-justify last-center md:text-xl">{`${program.Description}`}</p>
+			</section>
+			
+			<section className="relative w-[90vw] h-[80vh] left-[5%] p-8">
+				<iframe
+					src={`${program.Document.url}#toolbar=0`}
+					width="100%"
+					height="100%"
+				/>
+			</section>
+		</main>
   );
 };
 
