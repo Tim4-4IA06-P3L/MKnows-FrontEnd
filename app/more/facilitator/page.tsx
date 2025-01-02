@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const facilitator = () => {
+const FacilitatorPage = () => {
   return (
 		<main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 mb-12">
 			{/* Header Section */}
@@ -324,4 +324,4 @@ const facilitator = () => {
   );
 };
 
-export default facilitator;
+export default FacilitatorPage;

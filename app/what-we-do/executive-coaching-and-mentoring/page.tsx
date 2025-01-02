@@ -2,7 +2,7 @@ import React from "react";
 import CoverPage from "../../components/CoverPage";
 import OverlayImage from "../../components/OverlayImage";
 
-export default function Home() {
+export default function CoachingPage() {
 
 	const images = ["/coaching/coaching2.jpg", "/coaching/coaching3.webp"];
 	const images2 = ["/coaching/coaching4.webp", "/coaching/coaching5.webp"];

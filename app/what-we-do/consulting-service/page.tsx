@@ -2,7 +2,7 @@ import React from "react";
 import CoverPage from "../../components/CoverPage";
 import Image from "next/image";
 
-export default function Home() {
+export default function ConsultingPage() {
   return (
 		<main>
 			<section>

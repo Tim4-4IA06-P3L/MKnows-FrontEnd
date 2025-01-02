@@ -11,7 +11,7 @@ const videos = [
   { title: "Leadership & Managerial Series", src: "/lms.jpeg" },
   { title: "Other Series", src: "/os.jpeg" },
 ];
-const App = () => {
+const PublicTrainingPage = () => {
   return (
 		<main className="text-center pt-14">
 			<div>
@@ -56,4 +56,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default PublicTrainingPage;

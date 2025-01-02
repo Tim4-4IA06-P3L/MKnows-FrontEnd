@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import ClientLogos from "../../../components/clientlogos left";
 
-const InHouseTraining = () => {
+const InHouseTrainingPage = () => {
   const TrainingLocation = ({ number, text }) => (
     <div className="flex gap-2 items-start mb-6">
       <span className="text-blue-600 font-semibold text-base sm:text-lg flex-shrink-0">
@@ -131,4 +130,4 @@ const InHouseTraining = () => {
   );
 };
 
-export default InHouseTraining;
+export default InHouseTrainingPage;

@@ -2,7 +2,7 @@ import React from "react";
 import CoverPage from "../../components/CoverPage";
 import OverlayImage from "../../components/OverlayImage";
 
-export default function Home() {
+export default function AtcPage() {
 
 	const images = ["/atc/atc2.jpg", "/atc/atc3.webp"];
 	const images2 = ["/atc/atc4.jpg", "/atc/atc5.jpg"];

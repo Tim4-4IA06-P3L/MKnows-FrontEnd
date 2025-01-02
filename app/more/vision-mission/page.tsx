@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const VisionMission = () => {
+const VisionMissionPage = () => {
   return (
     <main>
       <div className="min-h-screen py-10">
@@ -13,10 +13,17 @@ const VisionMission = () => {
           </div>
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-8">
             <div className="md:w-1/2 mb-5 md:mb-0">
-              <img
+              <Image
+								width={500}
+								height={300}
                 src="/about-us/visimisi1.png"
                 alt="Vision"
-                className="w-full rounded-lg shadow-lg object-cover"
+								style={{
+									width: "100%",
+									height: "auto",
+									objectFit: "cover"
+								}}
+                className="w-full rounded-lg shadow-lg"
               />
             </div>
             <div className="md:w-1/2">
@@ -57,10 +64,17 @@ const VisionMission = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <img
+              <Image
+								width={500}
+								height={300}
                 src="/about-us/visimisi2.png"
                 alt="Mission"
-                className="w-full rounded-lg shadow-lg object-cover"
+                style={{
+									width: "100%",
+									height: "auto",
+									objectFit: "cover"
+								}}
+                className="w-full rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -185,4 +199,4 @@ const VisionMission = () => {
   );
 };
 
-export default VisionMission;
+export default VisionMissionPage;

@@ -40,7 +40,7 @@ const competencies = [
   "Team Cohesion & Leadership Competency.",
 ];
 
-const AboutUs = () => {
+const AboutUsPage = () => {
   return (
     <main>
       <h1 className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-sky-600 my-6 sm:my-8 lg:my-12 text-center">
@@ -117,12 +117,17 @@ const AboutUs = () => {
                 key={service.id}
                 className="flex items-center p-4 bg-blue-50 rounded-lg shadow-sm"
               >
-                <img
+                <Image
+									width={28}
+									height={28}
                   src={service.image}
                   alt={service.title}
-                  className="w-8 h-8 mr-4"
+									style={{
+										width: "auto",
+										height: "auto"
+									}}
                 />
-                <p className="text-gray-700 font-medium">{service.title}</p>
+                <p className="ml-4 text-gray-700 font-medium">{service.title}</p>
               </div>
             ))}
           </div>
@@ -147,16 +152,23 @@ const AboutUs = () => {
         </div>
       </div>
       <div className=" flex items-center justify-center px-8">
-        <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden">
           {/* Bagian Gambar dengan Overlay */}
           <div className="relative">
-            <img
+            <Image
+							width={800}
+							height={500}
               src="/about-us/aboutus3.jpeg"
               alt="Training Session"
-              className="w-full object-cover"
+							styles={{
+								width: "auto",
+								height: "100%",
+								objectFit: "cover"
+							}}
+							className="w-full h-auto"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center px-6">
-              <p className="text-white min-[320px]:max-[450px]:text-[10px] min-[450px]:max-sm:text-sm sm:text-lg leading-relaxed text-center">
+              <p className="text-white min-[320px]:max-[450px]:text-[10px] min-[450px]:max-sm:text-sm sm:text-lg leading-relaxed text-justify last-center">
                 Program pelatihan unggulan yang banyak diambil klien M-Knows
                 antara lain meliputi topik: Marketing, Sales Distribution,
                 Service, Leadership, Managerial, Supervisory, Credit Management,
@@ -170,7 +182,7 @@ const AboutUs = () => {
 
           {/* Bagian Bawah dengan Background Biru */}
           <div className="bg-blue-50 px-6 py-4 text-center">
-            <p className="min-[320px]:max-[450px]:text-[10px] min-[450px]:max-sm:text-sm sm:text-lg text-gray-700 text-lg">
+            <p className="min-[320px]:max-[450px]:text-[10px] min-[450px]:max-sm:text-sm sm:text-lg text-gray-700 text-justify last-center">
               Kami percaya model pelatihan kontemporer lebih baik dibandingkan
               pendekatan yang klasik dan konservatif.{" "}
               <span className="font-bold">
@@ -184,4 +196,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsPage;

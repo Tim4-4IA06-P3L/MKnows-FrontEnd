@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const History = () => {
+const HistoryPage = () => {
   return (
 		<main>
 			{/* Text */}
@@ -91,4 +91,4 @@ const History = () => {
   );
 };
 
-export default History;
+export default HistoryPage;

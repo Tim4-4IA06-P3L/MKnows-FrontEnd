@@ -1,5 +1,4 @@
-"use client";
-import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 const DropdownBootcamp = ({categories}) => {
   return (
@@ -19,12 +18,12 @@ const DropdownBootcamp = ({categories}) => {
 							<strong className="text-lg underline">{category.Category}</strong>
 							{category.programs.map((program) => (
 								<li key={program.id}>
-									<a
+									<Link
 										className="cursor-pointer hover:underline underline-offset-4"
 										href={`/bootcamp/${program.documentId}`}
 									>
 										{program.Title}
-									</a>
+									</Link>
 								</li>
 							))}
 						</ul>
@@ -32,13 +31,13 @@ const DropdownBootcamp = ({categories}) => {
 				</div>
 			</div>
       <div className="flex w-full">
-        <a
+        <Link
           href="/bootcamp"
           className="font-bold w-full text-center text-white tracking-widest 
 					p-3 bg-[#0089B9] shadow-lg hover:bg-sky-600"
         >
           Lihat Selengkapnya
-        </a>
+        </Link>
       </div>
     </div>
   );

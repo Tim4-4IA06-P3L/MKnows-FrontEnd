@@ -2,7 +2,7 @@ import React from "react";
 import CoverPage from "../../components/CoverPage";
 import Card from "../../components/Card";
 
-const Home = () => {
+const TrainingPage = () => {
   return (
 		<main>
 			{/* Hero */}
@@ -41,4 +41,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default TrainingPage;

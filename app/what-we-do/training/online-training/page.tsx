@@ -9,7 +9,7 @@ const videos = [
   { title: "Webtraining Office & Administration Series", src: "/woas.jpeg" },
   { title: "Webtraining Other Series", src: "/wos.jpeg" },
 ];
-const App = () => {
+const OnlineTrainingPage = () => {
   return (
 		<main className="text-center py-14">
 			<div>
@@ -54,4 +54,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default OnlineTrainingPage;

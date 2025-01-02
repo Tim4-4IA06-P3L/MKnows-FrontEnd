@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import CoverPage from "./components/CoverPage";
 import Card from "./components/Card";
 

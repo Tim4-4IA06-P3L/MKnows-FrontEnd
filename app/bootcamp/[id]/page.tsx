@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import CoverPage from "../../components/CoverPage";
 
-const page = ({ params }: { params: Promise<{id: string}> }) => {
+const BootcampDetail = ({ params }: { params: Promise<{id: string}> }) => {
 	const { id } = React.use(params);
 	const [program, setProgram] = useState(null);
 	const getPDF = async (id) => {
@@ -14,7 +14,7 @@ const page = ({ params }: { params: Promise<{id: string}> }) => {
 	
 	useEffect(() => {
 		getPDF(id);
-	}, []);
+	}, [id]);
 	
 	if (!program) {
 		return <div></div>
@@ -38,4 +38,4 @@ const page = ({ params }: { params: Promise<{id: string}> }) => {
   );
 };
 
-export default page;
+export default BootcampDetail;

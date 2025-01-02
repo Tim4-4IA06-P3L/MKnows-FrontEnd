@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Modal from "../../../../components/Modal";
 
-const TrainingScheduleForm = () => {
+const OnlineTrainingScheduleForm = () => {
   const [formData, setFormData] = useState({
     Name: "",
     Company: "",
@@ -40,6 +40,7 @@ const TrainingScheduleForm = () => {
 				setError(true);
 			}
 		} catch (err) {
+			console.log(err.message);
 			setError(true);
 		}
   };
@@ -206,4 +207,4 @@ const TrainingScheduleForm = () => {
   );
 };
 
-export default TrainingScheduleForm;
+export default OnlineTrainingScheduleForm;

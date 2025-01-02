@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import DropdownMore from "./dropdown/DropdownMore";
 import DropdownDo from "./dropdown/DropdownDo";
@@ -21,9 +22,9 @@ const Menu = ({categories}) => {
 				cursor-default top-20 left-0 w-full flex-col justify-around text-left min-[320px]:max-lg:bg-neutral-300
 				lg:flex lg:flex-row lg:justify-evenly lg:items-center lg:h-full lg:max-w-[70%] lg:space-x-5">
       <li className="cursor-pointer min-[320px]:max-lg:flex min-[320px]:max-lg:w-full">
-        <a className="min-[320px]:max-lg:w-full min-[320px]:max-lg:hover:bg-neutral-100
+        <Link className="min-[320px]:max-lg:w-full min-[320px]:max-lg:hover:bg-neutral-100
 						min-[320px]:max-lg:border-b-2 min-[320px]:max-lg:p-3 
-						min-[320px]:max-lg:bg-neutral-50" href="/">Home</a>
+						min-[320px]:max-lg:bg-neutral-50" href="/">Home</Link>
       </li>
 
       <li className="cursor-pointer min-[320px]:max-lg:hidden" onClick={() => handleToggle(1)}>
@@ -36,9 +37,9 @@ const Menu = ({categories}) => {
       </li>
 			
 			<li className="cursor-pointer min-[320px]:max-lg:flex min-[320px]:max-lg:w-full lg:hidden">
-        <a className="min-[320px]:max-lg:w-full min-[320px]:max-lg:hover:bg-neutral-100
+        <Link className="min-[320px]:max-lg:w-full min-[320px]:max-lg:hover:bg-neutral-100
 				min-[320px]:max-lg:border-b-2 min-[320px]:max-lg:p-3 
-				min-[320px]:max-lg:bg-neutral-50" href="/bootcamp">Bootcamp Program</a>
+				min-[320px]:max-lg:bg-neutral-50" href="/bootcamp">Bootcamp Program</Link>
       </li>
 
       <li className="cursor-pointer min-[320px]:max-lg:flex 

@@ -1,8 +1,8 @@
-import react from "react";
+import React from "react";
 import CoverPage from "../../components/CoverPage";
 import OverlayImage from "../../components/OverlayImage";
 
-const Page = () => {
+const OfficerDevPage = () => {
 	const images = ["/officer-development/officer-development2.jpg", "/officer-development/officer-development3.webp"];
 	const images2 = ["/officer-development/officer-development4.jpg", "/officer-development/officer-development5.webp"];
 	
@@ -360,4 +360,4 @@ const Page = () => {
 	);
 };
 
-export default Page;
+export default OfficerDevPage;

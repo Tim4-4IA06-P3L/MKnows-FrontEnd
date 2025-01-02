@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import CardBootcamp from "../components/CardBootcamp";
 import CoverPage from "../components/CoverPage";
 
-const Page = () => {
+const BootcampPage = () => {
   const [categories, setCategories] = useState([]);
 	const [toggle, setToggle] = useState(0);
 	
@@ -116,4 +116,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default BootcampPage;

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import CoverPage from "../../components/CoverPage";
 
-const OutboundPackages = () => {
+const OutboundPage = () => {
   const packages = [
     {
       title: "Paket Outbound 1 Hari",
@@ -146,4 +146,4 @@ const OutboundPackages = () => {
   );
 };
 
-export default OutboundPackages;
+export default OutboundPage;

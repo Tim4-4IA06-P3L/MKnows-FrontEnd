@@ -1,9 +1,7 @@
 import React from "react";
-import Image from "next/image";
-import ClientLogos from "../../components/clientlogos left";
-import ClientLogosRight from "../../components/clientlogos right";
+import ClientLogos from "../../components/ClientLogos";
 
-const OurClient = () => {
+const OurClientPage = () => {
 	const idx = Array.from(new Array(58), (x, i) => i+1);
   const imageArr = idx.map((i) => `/client/image ${i}.png`);
 	
@@ -26,8 +24,8 @@ const OurClient = () => {
 			{
 				imageChunks.map((chunk, index) => (
 				<React.Fragment key={index}>
-					<ClientLogos images={chunk.slice(0, 5)} />
-					<ClientLogosRight images={chunk.slice(6, 12)} />
+					<ClientLogos direction="left" images={chunk.slice(0, 5)} />
+					<ClientLogos direction="right" images={chunk.slice(6, 12)} />
 				</React.Fragment>
 				))
 			}
@@ -35,4 +33,4 @@ const OurClient = () => {
   );
 };
 
-export default OurClient;
+export default OurClientPage;
