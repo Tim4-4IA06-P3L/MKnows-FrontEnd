@@ -3,7 +3,7 @@ import React from "react";
 const DropdownNewTraining = () => {
   return (
 		<div className="cursor-default bg-white flex lg:flex-col 
-				lg:top-20 lg:left-0 lg:absolute w-full shadow-sm">
+				lg:top-20 lg:left-0 lg:absolute w-full shadow-lg">
 			<div
         className="
 				lg:overflow-auto

@@ -7,7 +7,7 @@ import DropdownNewTraining from "./dropdown/DropdownNewTraining";
 import DropdownBootcamp from "./dropdown/DropdownBootcamp";
 import useViewportWidth from "./dropdown/viewWidth";
 
-const Menu = ({bootcamps}) => {
+const Menu = ({categories}) => {
   const [toggleState, setToggleState] = useState(null);
 
   const handleToggle = (index) => {
@@ -32,7 +32,7 @@ const Menu = ({bootcamps}) => {
           transition-transform duration-300
           ${toggleState == 1 ? "rotate-180" : "rotate-0"}`}
         />
-        {toggleState == 1 && <DropdownBootcamp bootcamps={bootcamps} />}
+        {toggleState == 1 && <DropdownBootcamp categories={categories} />}
       </li>
 			
 			<li className="cursor-pointer min-[320px]:max-lg:flex min-[320px]:max-lg:w-full lg:hidden">

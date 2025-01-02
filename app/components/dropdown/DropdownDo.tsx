@@ -4,7 +4,7 @@ const DropdownDo = () => {
   return (
     <div
       className="cursor-default bg-white flex lg:flex-col 
-				top-20 left-0 lg:absolute w-full shadow-sm"
+				top-20 left-0 lg:absolute w-full shadow-lg"
     >
       <div
         className="

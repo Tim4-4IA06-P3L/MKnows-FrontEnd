@@ -21,10 +21,10 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-	const fetchBootcamps = async () => {
+	const fetchCategories = async () => {
 		try {
 			const response = await fetch(
-				"http://localhost:1337/api/categories?populate=*&sort=Category"
+				`${process.env.CMS_URL}/api/categories?populate[programs][populate][0]=Thumbnail&sort=Category`
 			);
 			const data = await response.json();
 			return data.data;
@@ -33,14 +33,14 @@ export default async function RootLayout({
 		}
 	};
 	
-	const bootcamps = await fetchBootcamps();
+	const categories = await fetchCategories();
 	
   return (
     <html lang="en">
       <body
         className={`${poppins.className} antialiased min-h-screen`}
       >
-				<Navbar bootcamps={bootcamps} />
+				<Navbar categories={categories} />
 				{children}
 				<Footer />
       </body>
