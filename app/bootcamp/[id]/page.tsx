@@ -1,10 +1,12 @@
 "use client";
-import React, { FC, useState, useEffect } from "react";
+import React, { use, FC, useState, useEffect } from "react";
 import CoverPage from "../../components/CoverPage";
-import { BootcampPage, Bootcamp } from "../../Types";
+import { Bootcamp } from "../../Types";
 
-const BootcampDetail: FC<BootcampPage> = ({ params }) => {
-  const { id } = params;
+const BootcampDetail: FC<{ params: Promise<{ id: string }> }> = ({
+  params,
+}) => {
+  const { id } = use(params);
   const [program, setProgram] = useState<Bootcamp | null>(null);
   const getPDF = async (id: string) => {
     const res = await fetch(

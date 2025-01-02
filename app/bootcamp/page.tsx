@@ -5,7 +5,7 @@ import CoverPage from "../components/CoverPage";
 import { Category, Bootcamp } from "../Types";
 
 const BootcampPage = () => {
-  const [categories, setCategories] = useState<Category[] | any[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
   const [toggle, setToggle] = useState(0);
 
   const setActive = () => {
@@ -56,7 +56,7 @@ const BootcampPage = () => {
               <div key={category.id}>
                 <h2
                   className="text-2xl font-bold text-center text-white p-5 bg-[#262262] border-t-8 border-b-8 border-t-[#B3FF00] border-b-[#B3FF00]"
-                  id={category.id}
+                  id={category.id.toString()}
                 >
                   {category.Category}
                 </h2>

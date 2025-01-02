@@ -1,9 +1,3 @@
-export interface BootcampPage {
-  params: {
-    id: string;
-  };
-}
-
 export interface Thumbnail {
   url: string,
   documentId: string,
