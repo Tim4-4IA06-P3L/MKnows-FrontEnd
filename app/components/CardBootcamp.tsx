@@ -25,7 +25,7 @@ const CardBootcamp = ({ thumbnail, title, level, description, bootcampID}) => {
 				<strong className="text-lg text-white">{title}</strong><br />
 				<strong className="text-blue-300">{level}</strong>
 				<p 
-					className="text-justify text-sm text-white line-clamp-10"
+					className="text-justify text-sm text-white line-clamp-[7] sm:line-clamp-[10]"
 				>
 					{description}
 				</p>

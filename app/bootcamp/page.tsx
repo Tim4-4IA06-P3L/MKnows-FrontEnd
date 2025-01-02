@@ -53,7 +53,10 @@ const Page = () => {
 				{categories.map((category) => (
 					category.programs.length > 0 &&
 					<div key={category.id}>
-						<h2 className="text-2xl font-bold text-center underline" id={category.id}>{category.Category}</h2>
+						<h2 className="text-2xl font-bold text-center text-white p-5 bg-[#262262] border-t-8 border-b-8 border-t-[#B3FF00] border-b-[#B3FF00]" 
+							id={category.id}>
+							{category.Category}
+						</h2>
 						<div className="flex flex-wrap justify-center gap-8 p-8">
 							{category.programs.map((program) => (
 								<CardBootcamp
