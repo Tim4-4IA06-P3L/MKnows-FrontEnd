@@ -87,25 +87,26 @@ const AboutUsPage = () => {
             />
           </div>
           <div className="flex flex-col justify-between">
-						<div>
-							<p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
-								Sejak berdiri, M-Knows Consulting telah sukses bekerjasama dengan
-								beragam perusahaan nasional dan multinasional, dengan kualitas
-								kerja yang memuaskan, dibuktikan dengan tingginya repeat order dan
-								customer yang loyal.
-							</p>
-							<br />
-							<p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify ">
-								Melalui cabang Jakarta & Surabaya, M-Knows Consulting telah sukses
-								melayani beragam perusahaan dengan kualitas kerja yang memuaskan,
-								sesuai keahliannya dan pendekatan konsultasi yang menekankan pada
-								sifat Applicative, Contemporary, High Impact, Fun & Motivational.
-							</p>
-						</div>
+            <div>
+              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+                Sejak berdiri, M-Knows Consulting telah sukses bekerjasama
+                dengan beragam perusahaan nasional dan multinasional, dengan
+                kualitas kerja yang memuaskan, dibuktikan dengan tingginya
+                repeat order dan customer yang loyal.
+              </p>
+              <br />
+              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify ">
+                Melalui cabang Jakarta & Surabaya, M-Knows Consulting telah
+                sukses melayani beragam perusahaan dengan kualitas kerja yang
+                memuaskan, sesuai keahliannya dan pendekatan konsultasi yang
+                menekankan pada sifat Applicative, Contemporary, High Impact,
+                Fun & Motivational.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-			
+
       <div className="flex items-center justify-center mt-10 px-8">
         <div className="max-w-4xl mx-auto px-6 py-20 bg-white rounded-lg shadow-lg">
           <h2 className="text-center text-2xl font-bold text-gray-800 mb-6">
@@ -118,16 +119,18 @@ const AboutUsPage = () => {
                 className="flex items-center p-4 bg-blue-50 rounded-lg shadow-sm"
               >
                 <Image
-									width={28}
-									height={28}
+                  width={28}
+                  height={28}
                   src={service.image}
                   alt={service.title}
-									style={{
-										width: "auto",
-										height: "auto"
-									}}
+                  style={{
+                    width: "auto",
+                    height: "auto",
+                  }}
                 />
-                <p className="ml-4 text-gray-700 font-medium">{service.title}</p>
+                <p className="ml-4 text-gray-700 font-medium">
+                  {service.title}
+                </p>
               </div>
             ))}
           </div>
@@ -156,16 +159,16 @@ const AboutUsPage = () => {
           {/* Bagian Gambar dengan Overlay */}
           <div className="relative">
             <Image
-							width={800}
-							height={500}
+              width={800}
+              height={500}
               src="/about-us/aboutus3.jpeg"
               alt="Training Session"
-							styles={{
-								width: "auto",
-								height: "100%",
-								objectFit: "cover"
-							}}
-							className="w-full h-auto"
+              style={{
+                width: "auto",
+                height: "100%",
+                objectFit: "cover",
+              }}
+              className="w-full h-auto"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center px-6">
               <p className="text-white min-[320px]:max-[450px]:text-[10px] min-[450px]:max-sm:text-sm sm:text-lg leading-relaxed text-justify last-center">

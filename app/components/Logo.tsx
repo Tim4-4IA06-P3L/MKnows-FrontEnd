@@ -1,17 +1,17 @@
-import React from "react";
+import React, { FC } from "react";
 import Image from "next/image";
 
-const Logo = ({ props }) => {
+const Logo: FC<{ props: string }> = ({ props }) => {
   return (
     <div className={`h-10 flex items-center ${props}`}>
       <Image
         src="/MKnows_Logo.png"
-				width={198}
-				height={62}
-				style= {{
-					height: "75%",
-					width: "auto",
-				}}
+        width={198}
+        height={62}
+        style={{
+          height: "75%",
+          width: "auto",
+        }}
         alt="M-Knows Logo"
       />
     </div>

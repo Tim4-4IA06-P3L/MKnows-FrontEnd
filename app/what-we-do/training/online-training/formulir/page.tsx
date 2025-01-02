@@ -14,55 +14,51 @@ const OnlineTrainingScheduleForm = () => {
     WhatsApp_Number: "",
     Training_Type: "Online",
   });
-	const [showModal, setShowModal] = useState(false);
-	const [error, setError] = useState(false);
-	const router = useRouter();
-	
-  const sendForm = async (e) => {
+  const [showModal, setShowModal] = useState(false);
+  const [error, setError] = useState(false);
+  const router = useRouter();
+
+  const sendForm = async (e: Event) => {
     e.preventDefault();
-		try {
-			const response = await fetch(
-				`${process.env.CMS_URL}/api/training-requests`,
-				{
-					method: "POST",
-					headers: {
-						"Content-Type": "application/json",
-					},
-					body: JSON.stringify({
-						data: formData,
-					}),
-				}
-			);
-			if (response.ok) {
-				setError(false);
-				setShowModal(true);
-			} else {
-				setError(true);
-			}
-		} catch (err) {
-			console.log(err.message);
-			setError(true);
-		}
+    try {
+      const response = await fetch(
+        `${process.env.CMS_URL}/api/training-requests`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            data: formData,
+          }),
+        }
+      );
+      if (response.ok) {
+        setError(false);
+        setShowModal(true);
+      } else {
+        setError(true);
+      }
+    } catch (err) {
+      console.log(err);
+      setError(true);
+    }
   };
-	
-	const clickModal = (e) => {
-		e.preventDefault();
-		if (!error) {
-			router.push('/');
-		} else {
-			setShowModal(false);
-			setError(false);
-		}
-	};
+
+  const clickModal = (e: Event) => {
+    e.preventDefault();
+    if (!error) {
+      router.push("/");
+    } else {
+      setShowModal(false);
+      setError(false);
+    }
+  };
 
   return (
     <main>
-			{(showModal && error) &&
-				<Modal error={true} onClick={clickModal} />
-			}
-			{(showModal && !error) &&
-				<Modal onClick={clickModal} />
-			}
+      {showModal && error && <Modal error={true} onClick={clickModal} />}
+      {showModal && !error && <Modal error={false} onClick={clickModal} />}
       <div className="min-h-screen bg-white flex items-center justify-center p-4">
         <div className="w-full max-w-6xl flex flex-col md:flex-row bg-transparent">
           {/* Left side - Image */}
@@ -74,11 +70,11 @@ const OnlineTrainingScheduleForm = () => {
                   src="/calendar.png"
                   alt="Calendar Icon"
                   fill={true}
-									sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   priority
-									style={{
-										objectFit: "contain",
-									}}
+                  style={{
+                    objectFit: "contain",
+                  }}
                 />
               </div>
             </div>
@@ -90,7 +86,7 @@ const OnlineTrainingScheduleForm = () => {
               Formulir Permintaan Jadwal Pelatihan Umum 2024
             </h2>
 
-            <form className="space-y-4" onSubmit={sendForm}>
+            <form className="space-y-4" onSubmit={() => sendForm}>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Nama Lengkap <span className="text-red-500">*</span>
