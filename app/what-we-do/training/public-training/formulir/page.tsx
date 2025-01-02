@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import Modal from "../../../../components/Modal";
 
 const TrainingScheduleForm = () => {
   const [formData, setFormData] = useState({
@@ -12,27 +14,54 @@ const TrainingScheduleForm = () => {
     WhatsApp_Number: "",
     Training_Type: "Public",
   });
+  const [showModal, setShowModal] = useState(false);
+	const [error, setError] = useState(false);
+	const router = useRouter();
+	
   const sendForm = async (e) => {
     e.preventDefault();
-    const response = await fetch(
-      "http://localhost:1337/api/training-requests",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          data: formData,
-        }),
-      }
-    );
-    if (response.ok) {
-      window.location.reload();
-    }
+		try {
+			const response = await fetch(
+				`${process.env.CMS_URL}/api/training-requests`,
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({
+						data: formData,
+					}),
+				}
+			);
+			if (response.ok) {
+				setError(false);
+				setShowModal(true);
+			} else {
+				setError(true);
+			}
+		} catch (err) {
+			setError(true);
+		}
   };
+	
+	const clickModal = (e) => {
+		e.preventDefault();
+		if (!error) {
+			router.push('/');
+		} else {
+			setShowModal(false);
+			setError(false);
+		}
+	};
 
   return (
     <main>
+			{(showModal && error) &&
+				<Modal error={true} onClick={clickModal} />
+			}
+			{(showModal && !error) &&
+				<Modal onClick={clickModal} />
+			}
       <div className="min-h-screen bg-white flex items-center justify-center p-4">
         <div className="w-full max-w-6xl flex flex-col md:flex-row bg-transparent">
           {/* Left side - Image */}
@@ -43,9 +72,12 @@ const TrainingScheduleForm = () => {
                 <Image
                   src="/calendar.png"
                   alt="Calendar Icon"
-                  layout="fill"
-                  objectFit="contain"
+                  fill={true}
+									sizes="(max-width: 768px) 100vw, 50vw"
                   priority
+									style={{
+										objectFit: "contain",
+									}}
                 />
               </div>
             </div>
