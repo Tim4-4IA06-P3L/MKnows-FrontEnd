@@ -75,7 +75,7 @@ export default function Home() {
           <div className="basis-[100%] md:basis-[33%] lg:basis-[25%]">
             <Card
               title="Layanan Konsultasi"
-              imgSrc="/consulting-service/Consulting_img.jpg"
+              imgSrc="/consulting-service/Consulting_Img.jpg"
               link="/what-we-do/consulting-service"
             />
           </div>
