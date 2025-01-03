@@ -49,7 +49,7 @@ const CardBootcamp: FC<cardBootcamp> = ({
 					right-[20px] bottom-[15px] bg-blue-600 hover:bg-blue-700
 					active:ring-1 active:ring-offset-1 active:ring-black
 					rounded-lg py-2 px-4 text-white"
-        href={`/bootcamp/${bootcampID}`}
+        href={`/bootcamp/${title}-${bootcampID}`}
       >
         <p>Detail</p>
         <div className="w-4 h-4">

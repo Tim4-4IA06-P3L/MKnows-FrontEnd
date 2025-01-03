@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "M-Knows Consulting",
+  title: "Home - M-Knows Consulting",
   description: "M-Knows Consulting Company Profile",
 };
 
