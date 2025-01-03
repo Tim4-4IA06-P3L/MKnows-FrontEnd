@@ -18,7 +18,7 @@ const PublicTrainingScheduleForm = () => {
   const [error, setError] = useState(false);
   const router = useRouter();
 
-  const sendForm = async (e: Event) => {
+  const sendForm = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       const response = await fetch(
@@ -45,7 +45,7 @@ const PublicTrainingScheduleForm = () => {
     }
   };
 
-  const clickModal = (e: Event) => {
+  const clickModal = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
     if (!error) {
       router.push("/");
@@ -86,7 +86,7 @@ const PublicTrainingScheduleForm = () => {
               Formulir Permintaan Jadwal Pelatihan Umum 2024
             </h2>
 
-            <form className="space-y-4" onSubmit={() => sendForm}>
+            <form className="space-y-4" onSubmit={sendForm}>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Nama Lengkap <span className="text-red-500">*</span>
