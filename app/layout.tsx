@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import React from "react";
@@ -40,6 +41,7 @@ export default async function RootLayout({
       <body className={`${poppins.className} antialiased min-h-screen`}>
         <Navbar categories={categories} />
         {children}
+        <GoogleAnalytics gaId="G-D8J74QBZZY" />
         <Footer />
       </body>
     </html>
