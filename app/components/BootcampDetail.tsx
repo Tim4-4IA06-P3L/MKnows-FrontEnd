@@ -1,5 +1,5 @@
 "use client";
-import React, { use, FC, useState, useEffect } from "react";
+import React, { FC, useState, useEffect } from "react";
 import CoverPage from "./CoverPage";
 import { Bootcamp } from "../Types";
 
