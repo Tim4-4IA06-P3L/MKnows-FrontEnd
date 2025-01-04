@@ -10,7 +10,7 @@ export const generateMetadata = async ({
   const titleAndId = (await params).titleAndId;
   const title = titleAndId.split("-")[0].replaceAll("%20", " ");
   return {
-    title: `Bootcamp ${title} - M-Knows Consulting`,
+    title: `${title} - M-Knows Consulting`,
     description: `Halaman Detail Bootcamp ${title} M-Knows Consulting`,
   };
 };

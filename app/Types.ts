@@ -7,7 +7,9 @@ export interface Thumbnail {
 export interface Document {
   id: number,
   documentId: string,
-  url: string
+  name: string,
+  url: string,
+  type: string,
 }
 
 export interface Category {

@@ -15,7 +15,7 @@
 }
 
 html {
-	scroll-padding-top: 120px;
+  scroll-padding-top: 120px;
 }
 
 body {
@@ -27,5 +27,14 @@ body {
 }
 
 .last-center {
-	text-align-last: center;
+  text-align-last: center;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.textLayer {
+  display: none !important;
 }
