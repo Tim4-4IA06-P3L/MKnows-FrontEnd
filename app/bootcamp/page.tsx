@@ -1,7 +1,6 @@
 import React from "react";
 import BootcampContent from "../components/BootcampContent";
 import type { Metadata } from "next";
-import { Category } from "../Types";
 
 export const metadata: Metadata = {
   title: "Bootcamp - M-Knows Consulting",
