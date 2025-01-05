@@ -36,13 +36,19 @@ const CardBootcamp: FC<cardBootcamp> = ({
           />
         </svg>
       </div>
-      <div className="absolute top-[35%] p-5 w-full">
+      <div className="absolute top-[35%] p-5 w-full h-full">
         <strong className="text-lg text-white">{title}</strong>
         <br />
         <strong className="text-blue-300">{level}</strong>
-        <p className="text-justify text-sm text-white line-clamp-[7] sm:line-clamp-[10]">
-          {description}
-        </p>
+        <div
+          className="w-full max-h-[30%] overflow-y-auto 
+          [&::-webkit-scrollbar]:w-1
+					[&::-webkit-scrollbar]:h-2
+          [&::-webkit-scrollbar-thumb]:bg-clip-content 
+					[&::-webkit-scrollbar-thumb]:bg-[#b3ff00]"
+        >
+          <p className="text-justify text-sm text-white">{description}</p>
+        </div>
       </div>
       <a
         className="absolute flex flex-row justify-end space-x-1 items-center 

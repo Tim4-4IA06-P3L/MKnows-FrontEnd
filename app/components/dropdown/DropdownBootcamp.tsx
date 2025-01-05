@@ -29,7 +29,7 @@ const DropdownBootcamp: FC<categories> = ({ categories }) => {
                     <li key={program.id}>
                       <Link
                         className="cursor-pointer hover:underline underline-offset-4"
-                        href={`/bootcamp/${program.documentId}`}
+                        href={`/bootcamp/${program.Title}-${program.documentId}`}
                       >
                         {program.Title}
                       </Link>

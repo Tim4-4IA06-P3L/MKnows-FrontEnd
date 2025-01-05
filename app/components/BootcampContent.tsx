@@ -1,27 +1,15 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, FC } from "react";
 import { Category, Bootcamp } from "../Types";
 import CardBootcamp from "./CardBootcamp";
 import CoverPage from "./CoverPage";
 
-const BootcampContent = () => {
-  const [categories, setCategories] = useState<Category[]>([]);
+const BootcampContent: FC<{ categories: Category[] }> = ({ categories }) => {
   const [toggle, setToggle] = useState(0);
 
   const setActive = () => {
     setToggle(toggle == 0 ? 1 : 0);
   };
-
-  const getCategories = async () => {
-    const res = await fetch(
-      `${process.env.CMS_URL}/api/categories?populate[programs][populate][0]=Thumbnail&sort=Category`
-    );
-    const data = await res.json();
-    setCategories(data.data);
-  };
-  useEffect(() => {
-    getCategories();
-  }, []);
 
   return (
     <>
