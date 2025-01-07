@@ -1,36 +1,38 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Card from "../../../components/Card";
 import type { Metadata } from "next";
+import { Training } from "../../../Types";
 
 export const metadata: Metadata = {
   title: "Public Training - M-Knows Consulting",
   description: "Public Training (Pelatihan Publik) M-Knows Consulting",
 };
 
-const videos = [
-  { title: "Sales & Marketing Series", src: "/sms.jpeg" },
-  { title: "Credit & Collection Series", src: "/ccs.jpeg" },
-  { title: "HC & Training Series", src: "/hts.jpeg" },
-  { title: "Finance Series", src: "/fs.jpeg" },
-  { title: "Office & Administration Series", src: "/oas.jpeg" },
-  { title: "Leadership & Managerial Series", src: "/lms.jpeg" },
-  { title: "Other Series", src: "/os.jpeg" },
-];
+const getPublicTraining = async () => {
+  const res = await fetch(
+    `${process.env.CMS_URL}/api/trainings?populate=*&sort=Title&filters[TrainingType]{$eq]=Public}`
+  );
+  const resJson = await res.json();
+  return resJson.data;
+};
+
+const publicTrainings: Training[] = await getPublicTraining();
+
 const PublicTrainingPage = () => {
   return (
     <>
       <main className="text-center pt-14">
         <div>
           <h1 className="text-2xl font-bold text-black">Public Training</h1>
-          <h2 className="text-xl text-blue-500">2024</h2>
+          <h2 className="text-xl text-blue-500">{`${new Date().getFullYear()}`}</h2>
         </div>
 
         {/* Button */}
         <div className="mt-4 text-left pl-5 md:pl-24 pr-5 pb-10 pt-10">
           <Link href="/what-we-do/training/public-training/formulir">
             <button className="px-6 py-2 text-sm bg-slate-100 border border-sky-600 text-sky-700 rounded-md hover:bg-gray-200">
-              Request Jadwal Public Training Tahun 2024
+              {`Request Jadwal Public Training Tahun ${new Date().getFullYear()}`}
             </button>
           </Link>
         </div>
@@ -38,23 +40,16 @@ const PublicTrainingPage = () => {
         {/* Grid */}
         <section className="py-10 px-20">
           <div className="flex flex-wrap justify-center gap-8">
-            {videos.map((video, index) => (
+            {publicTrainings.map((training) => (
               <div
-                key={index}
-                className="relative w-80 h-48 rounded-lg overflow-hidden shadow-lg flex-none"
+                className="basis-[100%] md:basis-[33%] lg:basis-[25%]"
+                key={training.documentId}
               >
-                <Image
-                  src={video.src}
-                  alt={video.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="transition-transform duration-300 transform"
+                <Card
+                  title={training.Title}
+                  imgSrc={training.Thumbnail.url}
+                  link={`/what-we-do/training/${training.Title}-${training.documentId}`}
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-20 flex items-end p-4">
-                  <p className="text-white text-lg font-semibold text-left">
-                    {video.title}
-                  </p>
-                </div>
               </div>
             ))}
           </div>

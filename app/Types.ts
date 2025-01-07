@@ -1,7 +1,9 @@
 export interface Thumbnail {
-  url: string,
+  id: number,
   documentId: string,
-  id: number
+  name: string,
+  url: string,
+  mime: string,
 }
 
 export interface Document {
@@ -9,7 +11,7 @@ export interface Document {
   documentId: string,
   name: string,
   url: string,
-  type: string,
+  mime: string,
 }
 
 export interface Category {
@@ -28,4 +30,14 @@ export interface Bootcamp {
   Description: string
   Thumbnail: Thumbnail,
   Document: Document
+}
+
+export interface Training {
+  id: number,
+  documentId: string,
+  Title: string,
+  TrainingType: string,
+  NewTraining: boolean,
+  Thumbnail: Thumbnail,
+  Document: Document,
 }

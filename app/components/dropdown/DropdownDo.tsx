@@ -8,14 +8,14 @@ const DropdownDo = () => {
     >
       <div
         className="
-				lg:overflow-auto
-				lg:[&::-webkit-scrollbar]:w-2
-				lg:[&::-webkit-scrollbar]:h-2
-				lg:[&::-webkit-scrollbar-track]:bg-neutral-100
-				lg:[&::-webkit-scrollbar-thumb]:bg-[#b3ff00]"
+				overflow-auto
+				[&::-webkit-scrollbar]:w-2
+				[&::-webkit-scrollbar]:h-2
+				[&::-webkit-scrollbar-track]:bg-neutral-100
+				[&::-webkit-scrollbar-thumb]:bg-[#b3ff00]"
       >
         <div
-          className="w-max left-0 p-8 min-[320px]:max-sm:text-sm min-[320px]:max-sm:w-full
+          className="w-max max-h-[50vh] left-0 p-4 lg:p-8 min-[320px]:max-sm:text-sm min-[320px]:max-sm:w-full
 						flex flex-col lg:flex-row lg:space-x-12"
         >
           <ul className="space-y-5 mb-5">

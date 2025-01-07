@@ -34,12 +34,25 @@ export default async function RootLayout({
     }
   };
 
+  const fetchNewTrainings = async () => {
+    try {
+      const response = await fetch(
+        `${process.env.CMS_URL}/api/trainings?filters[NewTraining][$eq]=true&sort=Title`
+      );
+      const data = await response.json();
+      return data.data;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const categories = await fetchCategories();
+  const newTrainings = await fetchNewTrainings();
 
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased min-h-screen`}>
-        <Navbar categories={categories} />
+        <Navbar categories={categories} newTrainings={newTrainings} />
         {children}
         <GoogleAnalytics gaId="G-D8J74QBZZY" />
         <Footer />

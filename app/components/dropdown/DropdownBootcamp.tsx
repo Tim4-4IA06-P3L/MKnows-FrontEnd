@@ -17,7 +17,7 @@ const DropdownBootcamp: FC<categories> = ({ categories }) => {
 				[&::-webkit-scrollbar-track]:bg-neutral-100
 				[&::-webkit-scrollbar-thumb]:bg-[#b3ff00]"
       >
-        <div className="w-max left-0 p-8 flex flex-row space-x-12">
+        <div className="w-max max-h-[50vh] left-0 p-4 lg:p-8 flex flex-row space-x-12">
           {categories.map(
             (category) =>
               category.programs.length > 0 && (

@@ -155,7 +155,8 @@ const Footer = () => {
       <div className="h-1 bg-neutral-400 mt-5"></div>
 
       <p className="p-3 text-center text-[#888888]">
-        2024 - &copy; M-Knows Consulting - Hak Cipta Dilindungi
+        {`${new Date().getFullYear()}`} - &copy; M-Knows Consulting - Hak Cipta
+        Dilindungi
       </p>
     </footer>
   );

@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 
 async function getCategories() {
   const res = await fetch(
-    `${process.env.CMS_URL}/api/categories?populate[programs][populate][0]=Thumbnail&sort=Category`
+    `${process.env.CMS_URL}/api/categories?populate[programs][populate][0]=Thumbnail&sort=Category`,
+		{ cache: 'no-store' }
   );
   const resJson = await res.json();
   const data = await resJson.data;

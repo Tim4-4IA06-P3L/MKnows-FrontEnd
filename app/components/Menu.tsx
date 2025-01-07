@@ -7,9 +7,12 @@ import DropdownDo from "./dropdown/DropdownDo";
 import DropdownNewTraining from "./dropdown/DropdownNewTraining";
 import DropdownBootcamp from "./dropdown/DropdownBootcamp";
 import useViewportWidth from "./dropdown/viewWidth";
-import { Category } from "../Types";
+import { Category, Training } from "../Types";
 
-const Menu: FC<{ categories: Category[] }> = ({ categories }) => {
+const Menu: FC<{ categories: Category[]; newTrainings: Training[] }> = ({
+  categories,
+  newTrainings,
+}) => {
   const [toggleState, setToggleState] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
@@ -60,22 +63,30 @@ const Menu: FC<{ categories: Category[] }> = ({ categories }) => {
       </li>
 
       <li
-        className="cursor-pointer min-[320px]:max-lg:flex 
-					min-[320px]:max-lg:items-center min-[320px]:max-lg:hover:bg-neutral-100
-					min-[320px]:max-lg:justify-between min-[320px]:max-lg:w-full 
-					min-[320px]:max-lg:border-b-2 min-[320px]:max-lg:p-3 
-					min-[320px]:max-lg:bg-neutral-50"
+        className="cursor-pointer min-[320px]:max-lg:hidden"
         onClick={() => handleToggle(2)}
       >
-        <p className="inline">New Training</p>
+        New Training
         <ChevronDownIcon
           className={`inline ml-2 w-4 h-4 transform
-					transition-transform duration-300
-					${toggleState == 2 ? "rotate-180" : "rotate-0"}`}
+          transition-transform duration-300
+          ${toggleState == 2 ? "rotate-180" : "rotate-0"}`}
         />
-        {toggleState == 2 && width >= 1024 && <DropdownNewTraining />}
+        {toggleState == 2 && (
+          <DropdownNewTraining newTrainings={newTrainings} />
+        )}
       </li>
-      {toggleState == 2 && width < 1024 && <DropdownNewTraining />}
+
+      <li className="cursor-pointer min-[320px]:max-lg:flex min-[320px]:max-lg:w-full lg:hidden">
+        <Link
+          className="min-[320px]:max-lg:w-full min-[320px]:max-lg:hover:bg-neutral-100
+				min-[320px]:max-lg:border-b-2 min-[320px]:max-lg:p-3 
+				min-[320px]:max-lg:bg-neutral-50"
+          href="/what-we-do/training/new-training"
+        >
+          New Training
+        </Link>
+      </li>
 
       <li
         className="cursor-pointer min-[320px]:max-lg:flex 

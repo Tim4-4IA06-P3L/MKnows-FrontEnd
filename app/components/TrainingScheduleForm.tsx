@@ -84,7 +84,7 @@ const TrainingScheduleForm: FC<{ type: string }> = ({ type }) => {
             {/* Right side - Form */}
             <div className="w-full md:w-1/2 p-8">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-                Formulir Permintaan Jadwal Pelatihan Umum 2024
+                {`Formulir Permintaan Jadwal Pelatihan Umum ${new Date().getFullYear()}`}
               </h2>
 
               <form className="space-y-4" onSubmit={sendForm}>

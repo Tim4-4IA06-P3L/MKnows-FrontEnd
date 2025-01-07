@@ -4,9 +4,12 @@ import Logo from "./Logo";
 import Menu from "./Menu";
 import { useState } from "react";
 import useViewportWidth from "./dropdown/viewWidth";
-import { Category } from "../Types";
+import { Category, Training } from "../Types";
 
-const Navbar: FC<{ categories: Category[] }> = ({ categories }) => {
+const Navbar: FC<{ categories: Category[]; newTrainings: Training[] }> = ({
+  categories,
+  newTrainings,
+}) => {
   const [toggleDropMobile, setToggleDropMobile] = useState(0);
 
   const setActive = () => {
@@ -47,7 +50,7 @@ const Navbar: FC<{ categories: Category[] }> = ({ categories }) => {
         ></div>
       </div>
       {(width >= 1024 || toggleDropMobile == 1) && (
-        <Menu categories={categories} />
+        <Menu categories={categories} newTrainings={newTrainings} />
       )}
     </nav>
   );
