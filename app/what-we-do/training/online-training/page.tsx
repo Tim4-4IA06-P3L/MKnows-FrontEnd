@@ -11,7 +11,12 @@ export const metadata: Metadata = {
 
 const getOnlineTraining = async () => {
   const res = await fetch(
-    `${process.env.CMS_URL}/api/trainings?populate=*&sort=Title&filters[TrainingType]{$eq]=Online}`
+    `${process.env.CMS_URL}/api/trainings?populate=*&sort=Title&filters[TrainingType]{$eq]=Online}`,
+    {
+      next: {
+        tags: ['onlineTrainings']
+      }
+    }
   );
   const resJson = await res.json();
   return resJson.data;

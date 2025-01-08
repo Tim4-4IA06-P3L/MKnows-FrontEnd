@@ -25,7 +25,12 @@ export default async function RootLayout({
   const fetchCategories = async () => {
     try {
       const response = await fetch(
-        `${process.env.CMS_URL}/api/categories?populate[programs][populate][0]=Thumbnail&sort=Category`
+        `${process.env.CMS_URL}/api/categories?populate[programs][populate][0]=Thumbnail&sort=Category`,
+        {
+          next: {
+            tags: ['categories']
+          }
+        }
       );
       const data = await response.json();
       return data.data;
@@ -37,7 +42,12 @@ export default async function RootLayout({
   const fetchNewTrainings = async () => {
     try {
       const response = await fetch(
-        `${process.env.CMS_URL}/api/trainings?filters[NewTraining][$eq]=true&sort=Title`
+        `${process.env.CMS_URL}/api/trainings?filters[NewTraining][$eq]=true&sort=Title`,
+        {
+          next: {
+            tags: ['newTrainings']
+          }
+        }
       );
       const data = await response.json();
       return data.data;

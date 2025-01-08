@@ -11,7 +11,12 @@ export const metadata: Metadata = {
 
 const getPublicTraining = async () => {
   const res = await fetch(
-    `${process.env.CMS_URL}/api/trainings?populate=*&sort=Title&filters[TrainingType]{$eq]=Public}`
+    `${process.env.CMS_URL}/api/trainings?populate=*&sort=Title&filters[TrainingType]{$eq]=Public}`,
+    {
+      next: {
+        tags: ['publicTrainings']
+      }
+    }
   );
   const resJson = await res.json();
   return resJson.data;

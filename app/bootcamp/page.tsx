@@ -10,7 +10,11 @@ export const metadata: Metadata = {
 async function getCategories() {
   const res = await fetch(
     `${process.env.CMS_URL}/api/categories?populate[programs][populate][0]=Thumbnail&sort=Category`,
-		{ cache: 'no-store' }
+    {
+      next: {
+        tags: ['bootcampCategories']
+      }
+    }
   );
   const resJson = await res.json();
   const data = await resJson.data;
