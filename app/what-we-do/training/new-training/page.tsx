@@ -12,9 +12,7 @@ const getNewTraining = async () => {
   const res = await fetch(
     `${process.env.CMS_URL}/api/trainings?populate=*&sort=Title&filters[NewTraining]{$eq]=true}`,
     {
-      next: {
-        tags: ['newTrainingsCards']
-      }
+      cache: 'no-store'
     }
   );
   const resJson = await res.json();

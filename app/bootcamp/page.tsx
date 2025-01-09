@@ -11,9 +11,7 @@ async function getCategories() {
   const res = await fetch(
     `${process.env.CMS_URL}/api/categories?populate[programs][populate][0]=Thumbnail&sort=Category`,
     {
-      next: {
-        tags: ['bootcampCategories']
-      }
+      cache: 'no-store'
     }
   );
   const resJson = await res.json();

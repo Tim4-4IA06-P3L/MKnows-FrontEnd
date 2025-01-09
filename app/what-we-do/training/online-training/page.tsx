@@ -13,9 +13,7 @@ const getOnlineTraining = async () => {
   const res = await fetch(
     `${process.env.CMS_URL}/api/trainings?populate=*&sort=Title&filters[TrainingType]{$eq]=Online}`,
     {
-      next: {
-        tags: ['onlineTrainings']
-      }
+      cache: "no-store"
     }
   );
   const resJson = await res.json();

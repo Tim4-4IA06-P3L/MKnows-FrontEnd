@@ -13,9 +13,7 @@ const getPublicTraining = async () => {
   const res = await fetch(
     `${process.env.CMS_URL}/api/trainings?populate=*&sort=Title&filters[TrainingType]{$eq]=Public}`,
     {
-      next: {
-        tags: ['publicTrainings']
-      }
+      cache: "no-store"
     }
   );
   const resJson = await res.json();
