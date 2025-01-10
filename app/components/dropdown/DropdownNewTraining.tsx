@@ -26,12 +26,12 @@ const DropdownNewTraining: FC<{ newTrainings: Training[] }> = ({
             {newTrainings.map((newTraining) => (
               <li className="flex justify-start" key={newTraining.documentId}>
                 <div className="lg:hidden border-green-500 border-4 inline mr-3"></div>
-                <a
+                <Link
                   className="cursor-pointer hover:underline underline-offset-4"
                   href={`/what-we-do/training/${newTraining.Title}_${newTraining.documentId}`}
                 >
                   {newTraining.Title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

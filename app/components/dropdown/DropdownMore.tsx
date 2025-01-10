@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const DropdownMore = () => {
@@ -21,59 +22,59 @@ const DropdownMore = () => {
           <ul className="space-y-5">
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/more/about-us"
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/more/history"
               >
                 History
-              </a>
+              </Link>
             </li>
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/more/vision-mission"
               >
                 Vision & Mission
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="space-y-5 min-[320px]:max-lg:mt-5">
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/more/our-client"
               >
                 Our Clients
-              </a>
+              </Link>
             </li>
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/more/facilitator"
               >
                 Our Facilitator
-              </a>
+              </Link>
             </li>
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/more/contact-us"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

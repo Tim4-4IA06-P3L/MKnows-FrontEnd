@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const DropdownDo = () => {
   return (
@@ -21,70 +22,70 @@ const DropdownDo = () => {
           <ul className="space-y-5 mb-5">
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/what-we-do/training"
               >
                 Public, In-House Training, Online Learning
-              </a>
+              </Link>
             </li>
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/what-we-do/officer-development"
               >
                 Hybrid Officer Development Crash Program
-              </a>
+              </Link>
             </li>
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/what-we-do/atc"
               >
                 Assessment for Technical Competency
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="space-y-5 mb-5">
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/what-we-do/lms"
               >
                 Learning Management System
-              </a>
+              </Link>
             </li>
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/what-we-do/consulting-service"
               >
                 Consulting Service
-              </a>
+              </Link>
             </li>
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/what-we-do/outbound"
               >
                 Outbound & Gathering
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="space-y-5">
             <li className="flex justify-start">
               <div className="lg:hidden border border-green-500 border-4 inline mr-3"></div>
-              <a
+              <Link
                 className="cursor-pointer hover:underline underline-offset-4"
                 href="/what-we-do/executive-coaching-and-mentoring"
               >
                 Executive Coaching & Business Mentoring
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
