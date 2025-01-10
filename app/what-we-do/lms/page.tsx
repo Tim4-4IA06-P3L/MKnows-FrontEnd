@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import CoverPage from "../../components/CoverPage";
 
 const Home: React.FC = () => {
@@ -293,17 +294,21 @@ const Home: React.FC = () => {
 
         {/* Section 4: Gambar */}
         <section className="relative w-full min-[320px]:max-md:mt-32 mt-20">
-          <div className="relative w-full h-[549px]">
+          <Link className="relative w-full h-[500px]" href="#">
             <Image
               src="/LMSVideo.png"
               alt="Kerja Sama"
-              fill={true}
+              width={1000}
+              height={800}
+              priority
               style={{
-                objectFit: "cover",
-                objectPosition: "bottom",
+                width: "100%",
+                height: "auto",
+                objectFit: "contain",
+                objectPosition: "center",
               }}
             />
-          </div>
+          </Link>
         </section>
       </div>
     </main>

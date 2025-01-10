@@ -98,7 +98,7 @@ export default function Home() {
               <Card
                 title="Sistem Manajemen Pembelajaran"
                 imgSrc="/SistemBelajar.png"
-                link=""
+                link="/what-we-do/lms"
               />
             </div>
             <div className="basis-[100%] md:basis-[33%] lg:basis-[25%]">
