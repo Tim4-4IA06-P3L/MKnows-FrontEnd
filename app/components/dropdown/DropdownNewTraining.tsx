@@ -28,7 +28,7 @@ const DropdownNewTraining: FC<{ newTrainings: Training[] }> = ({
                 <div className="lg:hidden border-green-500 border-4 inline mr-3"></div>
                 <a
                   className="cursor-pointer hover:underline underline-offset-4"
-                  href={`/what-we-do/training/new-training/${newTraining.Title}-${newTraining.documentId}`}
+                  href={`/what-we-do/training/${newTraining.Title}_${newTraining.documentId}`}
                 >
                   {newTraining.Title}
                 </a>

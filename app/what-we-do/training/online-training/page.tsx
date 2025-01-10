@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const getOnlineTraining = async () => {
   const res = await fetch(
-    `${process.env.CMS_URL}/api/trainings?populate=*&sort=Title&filters[TrainingType]{$eq]=Online}`,
+    `${process.env.CMS_URL}/api/trainings?populate=*&sort=Title&filters[TrainingType]{$eq]=Online`,
     {
       cache: "no-store"
     }
@@ -51,7 +51,7 @@ const OnlineTrainingPage = () => {
                 <Card
                   title={training.Title}
                   imgSrc={training.Thumbnail.url}
-                  link={`/what-we-do/training/${training.Title}-${training.documentId}`}
+                  link={`/what-we-do/training/${training.Title}_${training.documentId}`}
                 />
               </div>
             ))}

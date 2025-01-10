@@ -41,7 +41,7 @@ const NewTrainingPage = () => {
                 <Card
                   title={training.Title}
                   imgSrc={training.Thumbnail.url}
-                  link={`/what-we-do/new-training/${training.Title}-${training.documentId}`}
+                  link={`/what-we-do/training/${training.Title}_${training.documentId}`}
                 />
               </div>
             ))}
