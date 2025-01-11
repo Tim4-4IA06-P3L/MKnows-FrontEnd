@@ -34,7 +34,7 @@ const HistoryPage = () => {
             </div>
             <div className="w-full md:order-2 order-1 flex justify-center md:justify-end">
               <Image
-                src="/history1.jpeg"
+                src="/history/history1.jpeg"
                 alt="Office workspace"
                 width={500}
                 height={360}
@@ -47,7 +47,7 @@ const HistoryPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
             <div className="w-full flex justify-center md:justify-start">
               <Image
-                src="/history2.jpeg"
+                src="/history/history2.jpeg"
                 alt="Training session"
                 width={500}
                 height={360}
@@ -83,9 +83,9 @@ const HistoryPage = () => {
                 Selatan.
               </p>
             </div>
-            <div className="w-full flex justify-center md:order-2 order-1">
+            <div className="w-full md:order-2 order-1 flex justify-center md:justify-end">
               <Image
-                src="/history3.jpeg"
+                src="/history/history3.JPG"
                 alt="Coffee and notebook"
                 width={500}
                 height={360}

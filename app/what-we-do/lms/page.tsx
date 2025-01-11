@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     <main>
       <section className="pb-10">
         <CoverPage
-          bgSrc="/SistemBelajar.png"
+          bgSrc="/lms/lms.webp"
           coverTitle="Learning Management System (LMS)"
           subTitle=""
         />
@@ -296,7 +296,7 @@ const Home: React.FC = () => {
         <section className="relative w-full min-[320px]:max-md:mt-32 mt-20">
           <Link className="relative w-full h-[500px]" href="#">
             <Image
-              src="/LMSVideo.png"
+              src="/lms/LMSVideo.png"
               alt="Kerja Sama"
               width={1000}
               height={800}

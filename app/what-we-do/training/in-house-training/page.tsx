@@ -36,7 +36,7 @@ const InHouseTrainingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
             <div className="w-full">
               <Image
-                src="/inh1.jpeg"
+                src="/training/inh1.jpeg"
                 alt="Office workspace"
                 width={500}
                 height={400}
@@ -74,7 +74,7 @@ const InHouseTrainingPage = () => {
             </div>
             <div className="w-full md:order-2 order-1">
               <Image
-                src="/inh2.jpeg"
+                src="/training/inh2.jpeg"
                 alt="Training session"
                 width={500}
                 height={400}
@@ -87,7 +87,7 @@ const InHouseTrainingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
             <div className="w-full">
               <Image
-                src="/inh3.jpeg"
+                src="/training/inh3.webp"
                 alt="Coffee and notebook"
                 width={500}
                 height={400}

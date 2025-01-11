@@ -39,7 +39,7 @@ const OutboundPage = () => {
       <main>
         <section className="pb-10">
           <CoverPage
-            bgSrc="/Outbound.png"
+            bgSrc="/outbound/outbound.png"
             coverTitle="Outbound & Gathering"
             subTitle=""
           />

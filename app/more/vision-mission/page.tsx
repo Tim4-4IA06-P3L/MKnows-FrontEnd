@@ -23,7 +23,7 @@ const VisionMissionPage = () => {
                 <Image
                   width={500}
                   height={300}
-                  src="/about-us/visimisi1.png"
+                  src="/visi-misi/visimisi1.png"
                   alt="Vision"
                   style={{
                     width: "100%",
@@ -74,7 +74,7 @@ const VisionMissionPage = () => {
                 <Image
                   width={500}
                   height={300}
-                  src="/about-us/visimisi2.png"
+                  src="/visi-misi/visimisi2.png"
                   alt="Mission"
                   style={{
                     width: "100%",

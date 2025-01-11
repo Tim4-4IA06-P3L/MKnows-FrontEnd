@@ -73,7 +73,7 @@ const AboutUsPage = () => {
             </div>
             <div className="w-full md:order-2 order-1 flex justify-center md:justify-end">
               <Image
-                src="/about-us/aboutus1.png"
+                src="/about-us/aboutus1.jpg"
                 alt="Office workspace"
                 width={502}
                 height={361}
@@ -86,7 +86,7 @@ const AboutUsPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
             <div className="w-full flex justify-center md:justify-start">
               <Image
-                src="/about-us/aboutus2.png"
+                src="/about-us/aboutus2.webp"
                 alt="Training session"
                 width={502}
                 height={361}

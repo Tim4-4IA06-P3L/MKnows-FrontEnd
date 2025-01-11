@@ -18,7 +18,7 @@ export default function AtcPage() {
       <main>
         <section>
           <CoverPage
-            bgSrc="/atc/atc.jpeg"
+            bgSrc="/atc/atc.png"
             coverTitle="Assessment for Technical Competency (ATC)"
             subTitle=""
           />

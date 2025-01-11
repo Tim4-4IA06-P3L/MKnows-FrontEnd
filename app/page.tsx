@@ -9,7 +9,7 @@ export default function Home() {
         {/* Hero */}
         <section className="pb-14">
           <CoverPage
-            bgSrc="/inh2.jpeg"
+            bgSrc="/training/inh2.jpeg"
             coverTitle="Another Meaningful Learning with M-Knows Consulting"
             subTitle=""
           />
@@ -62,14 +62,14 @@ export default function Home() {
             <div className="basis-[100%] md:basis-[33%] lg:basis-[25%]">
               <Card
                 title="Program Pelatihan"
-                imgSrc="/ProgPelatihan.jpeg"
+                imgSrc="/bootcamp/bootcamp.jpeg"
                 link="/bootcamp"
               />
             </div>
             <div className="basis-[100%] md:basis-[33%] lg:basis-[25%]">
               <Card
                 title="Pembelajaran online, publik & pelatihan internal"
-                imgSrc="/OnlineLearn.png"
+                imgSrc="/training/OnlineLearn.jpg"
                 link="/what-we-do/training"
               />
             </div>
@@ -83,35 +83,35 @@ export default function Home() {
             <div className="basis-[100%] md:basis-[33%] lg:basis-[25%]">
               <Card
                 title="Penilaian Kompetensi Teknis (PKT)"
-                imgSrc="/PKT.png"
+                imgSrc="/atc/atc.png"
                 link="/what-we-do/atc"
               />
             </div>
             <div className="basis-[100%] md:basis-[33%] lg:basis-[25%]">
               <Card
                 title="Pelatihan Eksekutif & Pendampingan Bisnis"
-                imgSrc="/PelatihanEkse.jpeg"
+                imgSrc="/coaching/coaching.webp"
                 link="/what-we-do/executive-coaching-and-mentoring"
               />
             </div>
             <div className="basis-[100%] md:basis-[33%] lg:basis-[25%]">
               <Card
                 title="Sistem Manajemen Pembelajaran"
-                imgSrc="/SistemBelajar.png"
+                imgSrc="/lms/lms.webp"
                 link="/what-we-do/lms"
               />
             </div>
             <div className="basis-[100%] md:basis-[33%] lg:basis-[25%]">
               <Card
                 title="Outbound & Gathering"
-                imgSrc="/Outbound.png"
+                imgSrc="/outbound/outbound.png"
                 link="/what-we-do/outbound"
               />
             </div>
             <div className="basis-[100%] md:basis-[33%] lg:basis-[25%]">
               <Card
                 title="Program kilat pengembangan petugas hybrid untuk industri keuangan"
-                imgSrc="/Kilat.jpeg"
+                imgSrc="/officer-development/officer-development.jpg"
                 link="/what-we-do/officer-development"
               />
             </div>

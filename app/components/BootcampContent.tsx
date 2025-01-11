@@ -16,7 +16,7 @@ const BootcampContent: FC<{ categories: Category[] }> = ({ categories }) => {
       <main className="relative">
         <section>
           <CoverPage
-            bgSrc="/ProgPelatihan.jpeg"
+            bgSrc="/bootcamp/bootcamp.jpeg"
             coverTitle="Bootcamp Program"
             subTitle="Welcome to M-Knows Consulting!"
           />
@@ -69,9 +69,8 @@ const BootcampContent: FC<{ categories: Category[] }> = ({ categories }) => {
 
         <aside
           className={`fixed top-[15%] left-0 bg-neutral-100 p-8 h-[80%] w-[300px] rounded-br-lg shadow-lg 
-				transition-all duration-300 linear ${
-          toggle ? "translate-x-0" : "-translate-x-[100%]"
-        }`}
+				transition-all duration-300 linear ${toggle ? "translate-x-0" : "-translate-x-[100%]"
+            }`}
         >
           <div
             className={`absolute top-0 left-[100%] rounded-r-[50%] p-4 flex justify-center items-center cursor-pointer

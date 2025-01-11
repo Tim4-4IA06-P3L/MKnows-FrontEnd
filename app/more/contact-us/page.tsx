@@ -15,7 +15,7 @@ const ContactUsPage = () => {
         <div className="min-h-screen bg-white flex flex-col sm:flex-row items-center justify-center p-8 gap-8">
           <div className="basis-[50%]">
             <Image
-              src="/contactUs.webp"
+              src="/contact-us/contactUs.webp"
               priority
               width={900}
               height={600}
