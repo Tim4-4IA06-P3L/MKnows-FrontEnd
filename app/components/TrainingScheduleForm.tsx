@@ -144,8 +144,8 @@ const TrainingScheduleForm: FC<{ type: string }> = ({ type }) => {
                   </label>
                   <input
                     value={formData.Office_Number}
-                    pattern="[0-9]+"
-                    title="Hanya boleh diisi angka (0-9)"
+                    pattern="^0[0-9]{9,}"
+                    title="Hanya boleh diisi angka (0-9), diawali dengan 0, dan panjang minimum 10 angka"
                     onChange={(e) =>
                       setFormData({
                         ...formData,
@@ -154,7 +154,7 @@ const TrainingScheduleForm: FC<{ type: string }> = ({ type }) => {
                     }
                     required
                     type="tel"
-                    placeholder="Masukkan Nomor WhatsApp"
+                    placeholder="Masukkan Nomor Telepon Kantor"
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
                   />
                 </div>
@@ -165,8 +165,8 @@ const TrainingScheduleForm: FC<{ type: string }> = ({ type }) => {
                   </label>
                   <input
                     value={formData.WhatsApp_Number}
-                    pattern="[0-9]+"
-                    title="Hanya boleh diisi angka (0-9)"
+                    pattern="^0[0-9]{9,}"
+                    title="Hanya boleh diisi angka (0-9), diawali dengan 0, dan panjang minimum 10 angka"
                     onChange={(e) =>
                       setFormData({
                         ...formData,
