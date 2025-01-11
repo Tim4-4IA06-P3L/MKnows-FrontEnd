@@ -1,6 +1,6 @@
 "use client";
 import React, { FC, useState, useEffect } from "react";
-import CoverPage from "./CoverPage";
+import ThumbnailCover from "./ThumbnailCover";
 import { Bootcamp } from "../Types";
 import PdfComponent from "./PdfComponent";
 
@@ -32,10 +32,10 @@ const BootcampDetail: FC<{ id: string }> = ({ id }) => {
   return (
     <>
       <main>
-        <CoverPage
+        <ThumbnailCover
           bgSrc={`${program.Thumbnail.url}`}
-          coverTitle={`${program.Title}`}
-          subTitle={`${program.Level}`}
+          title={`${program.Title}`}
+          subtitle={`${program.Level}`}
         />
         <section className="p-8 flex justify-center">
           <p className="text-justify last-center md:text-xl">{`${program.Description}`}</p>

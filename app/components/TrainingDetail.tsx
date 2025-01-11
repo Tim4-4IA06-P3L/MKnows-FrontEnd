@@ -1,8 +1,8 @@
 "use client";
 import React, { FC, useState, useEffect } from "react";
-import CoverPage from "./CoverPage";
 import { Training } from "../Types";
 import PdfComponent from "./PdfComponent";
+import ThumbnailCover from "./ThumbnailCover";
 
 const TrainingDetail: FC<{ id: string }> = ({ id }) => {
   const [training, setTraining] = useState<Training | null>(null);
@@ -32,10 +32,10 @@ const TrainingDetail: FC<{ id: string }> = ({ id }) => {
   return (
     <>
       <main>
-        <CoverPage
+        <ThumbnailCover
           bgSrc={`${training.Thumbnail.url}`}
-          coverTitle={`${training.Title}`}
-          subTitle=""
+          title={`${training.Title}`}
+          subtitle=""
         />
 
         <PdfComponent

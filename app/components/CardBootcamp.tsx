@@ -18,26 +18,26 @@ const CardBootcamp: FC<cardBootcamp> = ({
 }) => {
   return (
     <div
-      className="relative basis-[380px] bg-center-top bg-contain bg-no-repeat"
+      className="relative basis-[410px] bg-center-top bg-contain bg-no-repeat"
       style={{
         backgroundImage: `url('${thumbnail}')`,
       }}
     >
       <Logo props="absolute top-2 left-2" />
       <div className="w-full">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 274.285 380">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 274.285 410">
           <polygon
             fill="#69BD45"
             points="0,132.766 0,104.286 274.285,145 274.285,151.146"
           />
           <polygon
             fill="#262262"
-            points="274.285,380 0,380 0,132.766 274.285,151.146 "
+            points="274.285,410 0,410 0,132.766 274.285,151.146 "
           />
         </svg>
       </div>
-      <div className="absolute top-[35%] p-5 w-full h-full">
-        <strong className="text-lg text-white">{title}</strong>
+      <div className="absolute top-[37%] px-5 w-full h-full">
+        <strong className="sm:text-lg text-white">{title}</strong>
         <br />
         <strong className="text-blue-300">{level}</strong>
         <div
@@ -47,7 +47,7 @@ const CardBootcamp: FC<cardBootcamp> = ({
           [&::-webkit-scrollbar-thumb]:bg-clip-content 
 					[&::-webkit-scrollbar-thumb]:bg-[#b3ff00]"
         >
-          <p className="text-justify text-sm text-white">{description}</p>
+          <p className="text-justify text-sm text-white pr-2">{description}</p>
         </div>
       </div>
       <a
