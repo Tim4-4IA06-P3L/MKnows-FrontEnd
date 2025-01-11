@@ -30,10 +30,10 @@ const OfficerDevPage = () => {
         </section>
 
         <section className="h-max w-full flex flex-col items-center p-10 md:p-20">
-          <strong className="text-2xl text-center mb-5 text-[#9DE000]">
-            Pengembangan Program Singkat Hybrid Proyek Lingkup
+          <strong className="text-2xl sm:text-3xl lg:text-5xl text-center mb-5 text-[#9DE000]">
+            Officer Development Crash Program
           </strong>
-          <p className="text-justify last-center">
+          <p className="text-center text-md lg:text-lg xl:text-xl 2xl:text-2xl">
             Officer Development Crash Program adalah program pelatihan & magang
             yang merupakan penciptaan kompetensi di bidang Sales, Credit &
             Collection, guna menghasilkan SDM yang produktif dan berkinerja
@@ -46,7 +46,7 @@ const OfficerDevPage = () => {
           </p>
         </section>
 
-        <section className="w-full space-y-8 p-10 md:p-20">
+        <section className="w-full space-y-8 p-10 md:p-20 text-sm lg:text-base">
           <div className="grid min-[320px]:max-md:grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-row justify-start items-center space-x-4 ">
               <div className="w-16 h-16 flex-shrink-0">
@@ -225,7 +225,7 @@ const OfficerDevPage = () => {
             <strong className="text-2xl text-[#9DE000]">
               Proses Perekrutan & Onboarding
             </strong>
-            <ol className="text-justify mt-5 text-left list-decimal list-inside marker:text-xl marker:text-[#1C75BC]">
+            <ol className="text-left mt-5 text-sm sm:text-base lg:text-lg list-decimal list-inside marker:text-xl marker:text-[#1C75BC]">
               <li>Recruitment 300 mahasiswa dilakukan bulan April 2022.</li>
               <li>
                 Persyaratan seleksi mahasiswa tingkat skripsi (tugas akhir),
@@ -251,8 +251,8 @@ const OfficerDevPage = () => {
             <strong className="text-2xl text-[#1C75BC]">
               Kerangka Program (Project Framework)
             </strong>
-            <p className="text-justify mt-5">
-              Aktivitas magang yang kami rancang adalah untuk mahasiswa dapat
+            <p className="text-left mt-5 text-sm sm:text-base lg:text-lg">
+              Aktivitas magang yang kami rancang adalah untuk mahasiswa
               dapat diterima bekerja di perusahaan keuangan, yang bernama
               Officer Development Crash Program (ODCP). ODCP memiliki
               keunggulan, karena mahasiswa diberikan kemampuan atau keahlian
@@ -260,9 +260,9 @@ const OfficerDevPage = () => {
               kebutuhan dari perusahaan keuangan yang menerimanya.
             </p>
 
-            <p className="text-justify mt-5">
+            <p className="text-left mt-5 text-sm sm:text-base lg:text-lg">
               Pendekatan kerja dan magang akan menggunakan pendekatan SCRUM
-              Framework, dimana pemegang akan diarahkan untuk merancang solusi
+              Framework, dimana pemagang akan diarahkan untuk merancang solusi
               melalui lima proses iteratif, yaitu Sprint Planning, Daily SCRUM,
               Sprint Review, Sprint Retrospective, dan Improvement.
             </p>
@@ -284,7 +284,7 @@ const OfficerDevPage = () => {
             <strong className="text-2xl text-[#9DE000]">
               Proses Pelatihan di Kampus Gratis
             </strong>
-            <p className="text-justify mt-5">
+            <p className="text-left mt-5 text-sm sm:text-base lg:text-lg">
               Materi diberikan secara synchronous (online meeting) dan
               asynchronous (video ajar dan white paper di{" "}
               <a
@@ -306,7 +306,7 @@ const OfficerDevPage = () => {
           <strong className="text-2xl text-[#9DE000] mb-8">
             Monitoring & Evaluasi
           </strong>
-          <p className="text-justify mb-8">
+          <p className="text-left mb-8 text-sm sm:text-base lg:text-lg">
             Peserta program akan dimonitor kerjanya meliputi :{" "}
           </p>
 
@@ -338,7 +338,7 @@ const OfficerDevPage = () => {
                   <strong className="min-[320px]:max-sm:text-sm">
                     Professional Working Attitude
                   </strong>
-                  <p className="text-justify min-[320px]:max-md:hidden">
+                  <p className="text-left min-[320px]:max-md:hidden">
                     Meliputi disiplin, intensi belajar, sopan santun, tingkat
                     energi, fokus, dan komitmen.
                   </p>
@@ -375,7 +375,7 @@ const OfficerDevPage = () => {
                   <strong className="min-[320px]:max-sm:text-sm">
                     Pantang Menyerah terhadap Hasil
                   </strong>
-                  <p className="text-justify min-[320px]:max-md:hidden">
+                  <p className="text-left min-[320px]:max-md:hidden">
                     Meliputi kualitas hasil penugasan, nilai kinerja, nilai uji
                     kompetensi.
                   </p>
@@ -410,7 +410,7 @@ const OfficerDevPage = () => {
                   <strong className="min-[320px]:max-sm:text-sm">
                     Penguasaan Kompetensi Teknis & Non Teknis
                   </strong>
-                  <p className="text-justify min-[320px]:max-md:hidden">
+                  <p className="text-left min-[320px]:max-md:hidden">
                     Meliputi standar kompetensi yang M-Knows terapkan, dimana
                     gap kompetensi akan diidentifikasi dan ditentukan solusi
                     perbaikannya.
@@ -419,7 +419,7 @@ const OfficerDevPage = () => {
               </div>
             </div>
           </div>
-          <p className="min-[320px]:max-sm:w-full w-[50%] mt-8 text-justify">
+          <p className="min-[320px]:max-sm:w-full w-[50%] mt-8 text-center text-sm sm:text-base lg:text-lg">
             Selama melakukan magang kerja, mahasiswa akan di monitoring dan
             evaluasi progress kerjanya oleh Kampus Gratis. Laporan yang dibuat
             akan di berikan akses kepada mahasiswa dan pihak perusahaan, sesuai

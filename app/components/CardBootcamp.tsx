@@ -47,7 +47,7 @@ const CardBootcamp: FC<cardBootcamp> = ({
           [&::-webkit-scrollbar-thumb]:bg-clip-content 
 					[&::-webkit-scrollbar-thumb]:bg-[#b3ff00]"
         >
-          <p className="text-justify text-sm text-white pr-2">{description}</p>
+          <p className="text-left text-sm text-white pr-2">{description}</p>
         </div>
       </div>
       <a

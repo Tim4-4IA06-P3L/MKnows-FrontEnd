@@ -23,13 +23,13 @@ const BootcampContent: FC<{ categories: Category[] }> = ({ categories }) => {
         </section>
 
         <section className="w-full flex flex-col items-center p-10 md:p-20">
-          <strong className="text-2xl md:text-4xl text-center mb-5">
+          <strong className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-center mb-5">
             Bootcamp Unggulan
           </strong>
-          <strong className="text-lg md:text-2xl text-center mb-5">
+          <strong className="text-xl sm:text-2xl lg:text-4xl text-center mb-5">
             Selamat Datang di M-Knows Consulting!
           </strong>
-          <p className="text-justify last-center md:text-xl">
+          <p className="text-center text-md lg:text-lg xl:text-xl 2xl:text-2xl">
             Dengan bangga mempersembahkan bootcamp unggulan kami yang dirancang
             khusus untuk membantu mengembangkan keterampilan dan pengetahuan
             Anda dalam berbagai bidang. Bootcamp kami menawarkan pelatihan

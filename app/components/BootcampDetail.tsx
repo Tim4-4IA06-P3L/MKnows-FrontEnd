@@ -38,7 +38,7 @@ const BootcampDetail: FC<{ id: string }> = ({ id }) => {
           subtitle={`${program.Level}`}
         />
         <section className="p-8 flex justify-center">
-          <p className="text-justify last-center md:text-xl">{`${program.Description}`}</p>
+          <p className="text-center md:text-xl">{`${program.Description}`}</p>
         </section>
 
         <PdfComponent

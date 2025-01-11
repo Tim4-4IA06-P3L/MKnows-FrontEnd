@@ -21,10 +21,10 @@ export default function ConsultingPage() {
         </section>
 
         <section className="w-full flex flex-col items-center p-10 md:p-20">
-          <strong className="text-2xl text-center mb-5">
+          <strong className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-center mb-5">
             Kemitraan SDM dan Bisnis Masa Depan
           </strong>
-          <p className="text-justify last-center">
+          <p className="text-center text-md lg:text-lg xl:text-xl 2xl:text-2xl">
             Mempunyai hubungan jangka panjang dengan perusahaan-perusahaan lokal
             dan internasional yang berbasis di Indonesia untuk mendukung
             pengembangan sumber daya manusia mereka serta strategi bisnis dan
@@ -54,10 +54,10 @@ export default function ConsultingPage() {
             <strong className="text-2xl text-[#1C75BC]">
               Kami telah menjadi mitra terpercaya (lebih dari 15 tahun)
             </strong>
-            <p className="text-justify mt-5">
+            <p className="text-left mt-5 text-sm sm:text-base lg:text-lg">
               Bagi perusahaan nasional dan multinasional dalam mendukung
               pengembangan bisnis dan strategi manajemen dan kompetensi sumber
-              daya manusia. Kebanggaan berasak dari hubungan jangka panjang yang
+              daya manusia. Kebanggaan berasal dari hubungan jangka panjang yang
               saling menguntungkan dengan berbagai perusahaaan yang memiliki
               visi untuk sukses, dan komitmen untuk mencapai kesuksesan itu
               melalui pengembangan sumber daya manusia.
@@ -73,7 +73,7 @@ export default function ConsultingPage() {
             <strong className="text-2xl text-[#ED8222]">
               Pengembangan Sumber Daya Manusia
             </strong>
-            <p className="text-justify mt-5">
+            <p className="text-left mt-5 text-sm sm:text-base lg:text-lg">
               Merupakan proses yang berkesinambungan yang membutuhkan komitmen
               yang tinggi dan manajemen yang baik untuk menjadi efektif dalam
               segala hal. Program pengembangan berkaitan dengan tahap
@@ -119,7 +119,7 @@ export default function ConsultingPage() {
             <strong className="text-2xl text-[#983EB1]">
               Program Pelatihan yang Efektif
             </strong>
-            <p className="text-justify mt-5">
+            <p className="text-left mt-5 text-sm sm:text-base lg:text-lg">
               Meningkatkan kompetensi sumber daya manusia untuk melakukan lebih
               baik dan nilai tambah bagi perusahaan serta institusi mereka.
               Pelatihan diperlukan untuk berbagai tujuan, misalnya mengembangkan
@@ -151,11 +151,11 @@ export default function ConsultingPage() {
             />
           </div>
 
-          <div className="absolute w-4/5 -translate-y-1/2 p-3 md:p-6 bg-[#AECFDF]">
-            <strong className="text-bold text-xl min-[320px]:max-md:text-md">
+          <div className="absolute w-4/5 -translate-y-1/2 p-3 md:p-6 bg-[#AECFDF] text-center">
+            <strong className="text-bold text-xl min-[320px]:max-md:text-md md:text-xl">
               M-Knows Consulting telah memperoleh banyak kesempatan bekerja sama
             </strong>
-            <p className="text-justify last-center min-[320px]:max-md:text-sm">
+            <p className="min-[320px]:max-md:text-sm md:text-lg">
               Dengan lembaga-lembaga swasta dan pemerintah pada proyek-proyek
               perumusan kebijakan, studi banding, serta undangan untuk menjadi
               pembicara tamu dalam berbagai kesempatan dan pertemuan atau

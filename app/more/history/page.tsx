@@ -20,16 +20,16 @@ const HistoryPage = () => {
         <div className="space-y-8 sm:space-y-12 lg:space-y-16 px-8">
           {/* Top Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
-            <div className="flex items-start md:order-1 order-2">
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+            <div className="flex items-center md:order-1 order-2">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 <span className="text-sky-600">M-Knows Consulting </span>
                 didirikan pertama kali pada bulan Juni 2003 dan berlokasi di
                 Petogogan Jakarta, dan pada tahun 2005 pindah ke Jl. Radio 4 No.
                 8B Kebayoran Baru Jakarta Selatan. Tahun 2008, M-Knows
                 Consulting membuka kantor cabangnya di Surabaya yang berlokasi
                 Jl. Raya Darmo Permai III sampai dengan sekarang. Tahun 2020
-                M-Knows membuka kantor untuk produksi solusi digital di jalan
-                raya Cirendeu no 61 Tangerang Selatan.
+                M-Knows membuka kantor untuk produksi solusi digital di Jl.
+                Raya Cirendeu No. 61 Tangerang Selatan.
               </p>
             </div>
             <div className="w-full md:order-2 order-1 flex justify-center md:justify-end">
@@ -55,7 +55,7 @@ const HistoryPage = () => {
               />
             </div>
             <div className="flex items-center">
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Sejak berdirinya,
                 <span className="text-sky-600"> M-Knows Consulting </span> telah
                 sukses bekerjasama dengan berbagai perusahaan nasional dan
@@ -74,8 +74,8 @@ const HistoryPage = () => {
 
           {/* Bottom Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 pb-8">
-            <div className="flex items-start md:order-1 order-2">
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+            <div className="flex items-center md:order-1 order-2">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 <span className="text-sky-600">M-Knows Consulting </span>
                 merupakan salah satu perusahaan Indonesia yang bergerak di
                 bidang consultant management. Didirikan pertama kali pada bulan

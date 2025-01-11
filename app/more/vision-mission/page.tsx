@@ -18,7 +18,7 @@ const VisionMissionPage = () => {
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold">Visi</h1>
             </div>
-            <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-8">
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8">
               <div className="md:w-1/2 mb-5 md:mb-0">
                 <Image
                   width={500}
@@ -34,7 +34,7 @@ const VisionMissionPage = () => {
                 />
               </div>
               <div className="md:w-1/2">
-                <p className="text-black leading-relaxed text-justify">
+                <p className="text-black leading-relaxed text-left text-sm sm:text-base lg:text-lg">
                   Menjadikan M-Knows Consulting sebagai one stop solution dalam
                   kegiatan konsultasi manajemen Sumber daya manusia, solusi
                   digital dan penyelenggaraan pelatihan, yang menekankan
@@ -52,9 +52,9 @@ const VisionMissionPage = () => {
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold">Misi</h1>
             </div>
-            <div className="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-8">
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8">
               <div className="md:w-1/2 order-last md:order-first mt-5 md:mt-0">
-                <div className="space-y-2 text-black leading-relaxed">
+                <div className="space-y-2 text-black leading-relaxed text-sm sm:text-base lg:text-lg">
                   <p>
                     1. Memberikan pelayanan terbaik dalam penyelenggaraan jasa
                     layanan, sesuai dengan kompetensi M-Knows.

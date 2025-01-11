@@ -20,9 +20,9 @@ const OutboundPage = () => {
       alt: "Paket Outbound 2 Hari",
     },
     {
-      title: "Paket Outbound 13 Hari",
+      title: "Paket Outbound 3 Hari",
       src: "/outbound/ob4.jpeg",
-      alt: "Paket Outbound 13 Hari",
+      alt: "Paket Outbound 3 Hari",
     },
   ];
 
@@ -53,8 +53,8 @@ const OutboundPage = () => {
         {/* Text */}
         <div className="space-y-8 sm:space-y-12 lg:space-y-16 max-w-7xl mx-auto pb-20">
           <div className="flex items-center mx-10 md:mx-20 lg:mx-40 xl:mx-0">
-            <p className="text-gray-700 sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-center">
-              Outbound merupakan jenis latihan yang memanfaatkan keunggulan alam
+            <p className="text-black text-md lg:text-lg xl:text-xl 2xl:text-2xl text-center">
+              Outbound merupakan jenis latihan yang memanfaatkan alam
               (outdoor) untuk membangun kerjasama tim dan pengembangan diri yang
               disimulasi dalam outbound training melalui permainan-permainan
               outbound yang edukatif baik dilakukan secara individu maupun
@@ -75,15 +75,15 @@ const OutboundPage = () => {
               className="rounded-lg shadow-lg object-cover"
             />
           </div>
-          <div className="md:w-1/2 w-full text-gray-800 text-justify xl:mr-20">
-            <p className="text-lg leading-relaxed">
+          <div className="md:w-1/2 w-full text-black text-left xl:mr-20">
+            <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
               Paket Outbound yang kami tawarkan tidak hanya mencakup tantangan
               fisik dan mental, tetapi juga tantangan intelegensia. Program ini
               dirancang dengan permainan dan kegiatan yang dapat memberikan
               perubahan karakter, sehingga individu menjadi lebih baik dan
               positif.
             </p>
-            <p className="mt-4 text-lg leading-relaxed">
+            <p className="mt-4 text-sm sm:text-base lg:text-lg leading-relaxed">
               Outbound training sangat cocok untuk perusahaan, baik swasta
               maupun instansi pemerintah, yang ingin meningkatkan kinerja
               karyawan mereka. Program ini dapat meningkatkan kreativitas,
@@ -97,7 +97,7 @@ const OutboundPage = () => {
         </div>
 
         {/* outbound packages */}
-        <h2 className="text-xl text-left pl-10 md:pl-24 pt-20 pb-8">
+        <h2 className="text-sm sm:text-base lg:text-lg text-left pl-10 md:pl-24 pt-20 pb-8">
           Paket Outbound Training yang kami tawarkan meliputi:
         </h2>
         <div className="flex flex-wrap justify-center gap-8 px-8">
@@ -118,7 +118,7 @@ const OutboundPage = () => {
                 />
               </div>
               <div className="w-1/2 pl-4 flex items-stretch justify-center">
-                <h2 className="md:text-2xl text-lg text-lime-700">
+                <h2 className="md:text-2xl text-sm sm:text-md lg:text-lg text-lime-700">
                   {pkg.title}
                 </h2>
               </div>
@@ -145,7 +145,7 @@ const OutboundPage = () => {
                   className="transition-transform duration-300 transform"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2">
-                  <p className="text-white text-lg font-semibold text-center">
+                  <p className="text-white text-sm sm:text-base lg:text-lg font-semibold text-center">
                     {video.title}
                   </p>
                 </div>

@@ -21,8 +21,8 @@ const Card: FC<card> = ({ title, imgSrc, link }) => {
             objectFit: "cover",
           }}
         />
-        <div className="absolute inset-0 bg-black bg-opacity-20 flex items-end p-4">
-          <h3 className="text-white font-semibold text-lg">{title}</h3>
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end p-4">
+          <h3 className="text-white text-lg">{title}</h3>
         </div>
       </div>
     </Link>

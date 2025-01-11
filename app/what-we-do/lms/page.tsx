@@ -16,10 +16,10 @@ const Home: React.FC = () => {
       <div className="bg-white min-h-screen">
         {/* Section 1: Title */}
         <section className="text-center mb-16 p-8">
-          <p className="text-black text-2xl">
+          <p className="text-black text-2xl sm:text-3xl lg:text-5xl font-semibold">
             Pengembangan LMS Berbasis Moodle
           </p>
-          <p className="text-black mt-2 text-lg text-justify last-center">
+          <p className="text-black mt-2 text-md lg:text-lg xl:text-xl 2xl:text-2xl text-center">
             Kami mengembangkan Learning Management System (LMS) menggunakan
             Moodle dengan fitur fleksibel untuk kegiatan belajar, pengaturan
             konten multimedia, dan dukungan untuk interaksi belajar yang
@@ -39,13 +39,13 @@ const Home: React.FC = () => {
             <h3 className="text-xl font-bold text-lime-700 mb-2">
               Modul Interaktif
             </h3>
-            <p className="text-black text-lg text-justify">
-              Modul Interaktif Modul pembelajaran yang kami kembangkan mengacu
+            <p className="text-black text-sm sm:text-base lg:text-lg text-left">
+              Modul pembelajaran yang kami kembangkan mengacu
               pada konsep Activity Based Learning dengan memperhatikan level
               interaktif dari setiap informasi yang perlu disampaikan.
             </p>
-            <p className="text-black mt-2 text-lg text-justify">
-              Penggunaan Grafis digunakan untuk menarik lebih banyak perhatian
+            <p className="text-black mt-2 text-sm sm:text-base lg:text-lg text-left">
+              Penggunaan grafis digunakan untuk menarik lebih banyak perhatian
               peserta dalam pembelajaran. Kami dapat memberi Anda grafis dalam
               bentuk 2D, 3D, still atau bergerak tergantung pada kebutuhan
               instruksional Anda.
@@ -87,7 +87,7 @@ const Home: React.FC = () => {
               {
                 level: "Interaktivitas Level 2",
                 description:
-                  "Modul E-Learning Interaktif dengan strategi penyampaian Explanatory untuk menyampaikan konsep dan pengetahuan yang lebih dalam dengan dukungan ilustrasi grafis.",
+                  "Modul E-Learning Interaktif dengan strategi penyampaian explanatory untuk menyampaikan konsep dan pengetahuan yang lebih dalam dengan dukungan ilustrasi grafis.",
                 icon: (
                   <svg
                     width={40}
@@ -116,7 +116,7 @@ const Home: React.FC = () => {
               {
                 level: "Interaktivitas Level 3",
                 description:
-                  "Modul E-Learning Interaktif dengan strategi penyampaian Pengalaman untuk mencapai pemahaman maksimal atas suatu pengetahuan dengan simulasi skenario kasus nyata dan skenario percabangan.",
+                  "Modul E-Learning Interaktif dengan strategi penyampaian pengalaman untuk mencapai pemahaman maksimal atas suatu pengetahuan dengan simulasi skenario kasus nyata dan skenario percabangan.",
                 icon: (
                   <svg
                     width={38}
@@ -143,7 +143,7 @@ const Home: React.FC = () => {
                 <h4 className="text-lg font-semibold text-lime-700 mb-2">
                   {item.level}
                 </h4>
-                <p className="text-black">{item.description}</p>
+                <p className="text-black text-sm sm:text-base">{item.description}</p>
               </div>
             ))}
           </div>
@@ -154,12 +154,12 @@ const Home: React.FC = () => {
           <h2 className="text-xl font-semibold text-teal-700 mb-4">
             Video Instruksional
           </h2>
-          <p className="text-black text-lg text-justify">
+          <p className="text-black text-sm sm:text-base lg:text-lg text-left">
             Video pembelajaran merupakan alternatif yang efektif untuk
             meningkatkan kualitas kegiatan belajar. Kami menyediakan berbagai
             jenis video sesuai kebutuhan instruksional Anda.
           </p>
-          <p className="text-black mt-2 text-lg text-justify">
+          <p className="text-black mt-2 text-sm sm:text-base lg:text-lg text-left">
             Pilihannya termasuk video live action yang menampilkan pengajar atau
             demonstrasi langsung. Selain itu, kami juga menawarkan video animasi
             yang menarik dan interaktif. Dengan pilihan ini, Anda dapat memilih
@@ -172,7 +172,7 @@ const Home: React.FC = () => {
               {
                 title: "Animasi 2D",
                 description:
-                  "Video penjelasan animasi untuk menyampaikan informasi seperti tutorial program atau platform dan informasi lainnya dengan bantuan host karakter animasi dan ilustrasi animasi 3D Animation.",
+                  "Video penjelasan animasi untuk menyampaikan informasi seperti tutorial program atau platform dan informasi lainnya dengan bantuan host karakter animasi dan ilustrasi animasi 3D.",
                 icon: (
                   <svg
                     width={40}
@@ -227,7 +227,7 @@ const Home: React.FC = () => {
               {
                 title: "Aksi Nyata",
                 description:
-                  "Video aksi langsung profesional untuk tutorial atau konsep video wawancara dengan sinematografi menengah dan animasi grafis gerak Video Penjelasan.",
+                  "Video aksi langsung profesional untuk tutorial atau konsep video wawancara dengan sinematografi menengah dan animasi grafis gerak.",
                 icon: (
                   <svg
                     width={40}
@@ -286,7 +286,7 @@ const Home: React.FC = () => {
                 <h4 className="text-lg font-semibold text-lime-700 mb-2">
                   {item.title}
                 </h4>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="text-black text-sm sm:text-base">{item.description}</p>
               </div>
             ))}
           </div>

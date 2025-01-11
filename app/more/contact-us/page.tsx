@@ -29,7 +29,7 @@ const ContactUsPage = () => {
           </div>
           <div className="basis-[50%] flex flex-col justify-start gap-5">
             <h1 className="text-green-800 text-4xl">CONTACT US</h1>
-            <p className="text-justify text-2xl">
+            <p className="text-left text-2xl">
               Jika Anda memiliki pertanyaan atau membutuhkan bantuan lebih
               lanjut, tim kami siap membantu! Hubungi kami langsung melalui
               WhatsApp!

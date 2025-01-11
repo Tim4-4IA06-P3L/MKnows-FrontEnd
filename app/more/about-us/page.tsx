@@ -38,7 +38,7 @@ const services = [
 
 const competencies = [
   "Selling & Sales Management Competencies.",
-  "Credit analysis Competency.",
+  "Credit Analysis Competency.",
   "Debt Collection Competency.",
   "Leadership, Managerial, & Supervisory Competencies.",
   "Training and Facilitating Competencies.",
@@ -56,8 +56,8 @@ const AboutUsPage = () => {
         <div className="space-y-8 sm:space-y-12 lg:space-y-16 px-8">
           {/* Top Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
-            <div className="flex items-start md:order-1 order-2">
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+            <div className="flex items-center md:order-1 order-2">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 <span className="text-sky-600">M-Knows Consulting </span>
                 adalah merk yang dipakai bersama oleh PT. Menara Indonesia dan
                 PT. Menara Pengetahuan Indonesia. PT. Menara Indonesia adalah
@@ -93,23 +93,21 @@ const AboutUsPage = () => {
                 className="rounded-lg shadow-lg object-cover"
               />
             </div>
-            <div className="flex flex-col justify-between">
-              <div>
-                <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
-                  Sejak berdiri, M-Knows Consulting telah sukses bekerjasama
-                  dengan beragam perusahaan nasional dan multinasional, dengan
-                  kualitas kerja yang memuaskan, dibuktikan dengan tingginya
-                  repeat order dan customer yang loyal.
-                </p>
-                <br />
-                <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify ">
-                  Melalui cabang Jakarta & Surabaya, M-Knows Consulting telah
-                  sukses melayani beragam perusahaan dengan kualitas kerja yang
-                  memuaskan, sesuai keahliannya dan pendekatan konsultasi yang
-                  menekankan pada sifat Applicative, Contemporary, High Impact,
-                  Fun & Motivational.
-                </p>
-              </div>
+            <div className="flex flex-col justify-center items-center">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
+                Sejak berdiri, M-Knows Consulting telah sukses bekerja sama
+                dengan beragam perusahaan nasional dan multinasional, dengan
+                kualitas kerja yang memuaskan, dibuktikan dengan tingginya
+                repeat order dan customer yang loyal.
+              </p>
+              <br />
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left ">
+                Melalui cabang Jakarta & Surabaya, M-Knows Consulting telah
+                sukses melayani beragam perusahaan dengan kualitas kerja yang
+                memuaskan, sesuai keahliannya dan pendekatan konsultasi yang
+                menekankan pada sifat Applicative, Contemporary, High Impact,
+                Fun & Motivational.
+              </p>
             </div>
           </div>
         </div>
@@ -135,7 +133,7 @@ const AboutUsPage = () => {
                       height: "auto",
                     }}
                   />
-                  <p className="ml-4 text-gray-700 font-medium">
+                  <p className="ml-4 text-black font-medium">
                     {service.title}
                   </p>
                 </div>
@@ -151,11 +149,11 @@ const AboutUsPage = () => {
             </h2>
             <ol className="list-decimal list-inside space-y-2">
               {competencies.map((competency, index) => (
-                <li key={index} className="text-lg flex items-start">
+                <li key={index} className="text-sm sm:text-base lg:text-lg flex items-start">
                   <span className="text-blue-700 font-bold mr-2">
                     {index + 1}.
                   </span>
-                  <span className="text-gray-700">{competency}</span>
+                  <span className="text-black">{competency}</span>
                 </li>
               ))}
             </ol>
@@ -171,16 +169,17 @@ const AboutUsPage = () => {
                 src="/about-us/aboutus3.jpeg"
                 alt="Training Session"
                 style={{
-                  width: "auto",
-                  height: "100%",
+                  width: "100%",
+                  height: "auto",
                   objectFit: "cover",
+                  objectPosition: "center",
                 }}
                 className="w-full h-auto"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center px-6">
-                <p className="text-white min-[320px]:max-[450px]:text-[10px] min-[450px]:max-sm:text-sm sm:text-lg leading-relaxed text-justify last-center">
+                <p className="text-white min-[320px]:max-[450px]:text-[10px] min-[450px]:max-sm:text-sm sm:text-lg leading-relaxed text-center">
                   Program pelatihan unggulan yang banyak diambil klien M-Knows
-                  antara lain meliputi topik: Marketing, Sales Distribution,
+                  antara lain meliputi topik Marketing, Sales Distribution,
                   Service, Leadership, Managerial, Supervisory, Credit
                   Management, Debt Collection, Filing, Office, 5S & Warehouse
                   Management, Finance & Banking, Persiapan Pensiun, Train The
@@ -193,7 +192,7 @@ const AboutUsPage = () => {
 
             {/* Bagian Bawah dengan Background Biru */}
             <div className="bg-blue-50 px-6 py-4 text-center">
-              <p className="min-[320px]:max-[450px]:text-[10px] min-[450px]:max-sm:text-sm sm:text-lg text-gray-700 text-justify last-center">
+              <p className="min-[320px]:max-[450px]:text-[10px] min-[450px]:max-sm:text-sm sm:text-lg text-black text-center">
                 Kami percaya model pelatihan kontemporer lebih baik dibandingkan
                 pendekatan yang klasik dan konservatif.{" "}
                 <span className="font-bold">

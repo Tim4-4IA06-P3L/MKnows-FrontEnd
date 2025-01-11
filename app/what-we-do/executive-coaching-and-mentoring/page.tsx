@@ -24,10 +24,10 @@ export default function CoachingPage() {
         </section>
 
         <section className="w-full flex flex-col items-center p-10 md:p-20">
-          <strong className="text-2xl text-center mb-5">
+          <strong className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-center mb-5">
             Peningkatan Keterampilan Kerja untuk Tim Efektif
           </strong>
-          <p className="text-justify last-center">
+          <p className="text-center text-md lg:text-lg xl:text-xl 2xl:text-2xl">
             Program ini bertujuan untuk membantu peserta dalam memperoleh
             pengetahuan dan keterampilan fungsional yang dapat mereka terapkan
             di tempat kerja, khususnya bagi Anda yang memiliki tim (rekan
@@ -47,10 +47,10 @@ export default function CoachingPage() {
             <strong className="text-2xl text-[#1C75BC]">
               Tujuan Pendampingan
             </strong>
-            <p className="text-justify mt-5">
+            <p className="text-left mt-5 text-sm sm:text-base lg:text-lg">
               Mengatasi semua kesulitan yang di hadapi bawahan dalam mengerjakan
-              tugas atau performance yang tidak mencapai dengan ketentuan yang
-              diperintahkan sehingga daripada itu meningkatkan keahlian tertentu
+              tugas atau performance yang tidak mencapai ketentuan yang
+              diperintahkan sehingga dapat meningkatkan keahlian tertentu
               di dalam pekerjaan yang kita kerjakan untuk memberikan kepercayaan
               yang lebih besar dalam pekerjaan yang kita lakukan saat ini.
             </p>
@@ -65,12 +65,12 @@ export default function CoachingPage() {
             <strong className="text-2xl text-[#F0C413]">
               Topik yang Ditawarkan
             </strong>
-            <ol className="list-decimal list-inside mt-5 text-left">
+            <ol className="list-decimal list-inside mt-5 text-left text-sm sm:text-base lg:text-lg">
               <li>Executive Coaching</li>
               <li>Leadership Coaching</li>
               <li>Business Mentoring</li>
             </ol>
-            <p className="text-justify mt-5">
+            <p className="text-left mt-5 text-sm sm:text-base lg:text-lg">
               Untuk mengembangkan kompetensi dan keterampilan peserta sehingga
               mampu menjadi sumber daya yang handal dalam pencapaian target
               perusahaan.

@@ -33,7 +33,7 @@ const FacilitatorPage = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-thin text-sky-600 mb-4">
                 Bunaiya
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Bunaiya adalah ahli strategi penjualan dan pengembangan SDM di
                 M-Knows Consulting dengan latar belakang dari Universitas
                 Indonesia. Pengalaman luasnya meliputi manajemen proyek, Six
@@ -50,7 +50,7 @@ const FacilitatorPage = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-thin text-sky-600 mb-4">
                 Hasniati Halim
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Hasni adalah praktisi sales & marketing di industri perhotelan
                 dengan latar belakang pendidikan sarjana di Public Relations
                 dari Universitas Padjajaran dan gelar master di Manajemen
@@ -87,7 +87,7 @@ const FacilitatorPage = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-thin text-sky-600 mb-4">
                 Rolando Gunawan
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Rolando Gunawan telah bergabung dengan M-Knows Consulting sejak
                 2008 dan menjabat sebagai Senior Consultant. Sebelumnya, ia
                 memiliki pengalaman di industri Forex dan Pariwisata selama
@@ -107,7 +107,7 @@ const FacilitatorPage = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-thin text-sky-600 mb-4">
                 Alam Daru
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 M. Alam memiliki lebih dari 17 tahun pengalaman di bidang
                 Pengembangan SDM, dimulai dari industri layanan keuangan. Dia
                 memiliki keahlian dalam Marketing, Selling, Lobbying,
@@ -142,7 +142,7 @@ const FacilitatorPage = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-thin text-sky-600 mb-4">
                 Tri Sulistyaningsih
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Tri Sulistyaningsih adalah Konsultan dan Manajer Senior di
                 M-Knows Consulting dengan lebih dari 10 tahun pengalaman dalam
                 konsultasi dan pelatihan untuk perusahaan-perusahaan seperti
@@ -160,7 +160,7 @@ const FacilitatorPage = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-thin text-sky-600 mb-4">
                 Dwi Priyanto
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Dwi, lulusan STIMIK Management Informatika, telah memiliki karir
                 profesional selama lebih dari 30 tahun di industri perhotelan,
                 perbankan, dan multifinance, termasuk di Hilton Hotel, Digicon
@@ -197,10 +197,10 @@ const FacilitatorPage = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-thin text-sky-600 mb-4">
                 Erlina Novita, SE Akt
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Erlina Novita adalah Senior Consultant & Trainer di M-Knows
                 Consulting dengan sertifikasi Trainer BNSP, juga menjabat
-                sebagai Corporate Secretary. Dia lulus dari FEBUI dalam bidang
+                sebagai Corporate Secretary. Dia lulus dari FEB UI dalam bidang
                 akuntansi dan memiliki pengalaman di Bank Bumi Daya dan Bank
                 Mandiri. Karirnya meliputi posisi Marketing Officer di Kanwil
                 Sumbagsel & Babel, Wakil Pimpinan Cabang Mabes TNI Cilangkap,
@@ -217,7 +217,7 @@ const FacilitatorPage = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-thin text-sky-600 mb-4">
                 Dedy Kusuma
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Dedy Kusuma adalah Consultant dan Sales Team Group Head di
                 M-Knows Consulting, lulusan Universitas Trisakti dengan latar
                 belakang di industri telekomunikasi sebelum bergabung. Dengan
@@ -256,7 +256,7 @@ const FacilitatorPage = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-thin text-sky-600 mb-4">
                 Dewi Puji Astuti
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Dewi Puji Astuti adalah konsultan di M-Knows Consulting dengan
                 pengalaman lebih dari 8 tahun. Dia telah menangani konsultasi
                 dan pelatihan untuk berbagai perusahaan nasional dan
@@ -274,9 +274,9 @@ const FacilitatorPage = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-thin text-sky-600 mb-4">
                 Ricky Dahlan, SE, Akt, MM
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Ricky Dahlan adalah Senior Consultant/Trainer dan Direktur
-                M-Knows Consulting. Berpendidikan Sarjana Akuntansi dari FEBUI
+                M-Knows Consulting. Berpendidikan Sarjana Akuntansi dari FEB UI
                 dan Magister Manajemen Keuangan dari UGM, Ricky memulai karir di
                 Citibank, lalu Ernst & Young, kemudian di Bank Mandiri dan Bank
                 Danamon sebagai AVP. Dia juga pernah menjadi Head of Debt
@@ -312,9 +312,9 @@ const FacilitatorPage = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-thin text-sky-600 mb-4">
                 Santy Dewi
               </h2>
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Berpengalaman sebagai praktisi selama lebih dari 12 tahun
-                diberagam Industri antara lain Multifinance, Bursa Keuangan,
+                di beragam Industri antara lain Multifinance, Bursa Keuangan,
                 Penerbangan, Kontraktor, dan Pendidikan. Kelas yang Santy
                 bawakan senantiasa Fun dan Energik. Pengetahuan beliau bersifat
                 Aplikatif, sangat sesuai bagi mereka yang bekerja dibagian

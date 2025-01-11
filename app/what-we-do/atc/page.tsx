@@ -25,13 +25,13 @@ export default function AtcPage() {
         </section>
 
         <section className="w-full flex flex-col items-center p-10 md:p-20">
-          <strong className="text-2xl text-center mb-5">
+          <strong className="text-2xl sm:text-3xl lg:text-5xl text-center mb-5">
             ATC : Solusi Integratif untuk Penilaian Potensi dan Kompetensi SDM
           </strong>
-          <p className="text-justify last-center">
+          <p className="text-center text-md lg:text-lg xl:text-xl 2xl:text-2xl">
             Adalah mitra (salah satu solusi) dalam mengukur dan menilai potensi
             serta kompetensi dari sumber daya manusia. ATC menawarkan solusi
-            integratif melalui metode terstandar dan sesuai dengan kebutuhan
+            terintegrasi melalui metode terstandar dan sesuai dengan kebutuhan
             untuk menyesuaikan dengan kebutuhan pengembangan bakat/minat
             individu.
           </p>
@@ -49,8 +49,8 @@ export default function AtcPage() {
             <strong className="text-2xl text-[#9DE000]">
               ATC Menawarkan Solusi Integratif
             </strong>
-            <p className="text-justify mt-5">
-              Untuk mengoptimasi pengembangan bakat melalui metode dan sarana
+            <p className="text-left mt-5 text-sm sm:text-base lg:text-lg">
+              Untuk mengoptimalisasi pengembangan bakat melalui metode dan sarana
               yang valid dan terpercaya. Kami juga memberikan laporan yang unik
               dan dipersonalisasikan oleh para asesor dan penasihat kami untuk
               memberikan informasi yang lengkap serta pengembangan jangka
@@ -67,7 +67,7 @@ export default function AtcPage() {
             <strong className="text-2xl text-[#ED8222]">
               Solusi-Solusi yang Ditawarkan Oleh ATC
             </strong>
-            <p className="text-justify mt-5">
+            <p className="text-left mt-5 text-sm sm:text-base lg:text-lg">
               Sesuai dengan setiap Individual Development Plan serta dapat
               menangkap potensi serta kompetensi dari para sumber daya manusia
               serta dapat memberikan gambaran yang jelas dari profil sumber daya
@@ -93,7 +93,7 @@ export default function AtcPage() {
             <strong className="text-2xl text-[#F0C413]">
               Program Pelatihan yang Efektif
             </strong>
-            <p className="text-justify mt-5">
+            <p className="text-left mt-5 text-sm sm:text-base lg:text-lg">
               Meningkatkan kompetensi sumber daya manusia untuk melakukan lebih
               baik dan nilai tambah bagi perusahaan serta institusi mereka.
               Pelatihan diperlukan untuk berbagai tujuan, misalnya mengembangkan

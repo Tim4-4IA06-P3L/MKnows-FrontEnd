@@ -16,7 +16,7 @@ const InHouseTrainingPage = () => {
       <span className="text-blue-600 font-semibold text-base sm:text-lg flex-shrink-0">
         {number}.
       </span>
-      <p className="text-gray-800 text-justify text-sm sm:text-base lg:text-lg">
+      <p className="text-black text-left text-sm sm:text-base lg:text-lg">
         {text}
       </p>
     </div>
@@ -44,14 +44,14 @@ const InHouseTrainingPage = () => {
               />
             </div>
             <div className="flex items-center">
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Pelatihan internal merupakan program pelatihan yang
-                diselenggarakan oleh M-KNOWS CONSULTING bekerjasama dengan
+                diselenggarakan oleh M-KNOWS CONSULTING yang bekerja sama dengan
                 perusahaan dalam pemantapan materi, meningkatkan skill karyawan
-                sehingga meningkatkan keunggulan kompetitif bidang Sumberdaya
+                sehingga meningkatkan keunggulan kompetitif di bidang Sumber Daya
                 Manusia dengan materi tertentu seperti Selling Skills,
                 Leadership, Executive Coaching &amp; Business Mentoring, Train
-                The Trainer, Collection Skills, Credit Analysis dan lain-lain
+                The Trainer, Collection Skills, Credit Analysis, dan lain-lain
                 sesuai kebutuhan perusahaan atau lembaga.
               </p>
             </div>
@@ -60,7 +60,7 @@ const InHouseTrainingPage = () => {
           {/* Middle Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
             <div className="flex items-center md:order-1 order-2">
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 M-KNOWS CONSULTING siap membantu mengembangkan program
                 pelatihan, materi, dan jadwal yang sesuai dengan kebutuhan
                 bisnis. Sejak tahun 2003, kami telah menyelenggarakan pelatihan
@@ -95,13 +95,13 @@ const InHouseTrainingPage = () => {
               />
             </div>
             <div className="flex items-center">
-              <p className="text-gray-700 text-sm sm:text-base lg:text-lg text-justify">
+              <p className="text-black text-sm sm:text-base lg:text-lg text-left">
                 Sistem penyelenggaraan pelatihan dapat diadakan dalam kelas
                 kecil (10-20 peserta) atau kelas besar (lebih dari 50 peserta).
                 Pelatihan diselenggarakan di tempat, tanggal, dan waktu yang
                 disepakati, biasanya berlangsung selama beberapa hari dari jam
                 08.00 hingga 17.00, atau sesuai kebutuhan perusahaan. Jumlah
-                pertemuan bisa disesuaikan. In-house training dapat dilakukan di
+                pertemuan dapat disesuaikan. In-house training dapat dilakukan di
                 luar Jabodetabek dan di seluruh wilayah Indonesia.
               </p>
             </div>
@@ -115,7 +115,7 @@ const InHouseTrainingPage = () => {
             <div className="space-y-4 max-w-4xl mx-auto">
               <TrainingLocation
                 number="1"
-                text="Tempat Penyelenggaraan Training: Pelatihan dapat diselenggarakan di Perusahaan atau internal. Pelatihan dapat diselenggarakan di tempat yang diinginkan misal: Hotel, Training Center perusahaan, dll."
+                text="Tempat Penyelenggaraan Training: Pelatihan dapat diselenggarakan di perusahaan atau internal. Pelatihan dapat diselenggarakan di tempat yang diinginkan, seperti hotel, training center perusahaan, dll."
               />
               <TrainingLocation
                 number="2"
@@ -123,7 +123,7 @@ const InHouseTrainingPage = () => {
               />
               <TrainingLocation
                 number="3"
-                text="Durasi : Durasi pelatihan dapat disesuaikan dengan kebutuhan, mulai dari 1 hari sampai beberapa hari."
+                text="Durasi : Durasi pelatihan dapat disesuaikan dengan kebutuhan, mulai dari 1 hari hingga beberapa hari."
               />
               <TrainingLocation
                 number="4"
