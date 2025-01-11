@@ -68,7 +68,7 @@ const TrainingScheduleForm: FC<{ type: string }> = ({ type }) => {
                 {/* Calendar Icon - Using Image */}
                 <div className="absolute inset-0 rounded-xl overflow-hidden">
                   <Image
-                    src="/calendar.png"
+                    src="/training/calendar.png"
                     alt="Calendar Icon"
                     fill={true}
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -94,6 +94,8 @@ const TrainingScheduleForm: FC<{ type: string }> = ({ type }) => {
                   </label>
                   <input
                     value={formData.Name}
+                    pattern="[A-Za-z '\-\.]+"
+                    title="Hanya boleh diisi huruf besar (A-Z), huruf kecil (a-z), strip (-), petik satu ('), dan titik (.)"
                     onChange={(e) =>
                       setFormData({ ...formData, Name: e.target.value })
                     }
@@ -142,6 +144,8 @@ const TrainingScheduleForm: FC<{ type: string }> = ({ type }) => {
                   </label>
                   <input
                     value={formData.Office_Number}
+                    pattern="[0-9]+"
+                    title="Hanya boleh diisi angka (0-9)"
                     onChange={(e) =>
                       setFormData({
                         ...formData,
@@ -161,6 +165,8 @@ const TrainingScheduleForm: FC<{ type: string }> = ({ type }) => {
                   </label>
                   <input
                     value={formData.WhatsApp_Number}
+                    pattern="[0-9]+"
+                    title="Hanya boleh diisi angka (0-9)"
                     onChange={(e) =>
                       setFormData({
                         ...formData,
