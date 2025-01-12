@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import CoverPage from "../../components/CoverPage";
+import LMSVideo from "@/app/components/LMSVideo";
 
-const Home: React.FC = () => {
+const LMSPage: React.FC = () => {
   return (
     <main>
       <section className="pb-10">
@@ -293,26 +294,10 @@ const Home: React.FC = () => {
         </section>
 
         {/* Section 4: Gambar */}
-        <section className="relative w-full min-[320px]:max-md:mt-32 mt-20">
-          <Link className="relative w-full h-[500px]" href="#">
-            <Image
-              src="/lms/LMSVideo.png"
-              alt="Kerja Sama"
-              width={1000}
-              height={800}
-              priority
-              style={{
-                width: "100%",
-                height: "auto",
-                objectFit: "contain",
-                objectPosition: "center",
-              }}
-            />
-          </Link>
-        </section>
+        <LMSVideo />
       </div>
     </main>
   );
 };
 
-export default Home;
+export default LMSPage;

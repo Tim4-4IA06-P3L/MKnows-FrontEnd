@@ -136,7 +136,8 @@ const Footer = () => {
         <a
           className="rounded-md h-5 w-5 flex items-center justify-center
 				bg-neutral-200 p-5 hover:rounded-3xl transition-all linear duration-300"
-          href="#"
+          href="https://www.youtube.com/@M-KnowsConsulting"
+          target="_blank"
         >
           <div>
             <svg

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CoverPage from "../../components/CoverPage";
+import OutboundVideoSection from "@/app/components/OutboundVideoSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -27,11 +28,31 @@ const OutboundPage = () => {
   ];
 
   const videos = [
-    { title: "Fun Offroad", src: "/outbound/ob5.jpeg" },
-    { title: "Drone Video", src: "/outbound/ob6.jpeg" },
-    { title: "Management Training Program", src: "/outbound/ob7.jpeg" },
-    { title: "Motivasi Outbound", src: "/outbound/ob8.jpeg" },
-    { title: "Family Employee & Gathering", src: "/outbound/ob9.jpeg" },
+    {
+      title: "Fun Offroad",
+      src: "/outbound/ob5.jpeg",
+      videoSrc: "https://e3aqifnbdssfg3bh.public.blob.vercel-storage.com/offroad.mp4"
+    },
+    {
+      title: "Drone Video",
+      src: "/outbound/ob6.jpeg",
+      videoSrc: "https://e3aqifnbdssfg3bh.public.blob.vercel-storage.com/drone-video.mp4"
+    },
+    {
+      title: "Management Training Program",
+      src: "/outbound/ob7.jpeg",
+      videoSrc: "https://e3aqifnbdssfg3bh.public.blob.vercel-storage.com/management-training.mp4"
+    },
+    {
+      title: "Motivasi Outbound",
+      src: "/outbound/ob8.jpeg",
+      videoSrc: "https://e3aqifnbdssfg3bh.public.blob.vercel-storage.com/motivasi.mp4"
+    },
+    {
+      title: "Family Employee & Gathering",
+      src: "/outbound/ob9.jpeg",
+      videoSrc: "https://e3aqifnbdssfg3bh.public.blob.vercel-storage.com/gathering.mp4"
+    },
   ];
 
   return (
@@ -127,32 +148,7 @@ const OutboundPage = () => {
         </div>
 
         {/* video section */}
-        <section className="py-10 px-20">
-          <h2 className="text-center text-3xl font-semibold mb-16">
-            Video Outbound
-          </h2>
-          <div className="flex flex-wrap justify-center gap-8">
-            {videos.map((video, index) => (
-              <div
-                key={index}
-                className="relative w-80 h-48 rounded-lg overflow-hidden shadow-lg flex-none"
-              >
-                <Image
-                  src={video.src}
-                  alt={video.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="transition-transform duration-300 transform"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2">
-                  <p className="text-white text-sm sm:text-base lg:text-lg font-semibold text-center">
-                    {video.title}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+        <OutboundVideoSection videos={videos} />
       </main>
     </>
   );
