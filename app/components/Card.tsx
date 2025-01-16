@@ -4,11 +4,12 @@ import Link from "next/link";
 
 interface card {
   title: string;
+  fontSize?: string;
   imgSrc: string;
   link: string;
 }
 
-const Card: FC<card> = ({ title, imgSrc, link }) => {
+const Card: FC<card> = ({ title, fontSize = "text-lg", imgSrc, link }) => {
   return (
     <Link href={link}>
       <div className="relative cursor-pointer group rounded-3xl overflow-hidden shadow-lg w-full h-60">
@@ -22,7 +23,7 @@ const Card: FC<card> = ({ title, imgSrc, link }) => {
           }}
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-end p-4">
-          <h3 className="text-white text-lg">{title}</h3>
+          <h3 className={`text-white ${fontSize} text-left`}>{title}</h3>
         </div>
       </div>
     </Link>

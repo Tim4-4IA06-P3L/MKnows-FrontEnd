@@ -43,13 +43,14 @@ const PublicTrainingPage = () => {
         {/* Grid */}
         <section className="py-10 px-20">
           <div className="flex flex-wrap justify-center gap-8">
-            {publicTrainings.map((training) => (
+            {publicTrainings.length > 0 && publicTrainings.map((training) => (
               <div
                 className="basis-[100%] md:basis-[33%] lg:basis-[25%]"
                 key={training.documentId}
               >
                 <Card
                   title={training.Title}
+                  fontSize="text-md"
                   imgSrc={training.Thumbnail.url}
                   link={`/what-we-do/training/${training.Title}_${training.documentId}`}
                 />

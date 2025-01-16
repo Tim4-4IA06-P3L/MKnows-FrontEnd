@@ -40,7 +40,7 @@ const BootcampContent: FC<{ categories: Category[] }> = ({ categories }) => {
         </section>
 
         <section className="w-full flex flex-col justify-center">
-          {categories.map(
+          {categories.length > 0 && categories.map(
             (category) =>
               category.programs.length > 0 && (
                 <div key={category.id}>

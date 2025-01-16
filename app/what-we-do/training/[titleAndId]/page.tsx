@@ -8,7 +8,7 @@ export const generateMetadata = async ({
   params: Promise<{ titleAndId: string }>;
 }): Promise<Metadata> => {
   const titleAndId = (await params).titleAndId;
-  const title = titleAndId.split("_")[0].replaceAll("%20", " ");
+  const title = decodeURIComponent(titleAndId.split("_")[0]);
   return {
     title: `${title} - M-Knows Consulting`,
     description: `Halaman Detail ${title} M-Knows Consulting`,

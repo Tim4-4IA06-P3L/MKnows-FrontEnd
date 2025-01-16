@@ -23,7 +23,7 @@ const DropdownNewTraining: FC<{ newTrainings: Training[] }> = ({
 				flex flex-col lg:flex-row lg:space-x-12"
         >
           <ul className="space-y-5">
-            {newTrainings.map((newTraining) => (
+            {newTrainings.length > 0 && newTrainings.map((newTraining) => (
               <li className="flex justify-start" key={newTraining.documentId}>
                 <div className="lg:hidden border-green-500 border-4 inline mr-3"></div>
                 <Link
