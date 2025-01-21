@@ -18,7 +18,7 @@ const CardBootcamp: FC<cardBootcamp> = ({
 }) => {
   return (
     <div
-      className="relative basis-[410px] bg-center-top bg-contain bg-no-repeat"
+      className="relative basis-[410px] bg-[length:100%_40%] bg-center-top bg-no-repeat"
       style={{
         backgroundImage: `url('${thumbnail}')`,
       }}

@@ -1,6 +1,12 @@
 import React from "react";
 import CoverPage from "../../components/CoverPage";
 import LMSVideo from "@/app/components/LMSVideo";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Learning Management System - M-Knows Consulting",
+  description: "Learning Management System M-Knows Consulting",
+};
 
 const LMSPage: React.FC = () => {
   return (
