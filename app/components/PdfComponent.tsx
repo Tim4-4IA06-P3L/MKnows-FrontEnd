@@ -24,9 +24,10 @@ const PdfComponent: FC<{
 					[&::-webkit-scrollbar-thumb]:bg-[#b3ff00]"
     >
       <div className="w-full h-full flex justify-center">
-        <Document file={url} onLoadSuccess={onLoadSuccess} className="w-full">
+        <Document file={url} onLoadSuccess={onLoadSuccess} className="w-full sm:w-[60%]">
           {Array.from(Array(numPages).keys()).map((n) => (
             <Page
+              scale={0.8}
               pageNumber={n + 1}
               className="mb-8 w-full h-auto"
               key={n + 1}
