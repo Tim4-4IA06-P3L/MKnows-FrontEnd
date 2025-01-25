@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 
 const getNewTraining = async () => {
   const res = await fetch(
-    `${process.env.CMS_URL}/api/trainings?populate=*&sort=Title&filters[NewTraining]{$eq]=true`,
+    `${process.env.CMS_URL}/api/trainings?populate=*&sort=Title&filters[NewTraining][$eq]=true`,
     {
-      cache: 'no-store'
+      cache: "no-store"
     }
   );
   const resJson = await res.json();
